@@ -1,0 +1,256 @@
+<!doctype html><html lang=fr><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=color-scheme content=dark>
+<title>Note economique du 6 septembre 2026</title>
+<link rel=preconnect href="https://fonts.googleapis.com">
+<link rel=preconnect href="https://fonts.gstatic.com" crossorigin>
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Inter:wght@400;500&display=swap">
+<style>
+:root{
+  --encre:#101720; --panneau:#18202B; --creux:#0B1119;
+  --papier:#E9E5DC; --gris:#8D97A4; --trait:#26303D;
+  --laiton:#C99A4B; --ecart:#C4614A; --tenu:#5E9B7E;
+  --serif:"Newsreader",Georgia,serif; --sans:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--encre);color:var(--papier);
+  font-family:var(--sans);font-size:16px;line-height:1.65;
+  -webkit-font-smoothing:antialiased}
+main{max-width:38rem;margin:0 auto;padding:1.5rem 1.25rem 5rem}
+a{color:inherit;text-decoration:none;border-bottom:1px solid var(--trait)}
+a:hover{border-color:var(--laiton)}
+:focus-visible{outline:2px solid var(--laiton);outline-offset:3px}
+
+.tete{display:flex;justify-content:space-between;align-items:baseline;
+  gap:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--trait)}
+.tete h1{font-family:var(--serif);font-size:1.05rem;font-weight:500;margin:0;
+  letter-spacing:.01em}
+.tete span{color:var(--gris);font-size:.75rem;font-variant-numeric:tabular-nums}
+
+.suivi{display:flex;flex-wrap:wrap;gap:.35rem;margin:.9rem 0 0}
+.suivi b{font-weight:400;font-size:.72rem;color:var(--gris);
+  border:1px solid var(--trait);border-radius:2px;padding:.15rem .45rem}
+
+section{margin-top:2.75rem}
+.etiquette{color:var(--laiton);font-size:.78rem;letter-spacing:.03em;
+  margin:0 0 .6rem;font-weight:500}
+h2{font-family:var(--serif);font-weight:400;font-size:1.5rem;line-height:1.3;
+  margin:0 0 .75rem}
+h3{font-family:var(--serif);font-weight:500;font-size:1.1rem;margin:0 0 .35rem}
+
+.ouverture{font-family:var(--serif);font-size:1.55rem;line-height:1.35;
+  margin:1.75rem 0 0;font-weight:400}
+
+.bloc{border-left:2px solid var(--trait);padding:.1rem 0 .1rem 1rem;margin:1.1rem 0}
+.bloc.vide{color:var(--gris);font-style:italic;border-left-color:var(--creux)}
+.inexplique .bloc{border-left-color:var(--laiton)}
+.divergence .bloc{border-left-color:var(--ecart)}
+.bloc p{margin:.3rem 0}
+.legende{color:var(--gris);font-size:.82rem}
+.legende b{color:var(--papier);font-weight:500}
+
+.synthese{list-style:none;padding:0;margin:0;font-family:var(--serif);
+  font-size:1.12rem;line-height:1.55}
+.synthese li{padding:.5rem 0;border-bottom:1px solid var(--trait)}
+.synthese li:last-child{border-bottom:0}
+
+table{width:100%;border-collapse:collapse;font-size:.85rem;
+  font-variant-numeric:tabular-nums}
+th{text-align:right;font-weight:500;color:var(--gris);font-size:.75rem;
+  padding:.35rem .3rem;border-bottom:1px solid var(--trait)}
+th:first-child{text-align:left}
+td{padding:.42rem .3rem;text-align:right;border-bottom:1px solid var(--creux)}
+td:first-child{text-align:left;color:var(--gris)}
+tr.anormal td{color:var(--laiton)}
+tr.anormal td:first-child{color:var(--laiton)}
+
+details{border-top:1px solid var(--trait);padding:.85rem 0}
+details[open]{padding-bottom:1.4rem}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;
+  align-items:baseline;gap:1rem;font-family:var(--serif);font-size:1.15rem}
+summary::-webkit-details-marker{display:none}
+summary em{font-style:normal;color:var(--gris);font-size:.72rem;
+  font-family:var(--sans);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+.chaine{list-style:none;counter-reset:c;padding:0;margin:.6rem 0 0}
+.chaine li{counter-increment:c;position:relative;padding-left:1.6rem;margin:.3rem 0;
+  font-size:.92rem}
+.chaine li::before{content:counter(c);position:absolute;left:0;top:.05rem;
+  color:var(--laiton);font-size:.72rem;font-variant-numeric:tabular-nums}
+.chaine b{font-weight:500}
+.chaine span{color:var(--gris)}
+
+.faux{color:var(--gris);font-size:.88rem;margin:.55rem 0 0;
+  border-left:2px solid var(--ecart);padding-left:.7rem}
+
+.hypo{border-top:1px solid var(--creux);padding:.7rem 0}
+.hypo p{margin:.15rem 0}
+.hypo .meta{color:var(--gris);font-size:.76rem;font-variant-numeric:tabular-nums}
+.verifiee .meta b{color:var(--tenu)}
+.infirmee .meta b{color:var(--ecart)}
+
+.score{display:flex;gap:1.5rem;flex-wrap:wrap;margin:.5rem 0 1rem}
+.score div span{display:block;color:var(--gris);font-size:.74rem}
+.score div b{font-family:var(--serif);font-size:1.6rem;font-weight:400;
+  font-variant-numeric:tabular-nums}
+
+footer{margin-top:4rem;padding-top:1rem;border-top:1px solid var(--trait);
+  color:var(--gris);font-size:.76rem}
+
+.bascule{position:sticky;top:0;z-index:5;display:flex;justify-content:flex-end;
+  padding:.4rem 0;background:var(--encre)}
+.bascule button{background:none;border:1px solid var(--trait);color:var(--gris);
+  border-radius:2px;padding:.25rem .6rem;font:inherit;font-size:.74rem;cursor:pointer}
+.bascule button:hover{color:var(--laiton);border-color:var(--laiton)}
+
+body.diapo main{max-width:44rem}
+body.diapo section,body.diapo .depart{display:none}
+body.diapo section.vue,body.diapo .depart.vue{display:block;min-height:78vh;
+  padding-top:1.5rem;animation:none}
+body.diapo .bascule::before{content:attr(data-pos);color:var(--gris);
+  font-size:.74rem;margin-right:auto;font-variant-numeric:tabular-nums}
+body.diapo details{border:0}
+body.diapo details summary{pointer-events:none}
+
+@media (min-width:40rem){main{padding:2.5rem 2rem 6rem}
+  .ouverture{font-size:1.9rem}h2{font-size:1.7rem}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media print{body{background:#fff;color:#000}.bascule{display:none}}
+</style></head><body><main>
+<div class="bascule"><button type=button>mode diapo</button></div>
+<div class="depart">
+<div class="tete"><h1>Note economique</h1><span>6 septembre 2026 &nbsp;v1</span></div>
+<div class="suivi"><b>Semi-conducteurs (equipementiers europeens)</b><b>Energie (majors petrolieres)</b><b>Fret maritime et logistique portuaire</b><b>Taux europeens</b></div>
+<p class="ouverture">Aucun mouvement ne franchit le seuil d&#x27;anomalie retenu par le fournisseur (liste des mouvements anormaux vide), mais le Brent affiche le z-score le plus eleve de la journee (z=1,81, +6,27$) sans qu&#x27;aucun dossier de presse disponible n&#x27;en identifie la cause.</p>
+</div>
+<section class="inexplique"><p class="etiquette">Ce que la presse n'explique pas</p>
+<h2>Mouvements sans cause identifiee</h2>
+<div class="bloc"><h3>Hausse du Brent</h3><p>+6,27$ sur la seance du 2026-09-01, niveau 96,02$, z=1,81 (sous le seuil d&#x27;anomalie mais mouvement le plus marque du jour)</p><p class="legende">Piste : Le theme tech le signale explicitement comme non explique par les dossiers disponibles ; le theme energie ne fait que deduire des consequences (couts de soutage, marges raffinage), pas une cause</p><p class="legende">Manque : <b>Communique OPEP+, donnee de stocks EIA/AIE, ou evenement geopolitique sur l&#x27;offre (Moyen-Orient, Russie, sanctions) - aucun de ces elements n&#x27;est present dans les dossiers transmis</b></p></div>
+<div class="bloc"><h3>Dollar fort / euro affaibli</h3><p>Indice dollar large +0,39 (z=1,26, niveau 118,748) ; EUR/USD -0,006 (z=-1,47, niveau 1,16)</p><p class="legende">Piste : Aucun dossier macro ou banques centrales n&#x27;a ete transmis (0 dossier, 0 article pour le theme macro)</p><p class="legende">Manque : <b>Communique Fed ou BCE, donnees d&#x27;emploi ou d&#x27;inflation US recentes, decision ou discours de taux - rien de tout cela n&#x27;est disponible dans les sources du jour</b></p></div>
+</section>
+<section class="divergence"><p class="etiquette">Presse contre prix</p>
+<h2>Divergences</h2>
+<div class="bloc"><h3>Tension geopolitique tech affichee dans la presse vs volatilite de marche en repli</h3><p class="legende">Presse : Deux dossiers (Taiwan-Chine, tarifs drones/composants chinois) decrivent une escalade des tensions technologiques et commerciales sino-americaines</p><p class="legende">Prix : Le VIX recule (-0,88, z=-0,65, non anormal), sans signe de stress sur les actifs risque</p><p>Correlation absente plutot que divergence forte : les dossiers sont a source unique (1 chacun), potentiellement issus de communiques officiels, et leur materialite est jugee faible ; le marche ne semble pas y reagir, ce qui peut signifier soit que l&#x27;information n&#x27;est pas encore integree, soit qu&#x27;elle est deja anticipee</p></div>
+</section>
+<section><p class="etiquette">Ce que les themes disent ensemble</p>
+<h2>Synthese</h2>
+<ul class="synthese"><li>Les themes ne se parlent pas aujourd&#x27;hui : macro et defense sont vides de dossiers, energie et tech ne partagent qu&#x27;une mention croisee du Brent sans lien causal etabli.</li><li>Le seul mouvement de marche notable (Brent, z=1,81) reste sans source de presse pour l&#x27;expliquer, ce qui est en soi l&#x27;information la plus importante de cette fenetre.</li><li>Le dollar fort et l&#x27;euro faible ne sont adosses a aucun dossier macro transmis, empechant toute lecture causale au-dela du constat statistique.</li><li>Les deux dossiers tech retenus sont chacun a source unique et potentiellement lies a des communiques officiels (Taiwan, administration americaine), donc a traiter comme signal faible, pas comme fait etabli de marche.</li><li>Absence de dossiers de presse aujourd&#x27;hui = absence de matiere pour distinguer fait, deduction et hypothese sur macro et defense.</li></ul>
+</section>
+<section><p class="etiquette">Reference chiffree</p><h2>Marches</h2>
+<table><thead><tr><th>Serie</th><th>Niveau</th><th>Var.</th><th>z</th></tr></thead><tbody>
+<tr><td>Volatilite actions (VIX)</td><td>14.32</td><td>-0.88</td><td>-0.65</td></tr>
+<tr><td>Spread haut rendement US</td><td>2.65</td><td>-0.01</td><td>-0.26</td></tr>
+<tr><td>Taux 10 ans US</td><td>4.77</td><td>-0.02</td><td>-0.56</td></tr>
+<tr><td>Taux 2 ans US</td><td>4.34</td><td>-0.05</td><td>-1.1</td></tr>
+<tr><td>Inflation anticipee 10 ans</td><td>2.35</td><td>+0</td><td>+0.07</td></tr>
+<tr><td>Brent</td><td>96.02</td><td>+6.27</td><td>+1.81</td></tr>
+<tr><td>Dollar (indice large)</td><td>118.748</td><td>+0.39</td><td>+1.26</td></tr>
+<tr><td>Euro / dollar</td><td>1.16</td><td>-0.006</td><td>-1.47</td></tr>
+</tbody></table>
+<p class="legende">z = ampleur de la variation du jour comparee aux 90 dernieres seances. Au-dela de 2, le mouvement sort de l'ordinaire.</p></section>
+<section><p class="etiquette">Le detail, si l'ouverture t'y renvoie</p>
+<h2>Par theme</h2>
+<details><summary>Macro et banques centrales<em>0 retenus / 0 dossiers</em></summary>
+<div class="bloc vide"><p>Rien de materiel sur ce theme.</p></div>
+<p class="legende">Ecarte comme bruit : Aucun dossier de presse n&#x27;a ete transmis pour cette fenetre (champ dossiers vide) : rien a sourcer ni a croiser, donc rien de retenu sous forme de dossier.</p>
+</details>
+<details><summary>Energie et matieres premieres<em>2 retenus / 0 dossiers</em></summary>
+<div class="bloc">
+<h3><a href="non disponible">Hausse marquée du Brent (+6,27$ sur la séance du 2026-09-01)</a></h3>
+<p>Le Brent cote 96,02$ le 2026-09-01, en hausse de 6,27$ sur la seance, avec un z-score de 1,81 (mouvement situe dans la queue haute de la distribution recente, sous le seuil d&#x27;anomalie retenu par le fournisseur). Aucun dossier de presse n&#x27;accompagne cette donnee de marche ; il s&#x27;agit d&#x27;une serie de prix, pas d&#x27;une source journalistique.</p>
+<p class="legende">1 sources independantes &middot; materialite haute</p>
+<ul class="chaine">
+<li><b>cout des intrants energetiques importes</b> <span>&rarr; pression a la hausse sur les couts operationnels, effet mecanique positif sur le chiffre d&#x27;affaires amont &rarr; majors petrolieres europeennes</span></li>
+<li><b>cout du carburant (soutes)</b> <span>&rarr; hausse potentielle des couts de transport maritime &rarr; fret maritime / logistique portuaire</span></li>
+</ul>
+<p class="faux">Faux si : Un repli du Brent sous 90$ lors du prochain releve invaliderait la lecture d&#x27;un choc persistant plutot qu&#x27;un pic ponctuel.</p>
+</div>
+<div class="bloc">
+<h3><a href="non disponible">Dollar fort / euro affaibli (indice large +0,39, EUR/USD -0,006)</a></h3>
+<p>L&#x27;indice large du dollar atteint 118,748 le 2026-08-28 (z=1,26) tandis que l&#x27;EUR/USD recule a 1,16 (z=-1,47). Donnees de marche uniquement, aucune source de presse associee.</p>
+<p class="legende">1 sources independantes &middot; materialite moyenne</p>
+<ul class="chaine">
+<li><b>facturation en dollar des matieres premieres et du fret</b> <span>&rarr; renchérissement relatif des importations et des couts logistiques pour les acteurs zone euro &rarr; fret maritime et logistique portuaire</span></li>
+<li><b>conversion de change sur revenus/couts libelles en dollar</b> <span>&rarr; effet mixte sur marges des equipementiers europeens exportateurs vs importateurs de composants &rarr; semi-conducteurs (equipementiers europeens)</span></li>
+</ul>
+<p class="faux">Faux si : Un retour de l&#x27;EUR/USD au-dessus de 1,17 et un repli de l&#x27;indice dollar sous 117 infirmeraient la persistance de ce mouvement.</p>
+</div>
+<p class="legende">Ecarte comme bruit : VIX en leger repli (-0,88, z=-0,65) : niveau non anormal, sans lien direct avec les expositions listees, Spread haut rendement US quasi stable (z=-0,26) : non anormal, pas de canal identifie vers l&#x27;energie ou le fret, Taux 10 ans et 2 ans US en leger repli : donnee US uniquement, pas de serie sur les taux europeens disponible pour l&#x27;exposition demandee, Inflation anticipee 10 ans US stable (z=0,07) : non anormal</p>
+</details>
+<details><summary>Defense et geopolitique<em>0 retenus / 0 dossiers</em></summary>
+<div class="bloc vide"><p>Rien de materiel sur ce theme.</p></div>
+</details>
+<details><summary>Tech et semi-conducteurs<em>2 retenus / 24 dossiers</em></summary>
+<div class="bloc">
+<h3><a href="https://www.tomshardware.com/tech-industry/policy/taiwan-cracks-down-on-tech-businesses-with-illegal-chinese-ownership-166-investigations-and-at-least-36-convictions-since-2020">Taiwan cracks down on tech businesses with illegal Chinese ownership — 166 investigations et au moins 36 condamnations depuis 2020</a></h3>
+<p>Taipei a mene 166 enquetes et obtenu au moins 36 condamnations depuis 2020 contre des participations chinoises illegales dans des entreprises technologiques taiwanaises, selon une seule source (Tom&#x27;s Hardware, relayant vraisemblablement une communication officielle).</p>
+<p class="legende">1 sources independantes &middot; communique d&#x27;une partie interessee &middot; materialite faible</p>
+<ul class="chaine">
+<li><b>perception du risque geopolitique Taiwan-Chine sur la chaine d&#x27;approvisionnement semi-conducteurs</b> <span>&rarr; prime de risque accrue sur les valorisations des equipementiers exposes a Taiwan &rarr; actions des equipementiers semi-conducteurs europeens (ASML, ASM International, BESI)</span></li>
+</ul>
+<p class="faux">Faux si : absence de reaction des cours des equipementiers europeens dans les jours suivants, ou absence d&#x27;escalade diplomatique Chine-Taiwan liee a ce dossier</p>
+</div>
+<div class="bloc">
+<h3><a href="https://www.tomshardware.com/tech-industry/drones/trump-slaps-up-to-100-percent-tariffs-on-imported-drones-and-critical-components-in-latest-move-against-chinas-proliferation-of-u-s-drone-market-citing-national-security-products-from-allied-nation-face-10-15-percent-rates">Trump impose jusqu&#x27;a 100% de droits de douane sur les drones et composants critiques importes de Chine</a></h3>
+<p>L&#x27;administration americaine a annonce des tarifs pouvant atteindre 100% sur les drones et composants critiques chinois, avec des taux de 10-15% pour les pays allies, selon une seule source.</p>
+<p class="legende">1 sources independantes &middot; communique d&#x27;une partie interessee &middot; materialite faible</p>
+<ul class="chaine">
+<li><b>extension possible de la logique tarifaire americaine aux composants electroniques/semi-conducteurs importes de Chine</b> <span>&rarr; risque accru de mesures similaires sur d&#x27;autres segments tech, cout d&#x27;approvisionnement plus eleve pour les fabricants dependants de composants chinois &rarr; chaines d&#x27;approvisionnement des equipementiers et fabricants de composants electroniques</span></li>
+</ul>
+<p class="faux">Faux si : aucune extension de mesures tarifaires similaires a d&#x27;autres categories de composants electroniques dans les semaines suivantes</p>
+</div>
+<p class="legende">Ecarte comme bruit : Single-slot low-profile 75W RTX 3060 with no power connectors disappoints in tests, OpenAI admits to &#x27;wiki incident&#x27; after its agents were discovered using a programming hub to communicate, FSP Mega GM 1200W power supply review, Bitcoin mining data center condemned after leaking 3 million gallons of water and forcing school closures, Samsung 990 2TB PCIe 4.0 SSD falls to $339.99 on Amazon, MSI MEG CoreLiquid E15 360 AIO Review</p>
+</details>
+</section>
+<section><p class="etiquette">Ce que l'outil avait annonce</p><h2>Carnet</h2>
+<p class="legende">Aucune hypothese encore arbitree. Le score apparait quand les premiers horizons sont atteints.</p>
+<div class="hypo ouverte">
+<p>Aucune donnee du dossier de presse n&#x27;explique la hausse anormale du Brent (+6,27$, z=1,81) observee le 2026-09-01; cette hausse reste une correlation non expliquee par les sources disponibles sur ce theme tech/semis.</p>
+<p class="meta">2026-09-06 &middot; Tech et semi-conducteurs &middot; 50% &middot; 10 j &middot; <b>ouverte</b></p>
+</div>
+<div class="hypo ouverte">
+<p>Le Brent se maintient au-dessus de 90$ lors des prochains relevés, confirmant un choc energetique persistant plutot qu&#x27;un pic ponctuel, avec repercussion visible sur les couts de fret</p>
+<p class="meta">2026-09-06 &middot; Energie et matieres premieres &middot; 55% &middot; 10 j &middot; <b>ouverte</b></p>
+</div>
+<div class="hypo ouverte">
+<p>Si la hausse du Brent (+6.27$ sur la derniere seance disponible, niveau 96.02$, z=1.81) se confirme sur les prochaines publications journalieres plutot que d&#x27;etre un mouvement isole, elle se traduira par une pression haussiere mesurable sur les couts de soutage du fret maritime et sur les marges raffinage des majors petrolieres europeennes.</p>
+<p class="meta">2026-09-06 &middot; Macro et banques centrales &middot; 50% &middot; 10 j &middot; <b>ouverte</b></p>
+</div>
+</section>
+<section><p class="etiquette">Contre les conclusions ci-dessus</p>
+<h2>Ce qui rendrait cette note fausse</h2>
+<div class="bloc"><p>Le z-score de 1,81 sur le Brent reste sous le seuil d&#x27;anomalie du fournisseur : toute la lecture ci-dessus pourrait sur-interpreter un mouvement statistiquement ordinaire au regard des 90 dernieres seances</p></div>
+<div class="bloc"><p>Les deux dossiers tech retenus proviennent d&#x27;une seule source chacun (Tom&#x27;s Hardware), possiblement elle-meme relais d&#x27;un communique officiel (gouvernement taiwanais, administration americaine) : le narratif de tension geopolitique pourrait etre surrepresente par rapport a sa portee reelle sur les marches</p></div>
+<div class="bloc"><p>L&#x27;absence totale de dossiers pour macro et defense ne signifie pas absence d&#x27;evenements reels sur ces themes, seulement absence de dossiers transmis dans cette fenetre - toute conclusion de calme macro serait un biais de source, pas un fait de marche</p></div>
+<div class="bloc"><p>Les dates des series ne sont pas synchrones (Brent au 2026-09-01, dollar/EUR au 2026-08-28, VIX/taux au 2026-09-03) : comparer ces mouvements comme s&#x27;ils etaient contemporains peut creer une fausse impression de coherence ou d&#x27;incoherence</p></div>
+</section>
+<footer><p>24 articles collectes, regroupes par dossier. Sources : GDELT, flux publics des institutions, series FRED. Consignes v1 &mdash; le score de fiabilite ne vaut que par version.</p><p>Touche d pour le mode diapo, j et k pour naviguer.</p></footer>
+</main><script>
+const corps=document.body, bar=document.querySelector('.bascule'),
+      bouton=bar.querySelector('button'),
+      vues=[...document.querySelectorAll('.depart, main > section')];
+let i=0, diapo=false;
+
+function montrer(n){
+  i=Math.max(0,Math.min(vues.length-1,n));
+  vues.forEach((v,k)=>v.classList.toggle('vue',k===i));
+  bar.dataset.pos=String(i+1).padStart(2,'0')+' / '+vues.length;
+  window.scrollTo(0,0);
+}
+function basculer(){
+  diapo=!diapo;
+  corps.classList.toggle('diapo',diapo);
+  bouton.textContent=diapo?'lecture continue':'mode diapo';
+  if(diapo){document.querySelectorAll('details').forEach(d=>d.open=true);montrer(0);}
+  else{vues.forEach(v=>v.classList.remove('vue'));bar.dataset.pos='';}
+}
+bouton.addEventListener('click',basculer);
+addEventListener('keydown',ev=>{
+  if(ev.target.matches('input,textarea'))return;
+  if(ev.key==='d'){basculer();return;}
+  if(!diapo)return;
+  if(ev.key==='j'||ev.key==='ArrowRight')montrer(i+1);
+  if(ev.key==='k'||ev.key==='ArrowLeft')montrer(i-1);
+});
+</script></body></html>

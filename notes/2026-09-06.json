@@ -1,0 +1,327 @@
+{
+ "date": "2026-09-06",
+ "version": "v1",
+ "exposition": [
+  "Semi-conducteurs (equipementiers europeens)",
+  "Energie (majors petrolieres)",
+  "Fret maritime et logistique portuaire",
+  "Taux europeens"
+ ],
+ "marche": [
+  {
+   "code": "VIXCLS",
+   "nom": "Volatilite actions (VIX)",
+   "unite": "pts",
+   "date": "2026-09-03",
+   "niveau": 14.32,
+   "variation": -0.88,
+   "z": -0.65,
+   "anormal": false
+  },
+  {
+   "code": "BAMLH0A0HYM2",
+   "nom": "Spread haut rendement US",
+   "unite": "pts",
+   "date": "2026-09-03",
+   "niveau": 2.65,
+   "variation": -0.01,
+   "z": -0.26,
+   "anormal": false
+  },
+  {
+   "code": "DGS10",
+   "nom": "Taux 10 ans US",
+   "unite": "%",
+   "date": "2026-09-03",
+   "niveau": 4.77,
+   "variation": -0.02,
+   "z": -0.56,
+   "anormal": false
+  },
+  {
+   "code": "DGS2",
+   "nom": "Taux 2 ans US",
+   "unite": "%",
+   "date": "2026-09-03",
+   "niveau": 4.34,
+   "variation": -0.05,
+   "z": -1.1,
+   "anormal": false
+  },
+  {
+   "code": "T10YIE",
+   "nom": "Inflation anticipee 10 ans",
+   "unite": "%",
+   "date": "2026-09-04",
+   "niveau": 2.35,
+   "variation": 0.0,
+   "z": 0.07,
+   "anormal": false
+  },
+  {
+   "code": "DCOILBRENTEU",
+   "nom": "Brent",
+   "unite": "$",
+   "date": "2026-09-01",
+   "niveau": 96.02,
+   "variation": 6.27,
+   "z": 1.81,
+   "anormal": false
+  },
+  {
+   "code": "DTWEXBGS",
+   "nom": "Dollar (indice large)",
+   "unite": "idx",
+   "date": "2026-08-28",
+   "niveau": 118.748,
+   "variation": 0.39,
+   "z": 1.26,
+   "anormal": false
+  },
+  {
+   "code": "DEXUSEU",
+   "nom": "Euro / dollar",
+   "unite": "$",
+   "date": "2026-08-28",
+   "niveau": 1.16,
+   "variation": -0.006,
+   "z": -1.47,
+   "anormal": false
+  }
+ ],
+ "themes": {
+  "macro": {
+   "retenus": [],
+   "ecarte_car_bruit": [
+    "Aucun dossier de presse n'a ete transmis pour cette fenetre (champ dossiers vide) : rien a sourcer ni a croiser, donc rien de retenu sous forme de dossier."
+   ],
+   "hypothese": {
+    "enonce": "Si la hausse du Brent (+6.27$ sur la derniere seance disponible, niveau 96.02$, z=1.81) se confirme sur les prochaines publications journalieres plutot que d'etre un mouvement isole, elle se traduira par une pression haussiere mesurable sur les couts de soutage du fret maritime et sur les marges raffinage des majors petrolieres europeennes.",
+    "probabilite": 0.5,
+    "horizon_jours": 10,
+    "verification": "Observer si DCOILBRENTEU reste au-dessus de 93-94$ sur les prochaines publications quotidiennes (persistance du niveau) et si les indices de fret (type Baltic Dry ou equivalent, non disponible ici) integrent un ajustement de surcharge carburant."
+   },
+   "titre": "Macro et banques centrales",
+   "dossiers_bruts": 0,
+   "articles_bruts": 0
+  },
+  "energie": {
+   "retenus": [
+    {
+     "titre": "Hausse marquée du Brent (+6,27$ sur la séance du 2026-09-01)",
+     "fait": "Le Brent cote 96,02$ le 2026-09-01, en hausse de 6,27$ sur la seance, avec un z-score de 1,81 (mouvement situe dans la queue haute de la distribution recente, sous le seuil d'anomalie retenu par le fournisseur). Aucun dossier de presse n'accompagne cette donnee de marche ; il s'agit d'une serie de prix, pas d'une source journalistique.",
+     "sources_independantes": 1,
+     "communique_interesse": false,
+     "chaine": [
+      {
+       "canal": "cout des intrants energetiques importes",
+       "effet": "pression a la hausse sur les couts operationnels, effet mecanique positif sur le chiffre d'affaires amont",
+       "actif": "majors petrolieres europeennes"
+      },
+      {
+       "canal": "cout du carburant (soutes)",
+       "effet": "hausse potentielle des couts de transport maritime",
+       "actif": "fret maritime / logistique portuaire"
+      }
+     ],
+     "invalidation": "Un repli du Brent sous 90$ lors du prochain releve invaliderait la lecture d'un choc persistant plutot qu'un pic ponctuel.",
+     "materialite": "haute",
+     "url": "non disponible"
+    },
+    {
+     "titre": "Dollar fort / euro affaibli (indice large +0,39, EUR/USD -0,006)",
+     "fait": "L'indice large du dollar atteint 118,748 le 2026-08-28 (z=1,26) tandis que l'EUR/USD recule a 1,16 (z=-1,47). Donnees de marche uniquement, aucune source de presse associee.",
+     "sources_independantes": 1,
+     "communique_interesse": false,
+     "chaine": [
+      {
+       "canal": "facturation en dollar des matieres premieres et du fret",
+       "effet": "renchérissement relatif des importations et des couts logistiques pour les acteurs zone euro",
+       "actif": "fret maritime et logistique portuaire"
+      },
+      {
+       "canal": "conversion de change sur revenus/couts libelles en dollar",
+       "effet": "effet mixte sur marges des equipementiers europeens exportateurs vs importateurs de composants",
+       "actif": "semi-conducteurs (equipementiers europeens)"
+      }
+     ],
+     "invalidation": "Un retour de l'EUR/USD au-dessus de 1,17 et un repli de l'indice dollar sous 117 infirmeraient la persistance de ce mouvement.",
+     "materialite": "moyenne",
+     "url": "non disponible"
+    }
+   ],
+   "ecarte_car_bruit": [
+    "VIX en leger repli (-0,88, z=-0,65) : niveau non anormal, sans lien direct avec les expositions listees",
+    "Spread haut rendement US quasi stable (z=-0,26) : non anormal, pas de canal identifie vers l'energie ou le fret",
+    "Taux 10 ans et 2 ans US en leger repli : donnee US uniquement, pas de serie sur les taux europeens disponible pour l'exposition demandee",
+    "Inflation anticipee 10 ans US stable (z=0,07) : non anormal"
+   ],
+   "hypothese": {
+    "enonce": "Le Brent se maintient au-dessus de 90$ lors des prochains relevés, confirmant un choc energetique persistant plutot qu'un pic ponctuel, avec repercussion visible sur les couts de fret",
+    "probabilite": 0.55,
+    "horizon_jours": 10,
+    "verification": "Niveau de DCOILBRENTEU au prochain releve disponible ; comparaison au seuil de 90$"
+   },
+   "titre": "Energie et matieres premieres",
+   "dossiers_bruts": 0,
+   "articles_bruts": 0
+  },
+  "defense": {
+   "retenus": [],
+   "ecarte_car_bruit": [],
+   "hypothese": {
+    "enonce": null,
+    "probabilite": 0,
+    "horizon_jours": 0,
+    "verification": "non disponible - aucun dossier de presse fourni pour ce theme sur la periode ; seules des series de marche (FRED) sont disponibles, sans source journalistique permettant d'etablir un fait, une deduction ou une chaine causale exploitable pour le theme Defense et geopolitique."
+   },
+   "titre": "Defense et geopolitique",
+   "dossiers_bruts": 0,
+   "articles_bruts": 0
+  },
+  "tech": {
+   "retenus": [
+    {
+     "titre": "Taiwan cracks down on tech businesses with illegal Chinese ownership — 166 investigations et au moins 36 condamnations depuis 2020",
+     "fait": "Taipei a mene 166 enquetes et obtenu au moins 36 condamnations depuis 2020 contre des participations chinoises illegales dans des entreprises technologiques taiwanaises, selon une seule source (Tom's Hardware, relayant vraisemblablement une communication officielle).",
+     "sources_independantes": 1,
+     "communique_interesse": true,
+     "chaine": [
+      {
+       "canal": "perception du risque geopolitique Taiwan-Chine sur la chaine d'approvisionnement semi-conducteurs",
+       "effet": "prime de risque accrue sur les valorisations des equipementiers exposes a Taiwan",
+       "actif": "actions des equipementiers semi-conducteurs europeens (ASML, ASM International, BESI)"
+      }
+     ],
+     "invalidation": "absence de reaction des cours des equipementiers europeens dans les jours suivants, ou absence d'escalade diplomatique Chine-Taiwan liee a ce dossier",
+     "materialite": "faible",
+     "url": "https://www.tomshardware.com/tech-industry/policy/taiwan-cracks-down-on-tech-businesses-with-illegal-chinese-ownership-166-investigations-and-at-least-36-convictions-since-2020"
+    },
+    {
+     "titre": "Trump impose jusqu'a 100% de droits de douane sur les drones et composants critiques importes de Chine",
+     "fait": "L'administration americaine a annonce des tarifs pouvant atteindre 100% sur les drones et composants critiques chinois, avec des taux de 10-15% pour les pays allies, selon une seule source.",
+     "sources_independantes": 1,
+     "communique_interesse": true,
+     "chaine": [
+      {
+       "canal": "extension possible de la logique tarifaire americaine aux composants electroniques/semi-conducteurs importes de Chine",
+       "effet": "risque accru de mesures similaires sur d'autres segments tech, cout d'approvisionnement plus eleve pour les fabricants dependants de composants chinois",
+       "actif": "chaines d'approvisionnement des equipementiers et fabricants de composants electroniques"
+      }
+     ],
+     "invalidation": "aucune extension de mesures tarifaires similaires a d'autres categories de composants electroniques dans les semaines suivantes",
+     "materialite": "faible",
+     "url": "https://www.tomshardware.com/tech-industry/drones/trump-slaps-up-to-100-percent-tariffs-on-imported-drones-and-critical-components-in-latest-move-against-chinas-proliferation-of-u-s-drone-market-citing-national-security-products-from-allied-nation-face-10-15-percent-rates"
+    }
+   ],
+   "ecarte_car_bruit": [
+    "Single-slot low-profile 75W RTX 3060 with no power connectors disappoints in tests",
+    "OpenAI admits to 'wiki incident' after its agents were discovered using a programming hub to communicate",
+    "FSP Mega GM 1200W power supply review",
+    "Bitcoin mining data center condemned after leaking 3 million gallons of water and forcing school closures",
+    "Samsung 990 2TB PCIe 4.0 SSD falls to $339.99 on Amazon",
+    "MSI MEG CoreLiquid E15 360 AIO Review",
+    "Sales of CD and vinyl music sees strong resurgence amid physical media backlash",
+    "PS5 emulator can now run the console version of GTA V at up to 60 FPS on PC",
+    "Former Old School RuneScape dev gets jail time for stealing $400,000 from players",
+    "This 246TB SSD media server is built for millionaire cinephiles",
+    "Save nearly 50% on this awesome 16-inch OLED laptop",
+    "Stripped-down Windows 11 for AI developers demands 64GB RAM",
+    "Gamescom apologizes after backlash over callous response to indie dev hardware thefts",
+    "Nvidia returns to selling Founder's Edition RTX 50-series GPUs at MSRP in person at PAX West",
+    "AMD reportedly prepping Ryzen 5 7500 (non-F) CPU with integrated graphics",
+    "Best of IFA 2026: MacBook Neo competitors, monitors, and wild laptop concepts",
+    "Modder gets Nvidia's DLSS 5 working on AMD's RDNA 4 GPUs",
+    "Xbox Game Pass imposes monthly cloud gaming limits",
+    "Dodge the RAMpocalypse with 20% discounts on Corsair RAM",
+    "'World's first fully transparent video game console' is on its way to Kickstarter",
+    "We tested DLSS 5 in NBA 2K27 with every RTX 50-series GPU",
+    "Japan to mass-procure 3D-printed rocket-powered drone interceptor"
+   ],
+   "hypothese": {
+    "enonce": "Aucune donnee du dossier de presse n'explique la hausse anormale du Brent (+6,27$, z=1,81) observee le 2026-09-01; cette hausse reste une correlation non expliquee par les sources disponibles sur ce theme tech/semis.",
+    "probabilite": 0.5,
+    "horizon_jours": 10,
+    "verification": "publication d'un communique OPEP+, d'une donnee EIA/AIE, ou d'un evenement geopolitique energie identifie dans les prochains jours pour expliquer le mouvement du Brent"
+   },
+   "titre": "Tech et semi-conducteurs",
+   "dossiers_bruts": 24,
+   "articles_bruts": 24
+  }
+ },
+ "etat_du_jour": "Aucun mouvement ne franchit le seuil d'anomalie retenu par le fournisseur (liste des mouvements anormaux vide), mais le Brent affiche le z-score le plus eleve de la journee (z=1,81, +6,27$) sans qu'aucun dossier de presse disponible n'en identifie la cause.",
+ "inexplique": [
+  {
+   "quoi": "Hausse du Brent",
+   "ampleur": "+6,27$ sur la seance du 2026-09-01, niveau 96,02$, z=1,81 (sous le seuil d'anomalie mais mouvement le plus marque du jour)",
+   "piste": "Le theme tech le signale explicitement comme non explique par les dossiers disponibles ; le theme energie ne fait que deduire des consequences (couts de soutage, marges raffinage), pas une cause",
+   "manque": "Communique OPEP+, donnee de stocks EIA/AIE, ou evenement geopolitique sur l'offre (Moyen-Orient, Russie, sanctions) - aucun de ces elements n'est present dans les dossiers transmis"
+  },
+  {
+   "quoi": "Dollar fort / euro affaibli",
+   "ampleur": "Indice dollar large +0,39 (z=1,26, niveau 118,748) ; EUR/USD -0,006 (z=-1,47, niveau 1,16)",
+   "piste": "Aucun dossier macro ou banques centrales n'a ete transmis (0 dossier, 0 article pour le theme macro)",
+   "manque": "Communique Fed ou BCE, donnees d'emploi ou d'inflation US recentes, decision ou discours de taux - rien de tout cela n'est disponible dans les sources du jour"
+  }
+ ],
+ "divergences": [
+  {
+   "constat": "Tension geopolitique tech affichee dans la presse vs volatilite de marche en repli",
+   "presse": "Deux dossiers (Taiwan-Chine, tarifs drones/composants chinois) decrivent une escalade des tensions technologiques et commerciales sino-americaines",
+   "prix": "Le VIX recule (-0,88, z=-0,65, non anormal), sans signe de stress sur les actifs risque",
+   "lecture": "Correlation absente plutot que divergence forte : les dossiers sont a source unique (1 chacun), potentiellement issus de communiques officiels, et leur materialite est jugee faible ; le marche ne semble pas y reagir, ce qui peut signifier soit que l'information n'est pas encore integree, soit qu'elle est deja anticipee"
+  }
+ ],
+ "synthese": [
+  "Les themes ne se parlent pas aujourd'hui : macro et defense sont vides de dossiers, energie et tech ne partagent qu'une mention croisee du Brent sans lien causal etabli.",
+  "Le seul mouvement de marche notable (Brent, z=1,81) reste sans source de presse pour l'expliquer, ce qui est en soi l'information la plus importante de cette fenetre.",
+  "Le dollar fort et l'euro faible ne sont adosses a aucun dossier macro transmis, empechant toute lecture causale au-dela du constat statistique.",
+  "Les deux dossiers tech retenus sont chacun a source unique et potentiellement lies a des communiques officiels (Taiwan, administration americaine), donc a traiter comme signal faible, pas comme fait etabli de marche.",
+  "Absence de dossiers de presse aujourd'hui = absence de matiere pour distinguer fait, deduction et hypothese sur macro et defense."
+ ],
+ "contre_analyse": [
+  "Le z-score de 1,81 sur le Brent reste sous le seuil d'anomalie du fournisseur : toute la lecture ci-dessus pourrait sur-interpreter un mouvement statistiquement ordinaire au regard des 90 dernieres seances",
+  "Les deux dossiers tech retenus proviennent d'une seule source chacun (Tom's Hardware), possiblement elle-meme relais d'un communique officiel (gouvernement taiwanais, administration americaine) : le narratif de tension geopolitique pourrait etre surrepresente par rapport a sa portee reelle sur les marches",
+  "L'absence totale de dossiers pour macro et defense ne signifie pas absence d'evenements reels sur ces themes, seulement absence de dossiers transmis dans cette fenetre - toute conclusion de calme macro serait un biais de source, pas un fait de marche",
+  "Les dates des series ne sont pas synchrones (Brent au 2026-09-01, dollar/EUR au 2026-08-28, VIX/taux au 2026-09-03) : comparer ces mouvements comme s'ils etaient contemporains peut creer une fausse impression de coherence ou d'incoherence"
+ ],
+ "carnet": [
+  {
+   "id": "2026-09-06-macro",
+   "date": "2026-09-06",
+   "theme": "Macro et banques centrales",
+   "enonce": "Si la hausse du Brent (+6.27$ sur la derniere seance disponible, niveau 96.02$, z=1.81) se confirme sur les prochaines publications journalieres plutot que d'etre un mouvement isole, elle se traduira par une pression haussiere mesurable sur les couts de soutage du fret maritime et sur les marges raffinage des majors petrolieres europeennes.",
+   "probabilite": 0.5,
+   "horizon_jours": 10,
+   "verification": "Observer si DCOILBRENTEU reste au-dessus de 93-94$ sur les prochaines publications quotidiennes (persistance du niveau) et si les indices de fret (type Baltic Dry ou equivalent, non disponible ici) integrent un ajustement de surcharge carburant.",
+   "version": "v1",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-06-energie",
+   "date": "2026-09-06",
+   "theme": "Energie et matieres premieres",
+   "enonce": "Le Brent se maintient au-dessus de 90$ lors des prochains relevés, confirmant un choc energetique persistant plutot qu'un pic ponctuel, avec repercussion visible sur les couts de fret",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification": "Niveau de DCOILBRENTEU au prochain releve disponible ; comparaison au seuil de 90$",
+   "version": "v1",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-06-tech",
+   "date": "2026-09-06",
+   "theme": "Tech et semi-conducteurs",
+   "enonce": "Aucune donnee du dossier de presse n'explique la hausse anormale du Brent (+6,27$, z=1,81) observee le 2026-09-01; cette hausse reste une correlation non expliquee par les sources disponibles sur ce theme tech/semis.",
+   "probabilite": 0.5,
+   "horizon_jours": 10,
+   "verification": "publication d'un communique OPEP+, d'une donnee EIA/AIE, ou d'un evenement geopolitique energie identifie dans les prochains jours pour expliquer le mouvement du Brent",
+   "version": "v1",
+   "statut": "ouverte",
+   "preuve": null
+  }
+ ],
+ "fiabilite": {}
+}

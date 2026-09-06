@@ -1,0 +1,38 @@
+[
+ {
+  "id": "2026-09-06-macro",
+  "date": "2026-09-06",
+  "theme": "Macro et banques centrales",
+  "enonce": "Si la hausse du Brent (+6.27$ sur la derniere seance disponible, niveau 96.02$, z=1.81) se confirme sur les prochaines publications journalieres plutot que d'etre un mouvement isole, elle se traduira par une pression haussiere mesurable sur les couts de soutage du fret maritime et sur les marges raffinage des majors petrolieres europeennes.",
+  "probabilite": 0.5,
+  "horizon_jours": 10,
+  "verification": "Observer si DCOILBRENTEU reste au-dessus de 93-94$ sur les prochaines publications quotidiennes (persistance du niveau) et si les indices de fret (type Baltic Dry ou equivalent, non disponible ici) integrent un ajustement de surcharge carburant.",
+  "version": "v1",
+  "statut": "ouverte",
+  "preuve": null
+ },
+ {
+  "id": "2026-09-06-energie",
+  "date": "2026-09-06",
+  "theme": "Energie et matieres premieres",
+  "enonce": "Le Brent se maintient au-dessus de 90$ lors des prochains relevés, confirmant un choc energetique persistant plutot qu'un pic ponctuel, avec repercussion visible sur les couts de fret",
+  "probabilite": 0.55,
+  "horizon_jours": 10,
+  "verification": "Niveau de DCOILBRENTEU au prochain releve disponible ; comparaison au seuil de 90$",
+  "version": "v1",
+  "statut": "ouverte",
+  "preuve": null
+ },
+ {
+  "id": "2026-09-06-tech",
+  "date": "2026-09-06",
+  "theme": "Tech et semi-conducteurs",
+  "enonce": "Aucune donnee du dossier de presse n'explique la hausse anormale du Brent (+6,27$, z=1,81) observee le 2026-09-01; cette hausse reste une correlation non expliquee par les sources disponibles sur ce theme tech/semis.",
+  "probabilite": 0.5,
+  "horizon_jours": 10,
+  "verification": "publication d'un communique OPEP+, d'une donnee EIA/AIE, ou d'un evenement geopolitique energie identifie dans les prochains jours pour expliquer le mouvement du Brent",
+  "version": "v1",
+  "statut": "ouverte",
+  "preuve": null
+ }
+]
