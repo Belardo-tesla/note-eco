@@ -82,5 +82,53 @@
   "version": "v3",
   "statut": "ouverte",
   "preuve": null
+ },
+ {
+  "id": "2026-09-07-energie",
+  "date": "2026-09-07",
+  "theme": "Energie et matieres premieres",
+  "enonce": "Sans nouvelle information de presse, le Brent (DCOILBRENTEU), dont le dernier releve disponible date du 2026-09-01 (6 jours, perime) et affichait une hausse forte (+6.27$, z-score de 1.81, soit un mouvement nettement au-dessus de la normale), se stabilisera sans repartir a la hausse : il restera sous 100$ d'ici au 2026-09-17.",
+  "probabilite": 0.55,
+  "horizon_jours": 10,
+  "verification_auto": {
+   "serie": "DCOILBRENTEU",
+   "operateur": "<",
+   "seuil": 100
+  },
+  "version": "v3",
+  "statut": "ouverte",
+  "preuve": null
+ },
+ {
+  "id": "2026-09-07-defense",
+  "date": "2026-09-07",
+  "theme": "Defense et geopolitique",
+  "enonce": "Le Brent a saute de +6.27$ sur sa derniere lecture connue (2026-09-01, perimee de 6 jours), un mouvement statistiquement notable (z=1.81) mais sans dossier de presse identifie pour l'expliquer. Si la hausse est due a une tension geopolitique reelle, elle devrait se confirmer ou s'amplifier plutot que de refluer une fois des donnees plus fraiches disponibles.",
+  "probabilite": 0.4,
+  "horizon_jours": 10,
+  "verification_auto": {
+   "serie": "DCOILBRENTEU",
+   "operateur": ">=",
+   "seuil": 96.02
+  },
+  "version": "v3",
+  "statut": "ouverte",
+  "preuve": null
+ },
+ {
+  "id": "2026-09-07-tech",
+  "date": "2026-09-07",
+  "theme": "Tech et semi-conducteurs",
+  "enonce": "Le Brent (DCOILBRENTEU), releve a 96.02$ le 2026-09-01 (donnee agee de 6 jours, hausse de +6.27$ sur la derniere variation connue, z-score de 1.81 signalant un ecart notable a la normale sans etre qualifie d'anormal), depassera le seuil de 100$ d'ici 10 jours, ce qui renchérirait mecaniquement les couts de carburant des transporteurs maritimes et modifierait les marges des majors petrolieres.",
+  "probabilite": 0.4,
+  "horizon_jours": 10,
+  "verification_auto": {
+   "serie": "DCOILBRENTEU",
+   "operateur": ">=",
+   "seuil": 100
+  },
+  "version": "v3",
+  "statut": "ouverte",
+  "preuve": null
  }
 ]

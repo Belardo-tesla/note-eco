@@ -127,17 +127,17 @@
    },
    {
     "source": "Google News : BCE OR Fed taux directeurs inflation",
-    "articles": 1,
+    "articles": 3,
     "erreur": null
    },
    {
     "source": "Google News : central bank rate decision inflation",
-    "articles": 4,
+    "articles": 5,
     "erreur": null
    },
    {
     "source": "Google News : banque centrale politique monetaire",
-    "articles": 7,
+    "articles": 13,
     "erreur": null
    }
   ],
@@ -167,16 +167,16 @@
    {
     "source": "GDELT",
     "articles": 0,
-    "erreur": "reponse inattendue (429)"
+    "erreur": "reponse inattendue (200)"
    },
    {
     "source": "Google News : sanctions geopolitique tensions militaires",
-    "articles": 1,
+    "articles": 0,
     "erreur": null
    },
    {
     "source": "Google News : sanctions military escalation NATO",
-    "articles": 1,
+    "articles": 0,
     "erreur": null
    },
    {
@@ -256,8 +256,8 @@
    "ecarte_car_bruit": [],
    "hypothese": null,
    "titre": "Macro et banques centrales",
-   "dossiers_bruts": 12,
-   "articles_bruts": 12,
+   "dossiers_bruts": 20,
+   "articles_bruts": 21,
    "collecte": [
     {
      "source": "GDELT",
@@ -266,17 +266,17 @@
     },
     {
      "source": "Google News : BCE OR Fed taux directeurs inflation",
-     "articles": 1,
+     "articles": 3,
      "erreur": null
     },
     {
      "source": "Google News : central bank rate decision inflation",
-     "articles": 4,
+     "articles": 5,
      "erreur": null
     },
     {
      "source": "Google News : banque centrale politique monetaire",
-     "articles": 7,
+     "articles": 13,
      "erreur": null
     }
    ]
@@ -284,16 +284,16 @@
   "energie": {
    "retenus": [],
    "ecarte_car_bruit": [
-    "Aucun dossier de presse n'a ete remonte par la collecte des 36 dernieres heures pour ce theme : la liste 'dossiers' est vide, donc aucune information de presse ne peut etre retenue, meme si des donnees de marche bougent."
+    "Aucun dossier de presse recu sur ce theme dans les dernieres 36 heures : la collecte n'a rien remonte. Impossible de construire une chaine causale a partir des seules variations de marche (regle absolue : un prix qui bouge n'est pas une information de presse)."
    ],
    "hypothese": {
-    "enonce": "Le Brent (DCOILBRENTEU), dont le dernier releve connu (01/09/2026, soit 6 jours d'anciennete) affichait 96,02 dollars apres une hausse inhabituelle (+6,27 $, z-score de 1,81, signe d'un mouvement rare), restera au-dessus de 90 dollars lors du prochain releve dans les 10 jours qui suivent, en l'absence de toute information de presse identifiee justifiant ce niveau.",
+    "enonce": "Sans nouvelle information de presse, le Brent (DCOILBRENTEU), dont le dernier releve disponible date du 2026-09-01 (6 jours, perime) et affichait une hausse forte (+6.27$, z-score de 1.81, soit un mouvement nettement au-dessus de la normale), se stabilisera sans repartir a la hausse : il restera sous 100$ d'ici au 2026-09-17.",
     "probabilite": 0.55,
     "horizon_jours": 10,
     "verification_auto": {
      "serie": "DCOILBRENTEU",
-     "operateur": ">=",
-     "seuil": 90
+     "operateur": "<",
+     "seuil": 100
     }
    },
    "titre": "Energie et matieres premieres",
@@ -323,55 +323,37 @@
    ]
   },
   "defense": {
-   "retenus": [
-    {
-     "titre": "Conflit maritime entre États-Unis et Iran : frappes sur des pétroliers et menace de représailles dans le Golfe",
-     "fait": "Un seul média (relayé via l'agrégateur news.google.com) rapporte des frappes visant des pétroliers et des menaces de représailles américano-iraniennes dans le Golfe. Aucune autre source independante ne confirme ce recit a ce stade.",
-     "sources_independantes": 1,
-     "communique_interesse": false,
-     "chaine": [
-      {
-       "canal": "risque de perturbation du trafic petrolier dans le detroit d'Ormuz",
-       "effet": "si le conflit se confirme et s'intensifie, prime de risque geopolitique sur le prix du petrole et sur les couts d'assurance maritime",
-       "actif": "Brent (DCOILBRENTEU)",
-       "exposes": "majors petrolieres cotees (TotalEnergies, Shell, BP, ExxonMobil) et armateurs/assureurs du fret maritime, exposition a la hausse du cout du transport en cas de blocage du detroit"
-      }
-     ],
-     "invalidation": "absence de reprise par au moins une deuxieme source independante (agence de presse, gouvernement, ONG maritime type Lloyd's List) dans les 48h suivantes, ou stabilite du Brent malgre l'annonce",
-     "materialite": "faible",
-     "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQSEVuUXh6QUlfYjBFYUU5blZKT2QtbXlQVS1hTklvaHhENUVLS1lmQ1Vtam5WLWkxanBTcnpqbGhYNC1qdTJBcW5pWXYtU2stTHZDMDVhdEF3VS05LU05WEwxemdzYk5sV1hVRzJXQ3NTbHo0bDNEdnhuVWZYaXRHZFJXckE4OG1NVk5GVHRlcllVV2hTam5LMFNpZmI5S1YyMzVrWEdfZEVuQlZWWnJQQm81TXZJb1gzQ2djTXpvYTBYT0s1SVlNY2dLSWZqakEyTlF1eVhfWndKeEwyZkE4VE9UV2xsOFk?oc=5"
-    }
-   ],
+   "retenus": [],
    "ecarte_car_bruit": [
-    "Russian Sabotage in Europe: How to Make Moscow Pay Without Going to War - vijesti.me (analyse/opinion, une seule source, aucun evenement date ni canal de transmission chiffrable identifie vers un prix de marche)"
+    "Aucun dossier de presse remonte par la collecte des 36 dernieres heures sur le theme Defense et geopolitique. La liste transmise est vide : aucune information de presse n'est disponible pour ce cycle, et aucun dossier n'a ete fabrique a partir des seules donnees de marche."
    ],
    "hypothese": {
-    "enonce": "Si les frappes sur des petroliers dans le Golfe sont confirmees par au moins une deuxieme source d'ici 10 jours, le Brent pourrait depasser 100 dollars le baril, contre 96,02 dollars constate le 2026-09-01 (donnee agee de 6 jours).",
-    "probabilite": 0.3,
+    "enonce": "Le Brent a saute de +6.27$ sur sa derniere lecture connue (2026-09-01, perimee de 6 jours), un mouvement statistiquement notable (z=1.81) mais sans dossier de presse identifie pour l'expliquer. Si la hausse est due a une tension geopolitique reelle, elle devrait se confirmer ou s'amplifier plutot que de refluer une fois des donnees plus fraiches disponibles.",
+    "probabilite": 0.4,
     "horizon_jours": 10,
     "verification_auto": {
      "serie": "DCOILBRENTEU",
      "operateur": ">=",
-     "seuil": 100
+     "seuil": 96.02
     }
    },
    "titre": "Defense et geopolitique",
-   "dossiers_bruts": 2,
-   "articles_bruts": 2,
+   "dossiers_bruts": 0,
+   "articles_bruts": 0,
    "collecte": [
     {
      "source": "GDELT",
      "articles": 0,
-     "erreur": "reponse inattendue (429)"
+     "erreur": "reponse inattendue (200)"
     },
     {
      "source": "Google News : sanctions geopolitique tensions militaires",
-     "articles": 1,
+     "articles": 0,
      "erreur": null
     },
     {
      "source": "Google News : sanctions military escalation NATO",
-     "articles": 1,
+     "articles": 0,
      "erreur": null
     },
     {
@@ -384,16 +366,18 @@
   "tech": {
    "retenus": [],
    "ecarte_car_bruit": [
-    "Aucun dossier de presse n'a ete remonte par la collecte des 36 dernieres heures pour ce theme : la liste des dossiers transmise est vide. Aucune information ne peut donc etre retenue, meme si des donnees de marche (Brent, dollar, taux) bougent - un prix qui varie n'est pas une information de presse et ne peut pas etre transforme en dossier."
+    "Aucun dossier de presse recu sur les dernieres 36h pour ce theme : la liste 'dossiers' transmise est vide. Aucune information ne peut donc etre retenue ou analysee, conformement a la regle interdisant de fabriquer un dossier a partir des seules donnees de marche.",
+    "Les mouvements de marche disponibles (VIX, spreads de credit, taux US, Brent, dollar) sont tous perimes (4 a 10 jours) et ne constituent pas des informations de presse : un prix qui bouge n'est pas un dossier.",
+    "Aucune serie de taux europeens n'est presente dans les donnees transmises malgre l'exposition 'Taux europeens' du lecteur ; seules des series US (DGS10, DGS2) sont disponibles, ce qui empeche toute analyse specifique a ce facteur d'exposition."
    ],
    "hypothese": {
-    "enonce": "Le Brent (DCOILBRENTEU), qui a bondi de 6,27$ sur une lecture datee du 2026-09-01 (deja vieille de 6 jours) pour atteindre 96,02$, un niveau statistiquement eleve (z-score, mesure de l'ecart a la normale, de 1,81), restera au-dessus de 95$ le 2026-09-17.",
-    "probabilite": 0.55,
+    "enonce": "Le Brent (DCOILBRENTEU), releve a 96.02$ le 2026-09-01 (donnee agee de 6 jours, hausse de +6.27$ sur la derniere variation connue, z-score de 1.81 signalant un ecart notable a la normale sans etre qualifie d'anormal), depassera le seuil de 100$ d'ici 10 jours, ce qui renchérirait mecaniquement les couts de carburant des transporteurs maritimes et modifierait les marges des majors petrolieres.",
+    "probabilite": 0.4,
     "horizon_jours": 10,
     "verification_auto": {
      "serie": "DCOILBRENTEU",
      "operateur": ">=",
-     "seuil": 95
+     "seuil": 100
     }
    },
    "titre": "Tech et semi-conducteurs",
@@ -423,7 +407,7 @@
    ]
   }
  },
- "etat_du_jour": "Sur les quatre themes suivis, un seul dossier de presse a ete retenu aujourd'hui : des frappes non confirmees sur des petroliers dans le Golfe, rapportees par une seule source, pendant que le Brent affiche une hausse marquee (+6,27 dollars, a 96,02 dollars) sur une donnee deja vieille de 6 jours.",
+ "etat_du_jour": "Aucune information de presse n'a ete retenue aujourd'hui sur les quatre themes suivis (macro, energie, defense, tech) ; les seules donnees disponibles sont des indicateurs de marche ages de 3 a 10 jours, dont une hausse du Brent de +6,27 dollars vieille de 6 jours que le systeme ne classe pas comme statistiquement anormale.",
  "carte": [
   {
    "theme": "Macro et banques centrales",
@@ -435,20 +419,7 @@
   },
   {
    "theme": "Defense et geopolitique",
-   "acteurs": [
-    {
-     "nom": "Majors petrolieres amont (TotalEnergies, Shell, BP, ExxonMobil)",
-     "direction": 1,
-     "sources": 1,
-     "pourquoi": "Si les frappes sur des petroliers dans le Golfe se confirment, une prime de risque geopolitique pourrait soutenir les prix du petrole et donc les marges amont de ces groupes, mais l'information n'est portee que par une seule source non confirmee."
-    },
-    {
-     "nom": "Armateurs et assureurs du fret maritime (transport petrolier via le detroit d'Ormuz)",
-     "direction": -1,
-     "sources": 1,
-     "pourquoi": "Une escalade dans le Golfe augmenterait le cout des primes d'assurance et des routes de transport, mais ce risque repose sur un seul recit de presse non recoupe."
-    }
-   ]
+   "acteurs": []
   },
   {
    "theme": "Tech et semi-conducteurs",
@@ -458,66 +429,64 @@
  "glossaire": [
   {
    "terme": "z-score",
-   "definition": "Une mesure qui indique de combien un chiffre s'ecarte de sa moyenne habituelle ; plus il est eleve en valeur absolue, plus le mouvement est rare."
+   "definition": "Une mesure de l'ecart d'une variation par rapport a son comportement habituel sur les 90 derniers jours ; plus il est eleve, plus le mouvement est rare."
   },
   {
    "terme": "spread (ecart de taux)",
-   "definition": "La difference entre deux taux d'interet, ici entre ce que paient les entreprises fragiles et un taux de reference sans risque."
-  },
-  {
-   "terme": "Brent",
-   "definition": "Le prix de reference du petrole brut extrait en mer du Nord, utilise comme etalon mondial."
+   "definition": "La difference de taux d'interet entre deux emprunts, ici entre les entreprises fragiles et une reference sans risque."
   },
   {
    "terme": "VIX",
-   "definition": "Un indice qui mesure la nervosite anticipee des marches actions americains ; plus il est haut, plus les investisseurs redoutent des secousses."
+   "definition": "Un indice qui mesure la nervosite anticipee des marches actions americains."
   },
   {
-   "terme": "spread haut rendement",
-   "definition": "Le surcout que doivent payer les entreprises les moins solides financierement pour emprunter, par rapport a une dette jugee plus sure."
+   "terme": "Brent",
+   "definition": "Le prix de reference du petrole extrait en mer du Nord, utilise comme etalon mondial."
   },
   {
-   "terme": "taux 2 ans / 10 ans US",
-   "definition": "Le cout de l'argent preteur aux Etats-Unis a court terme (2 ans) et long terme (10 ans), qui refletent les attentes sur la politique monetaire et l'inflation future."
+   "terme": "point de base / pts",
+   "definition": "Une unite pour mesurer de petites variations de taux ou de spreads."
+  },
+  {
+   "terme": "taux 10 ans / 2 ans",
+   "definition": "Le taux d'interet paye par l'Etat americain pour emprunter sur 10 ans ou 2 ans, indicateur du cout de l'argent."
   },
   {
    "terme": "inflation anticipee",
-   "definition": "Le niveau d'inflation que les investisseurs s'attendent a voir dans les dix prochaines annees, deduit des prix des obligations."
+   "definition": "Le niveau d'inflation que les investisseurs pensent probable dans le futur, deduit des prix du marche obligataire."
   },
   {
-   "terme": "detroit d'Ormuz",
-   "definition": "Un passage maritime etroit entre le Golfe et l'ocean Indien par lequel transite une grande partie du petrole mondial."
+   "terme": "perime",
+   "definition": "Se dit d'une donnee dont la date depasse le seuil de fraicheur retenu (ici 3 jours), donc a interpreter avec prudence."
   },
   {
-   "terme": "source independante",
-   "definition": "Un media ou une organisation qui rapporte une information de maniere autonome, sans simplement reprendre ce qu'un autre a deja publie."
+   "terme": "couts de soutage",
+   "definition": "Le cout du carburant consomme par les navires de transport maritime."
   },
   {
-   "terme": "donnee perimee",
-   "definition": "Une statistique ou un prix qui date de plus de trois jours et qui ne reflete donc pas forcement la situation du jour."
+   "terme": "GDELT",
+   "definition": "Une base de donnees automatisee qui recense des articles de presse mondiaux, ici en erreur (code 429, trop de requetes)."
   }
  ],
- "inexplique": [],
- "divergences": [
+ "inexplique": [
   {
-   "constat": "La presse defense evoque un risque de conflit ouvert (frappes sur des petroliers, menaces de representailles) dans le Golfe, alors que les indicateurs de stress des marches restent calmes.",
-   "presse": "Un seul media rapporte des frappes et des menaces de representailles americano-iraniennes visant des petroliers, un recit d'escalade.",
-   "prix": "Le VIX (indicateur de nervosite des actions), releve le 2026-09-03 donc vieux de 4 jours, s'etablit a 14,32, en baisse et sans anomalie signalee ; le spread haut rendement (surcout d'emprunt des entreprises fragiles) est lui aussi stable et sans anomalie.",
-   "lecture": "Soit le marche n'accorde pas encore de credit a ce recit a source unique et non confirme, soit les indicateurs de stress utilises ici (actions americaines, credit corporate US) ne sont simplement pas les bons capteurs pour un risque localise au petrole et au fret maritime."
+   "quoi": "Hausse du Brent de +6,27 dollars sur le dernier releve disponible (96,02$, date du 2026-09-01, age de 6 jours)",
+   "ampleur": "z-score de 1,81 : ecart notable par rapport aux 90 dernieres seances, mais sous le seuil que le systeme utilise pour qualifier un mouvement d'anormal",
+   "piste": "Toutes les hypotheses formulees dans les quatre themes (energie, defense, tech, macro) supposent une cause geopolitique ou une decision de l'OPEP+ sans qu'aucune source de presse ne l'etaye",
+   "manque": "Un communique de l'OPEP+, une donnee de l'agence americaine de l'energie (EIA) ou de l'agence internationale de l'energie (AIE), ou une confirmation journalistique d'un evenement precis (frappe, sanction, rupture d'approvisionnement)"
   }
  ],
+ "divergences": [],
  "synthese": [
-  "Trois des quatre themes (macro, energie, tech) n'ont produit aucun dossier de presse exploitable aujourd'hui ; la collecte GDELT a d'ailleurs echoue (erreur 429) sur les quatre themes, ce qui limite la portee de ce silence.",
-  "Le seul fil conducteur entre les themes est une donnee de marche, le Brent a 96,02 dollars, deja vieille de 6 jours, reprise dans les hypotheses de trois themes distincts sans qu'aucune information de presse solide ne l'explique.",
-  "Le seul dossier de presse du jour (frappes sur des petroliers dans le Golfe) repose sur une source unique non confirmee et n'a pas de contrepartie visible dans les indicateurs de stress des marches suivis ici.",
-  "Les themes ne se repondent pas aujourd'hui : aucune chaine causale croisee entre banques centrales, defense et technologie ne peut etre etablie a partir des informations disponibles.",
-  "L'essentiel du contenu de cette note repose sur l'interpretation d'une seule donnee de marche vieillissante plutot que sur des faits de presse frais et confirmes."
+  "Les quatre themes ne se parlent pas aujourd'hui : aucun dossier de presse n'a ete retenu nulle part, malgre 21 articles bruts collectes sur la macro.",
+  "Les quatre fichiers thematiques construisent des hypotheses distinctes a partir du meme point de donnee unique (le Brent a 96,02$, vieux de 6 jours), ce qui cree une illusion de convergence analytique alors qu'il n'y a qu'une seule donnee source.",
+  "L'absence totale d'information de presse, combinee aux erreurs de collecte GDELT (429, trop de requetes), suggere un probleme de collecte plutot qu'un calme reel des marches.",
+  "Aucune divergence ton-presse vs prix ne peut etre etablie faute de contenu de presse a comparer aux prix."
  ],
  "contre_analyse": [
-  "Le dossier defense sur les frappes de petroliers ne repose que sur une seule source relayee par un agregateur ; s'il s'agit d'une rumeur ou d'une information erronee, toute la lecture geopolitique de la note s'effondre.",
-  "Le Brent a 96,02 dollars date du 2026-09-01, soit 6 jours avant la redaction de cette note ; le niveau reel du petrole aujourd'hui peut deja etre tres different, rendant caduques les hypotheses construites dessus.",
-  "L'absence de dossiers de presse sur macro, energie et tech peut refleter une panne technique de la collecte (erreur 429 sur GDELT, plusieurs flux a zero article) plutot qu'une absence reelle d'actualite sur ces sujets.",
-  "Le z-score eleve du Brent (1,81) signale un mouvement statistiquement rare mais ne dit rien de sa cause ; associer ce mouvement au recit du Golfe reste une hypothese non demontree, pas un lien etabli."
+  "Les erreurs GDELT (code 429) peuvent masquer de vraies informations de presse existantes mais non collectees ; l'absence de dossiers ne prouve pas l'absence de nouvelles.",
+  "La donnee Brent de 96,02$ date de 6 jours : si un releve plus recent existe et diverge fortement, toute l'architecture d'hypotheses construite dessus serait obsolete.",
+  "Le seuil retenu par le systeme pour qualifier un mouvement d''anormal' peut etre trop eleve : un z-score de 1,81 reste economiquement significatif meme sans franchir ce seuil."
  ],
  "carnet": [
   {
@@ -599,6 +568,54 @@
     "serie": "DCOILBRENTEU",
     "operateur": ">=",
     "seuil": 95
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-energie",
+   "date": "2026-09-07",
+   "theme": "Energie et matieres premieres",
+   "enonce": "Sans nouvelle information de presse, le Brent (DCOILBRENTEU), dont le dernier releve disponible date du 2026-09-01 (6 jours, perime) et affichait une hausse forte (+6.27$, z-score de 1.81, soit un mouvement nettement au-dessus de la normale), se stabilisera sans repartir a la hausse : il restera sous 100$ d'ici au 2026-09-17.",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": "<",
+    "seuil": 100
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-defense",
+   "date": "2026-09-07",
+   "theme": "Defense et geopolitique",
+   "enonce": "Le Brent a saute de +6.27$ sur sa derniere lecture connue (2026-09-01, perimee de 6 jours), un mouvement statistiquement notable (z=1.81) mais sans dossier de presse identifie pour l'expliquer. Si la hausse est due a une tension geopolitique reelle, elle devrait se confirmer ou s'amplifier plutot que de refluer une fois des donnees plus fraiches disponibles.",
+   "probabilite": 0.4,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 96.02
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-tech",
+   "date": "2026-09-07",
+   "theme": "Tech et semi-conducteurs",
+   "enonce": "Le Brent (DCOILBRENTEU), releve a 96.02$ le 2026-09-01 (donnee agee de 6 jours, hausse de +6.27$ sur la derniere variation connue, z-score de 1.81 signalant un ecart notable a la normale sans etre qualifie d'anormal), depassera le seuil de 100$ d'ici 10 jours, ce qui renchérirait mecaniquement les couts de carburant des transporteurs maritimes et modifierait les marges des majors petrolieres.",
+   "probabilite": 0.4,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 100
    },
    "version": "v3",
    "statut": "ouverte",
