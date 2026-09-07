@@ -130,5 +130,21 @@
   "version": "v3",
   "statut": "ouverte",
   "preuve": null
+ },
+ {
+  "id": "2026-09-07-tech",
+  "date": "2026-09-07",
+  "theme": "Tech et semi-conducteurs",
+  "enonce": "Malgre le rally des semi-conducteurs et le risque geopolitique croissant (espionnage industriel, tensions sur les controles d'exportation vers la Chine), la volatilite des marches actions restera basse, signe que ce risque n'est pas encore price par le marche.",
+  "probabilite": 0.6,
+  "horizon_jours": 10,
+  "verification_auto": {
+   "serie": "VIXCLS",
+   "operateur": "<",
+   "seuil": 16
+  },
+  "version": "v3",
+  "statut": "ouverte",
+  "preuve": null
  }
 ]
