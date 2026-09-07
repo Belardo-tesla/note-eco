@@ -34,5 +34,53 @@
   "version": "v1",
   "statut": "ouverte",
   "preuve": null
+ },
+ {
+  "id": "2026-09-07-energie",
+  "date": "2026-09-07",
+  "theme": "Energie et matieres premieres",
+  "enonce": "Le Brent (DCOILBRENTEU), dont le dernier releve connu (01/09/2026, soit 6 jours d'anciennete) affichait 96,02 dollars apres une hausse inhabituelle (+6,27 $, z-score de 1,81, signe d'un mouvement rare), restera au-dessus de 90 dollars lors du prochain releve dans les 10 jours qui suivent, en l'absence de toute information de presse identifiee justifiant ce niveau.",
+  "probabilite": 0.55,
+  "horizon_jours": 10,
+  "verification_auto": {
+   "serie": "DCOILBRENTEU",
+   "operateur": ">=",
+   "seuil": 90
+  },
+  "version": "v3",
+  "statut": "ouverte",
+  "preuve": null
+ },
+ {
+  "id": "2026-09-07-defense",
+  "date": "2026-09-07",
+  "theme": "Defense et geopolitique",
+  "enonce": "Si les frappes sur des petroliers dans le Golfe sont confirmees par au moins une deuxieme source d'ici 10 jours, le Brent pourrait depasser 100 dollars le baril, contre 96,02 dollars constate le 2026-09-01 (donnee agee de 6 jours).",
+  "probabilite": 0.3,
+  "horizon_jours": 10,
+  "verification_auto": {
+   "serie": "DCOILBRENTEU",
+   "operateur": ">=",
+   "seuil": 100
+  },
+  "version": "v3",
+  "statut": "ouverte",
+  "preuve": null
+ },
+ {
+  "id": "2026-09-07-tech",
+  "date": "2026-09-07",
+  "theme": "Tech et semi-conducteurs",
+  "enonce": "Le Brent (DCOILBRENTEU), qui a bondi de 6,27$ sur une lecture datee du 2026-09-01 (deja vieille de 6 jours) pour atteindre 96,02$, un niveau statistiquement eleve (z-score, mesure de l'ecart a la normale, de 1,81), restera au-dessus de 95$ le 2026-09-17.",
+  "probabilite": 0.55,
+  "horizon_jours": 10,
+  "verification_auto": {
+   "serie": "DCOILBRENTEU",
+   "operateur": ">=",
+   "seuil": 95
+  },
+  "version": "v3",
+  "statut": "ouverte",
+  "preuve": null
  }
 ]
