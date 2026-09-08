@@ -178,5 +178,21 @@
   "version": "v3",
   "statut": "ouverte",
   "preuve": null
+ },
+ {
+  "id": "2026-09-08-energie",
+  "date": "2026-09-08",
+  "theme": "Energie et matieres premieres",
+  "enonce": "Compte tenu des tensions autour d'Ormuz et des attaques rapportees contre des installations saoudiennes, le Brent (DCOILBRENTEU) depassera 100 dollars dans les 10 prochains jours de cotation.",
+  "probabilite": 0.5,
+  "horizon_jours": 10,
+  "verification_auto": {
+   "serie": "DCOILBRENTEU",
+   "operateur": ">=",
+   "seuil": 100
+  },
+  "version": "v3",
+  "statut": "ouverte",
+  "preuve": null
  }
 ]

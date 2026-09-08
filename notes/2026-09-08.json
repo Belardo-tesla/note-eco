@@ -13,12 +13,12 @@
    "nom": "Volatilite actions (VIX)",
    "quoi": "la nervosite des marches actions",
    "unite": "pts",
-   "date": "2026-09-03",
-   "age_jours": 5,
-   "perime": true,
-   "niveau": 14.32,
-   "variation": -0.88,
-   "z": -0.65,
+   "date": "2026-09-07",
+   "age_jours": 1,
+   "perime": false,
+   "niveau": 15.3,
+   "variation": 0.77,
+   "z": 0.63,
    "anormal": false
   },
   {
@@ -26,12 +26,12 @@
    "nom": "Spread haut rendement US",
    "quoi": "le surcout paye par les entreprises fragiles pour emprunter",
    "unite": "pts",
-   "date": "2026-09-03",
-   "age_jours": 5,
-   "perime": true,
-   "niveau": 2.65,
-   "variation": -0.01,
-   "z": -0.26,
+   "date": "2026-09-07",
+   "age_jours": 1,
+   "perime": false,
+   "niveau": 2.68,
+   "variation": 0.0,
+   "z": 0.04,
    "anormal": false
   },
   {
@@ -182,9 +182,9 @@
    "nom": "Spread entreprises solides",
    "quoi": "le surcout d'emprunt des grandes entreprises saines",
    "unite": "pts",
-   "date": "2026-09-03",
-   "age_jours": 5,
-   "perime": true,
+   "date": "2026-09-07",
+   "age_jours": 1,
+   "perime": false,
    "niveau": 0.81,
    "variation": 0.0,
    "z": -0.05,
@@ -213,81 +213,81 @@
   "macro": [
    {
     "source": "Google News : banque centrale",
-    "articles": 36,
+    "articles": 38,
     "erreur": null
    },
    {
     "source": "Google News : taux directeurs",
-    "articles": 5,
-    "erreur": null
-   },
-   {
-    "source": "Google News : inflation zone euro",
     "articles": 7,
     "erreur": null
    },
    {
     "source": "Google News : Federal Reserve",
-    "articles": 13,
+    "articles": 23,
     "erreur": null
    },
    {
     "source": "Google News : inflation data",
     "articles": 33,
     "erreur": null
+   },
+   {
+    "source": "Google News : bond yields",
+    "articles": 27,
+    "erreur": null
    }
   ],
   "energie": [
    {
     "source": "Google News : petrole",
-    "articles": 39,
-    "erreur": null
-   },
-   {
-    "source": "Google News : OPEP",
-    "articles": 3,
+    "articles": 40,
     "erreur": null
    },
    {
     "source": "Google News : gaz naturel",
-    "articles": 21,
-    "erreur": null
-   },
-   {
-    "source": "Google News : oil prices",
-    "articles": 39,
+    "articles": 31,
     "erreur": null
    },
    {
     "source": "Google News : OPEC",
-    "articles": 21,
+    "articles": 19,
+    "erreur": null
+   },
+   {
+    "source": "Google News : refinery",
+    "articles": 35,
+    "erreur": null
+   },
+   {
+    "source": "Google News : LNG shipping",
+    "articles": 27,
     "erreur": null
    }
   ],
   "defense": [
    {
     "source": "Google News : sanctions",
-    "articles": 24,
-    "erreur": null
-   },
-   {
-    "source": "Google News : geopolitique",
-    "articles": 17,
+    "articles": 36,
     "erreur": null
    },
    {
     "source": "Google News : detroit Ormuz",
-    "articles": 19,
-    "erreur": null
-   },
-   {
-    "source": "Google News : sanctions",
-    "articles": 34,
+    "articles": 20,
     "erreur": null
    },
    {
     "source": "Google News : military escalation",
-    "articles": 21,
+    "articles": 18,
+    "erreur": null
+   },
+   {
+    "source": "Google News : defense spending",
+    "articles": 18,
+    "erreur": null
+   },
+   {
+    "source": "Google News : NATO",
+    "articles": 30,
     "erreur": null
    }
   ],
@@ -299,22 +299,22 @@
    },
    {
     "source": "Google News : ASML",
-    "articles": 24,
+    "articles": 37,
     "erreur": null
    },
    {
     "source": "Google News : Nvidia",
-    "articles": 33,
-    "erreur": null
-   },
-   {
-    "source": "Google News : semiconductor",
     "articles": 37,
     "erreur": null
    },
    {
     "source": "Google News : export controls",
-    "articles": 14,
+    "articles": 16,
+    "erreur": null
+   },
+   {
+    "source": "Google News : TSMC",
+    "articles": 34,
     "erreur": null
    }
   ],
@@ -326,32 +326,32 @@
    "ecarte_car_bruit": [],
    "hypothese": null,
    "titre": "Macro et banques centrales",
-   "dossiers_bruts": 70,
-   "articles_bruts": 94,
+   "dossiers_bruts": 101,
+   "articles_bruts": 128,
    "collecte": [
     {
      "source": "Google News : banque centrale",
-     "articles": 36,
+     "articles": 38,
      "erreur": null
     },
     {
      "source": "Google News : taux directeurs",
-     "articles": 5,
-     "erreur": null
-    },
-    {
-     "source": "Google News : inflation zone euro",
      "articles": 7,
      "erreur": null
     },
     {
      "source": "Google News : Federal Reserve",
-     "articles": 13,
+     "articles": 23,
      "erreur": null
     },
     {
      "source": "Google News : inflation data",
      "articles": 33,
+     "erreur": null
+    },
+    {
+     "source": "Google News : bond yields",
+     "articles": 27,
      "erreur": null
     }
    ]
@@ -359,134 +359,141 @@
   "energie": {
    "retenus": [
     {
-     "titre": "Oil Prices Rise After U.S. and Iran Trade Strikes",
-     "fait": "Plusieurs agences et medias (Bloomberg, CNBC, Reuters via Al Jazeera, Forbes, etc., 10 sources independantes) rapportent des frappes croisees entre les Etats-Unis et l'Iran, suivies d'une hausse du prix du petrole. C'est une information de presse fraiche (vu_depuis=0), non un simple mouvement de marche.",
-     "sources_independantes": 10,
+     "titre": "Pétrole : le Brent flirte avec les 100 dollars",
+     "fait": "Sept sources indépendantes de la presse financière francophone rapportent une remontée marquée du prix du Brent (le baril de référence en mer du Nord) vers le seuil symbolique de 100 dollars. La dernière donnée officielle disponible (Brent, FRED) date du 1er septembre, soit 7 jours, et montre un niveau de 96,02 dollars avec un ecart a la normale (z-score) de 1,81, ce qui est un mouvement sensiblement au-dessus de la moyenne recente.",
+     "sources_independantes": 7,
      "communique_interesse": false,
      "chaine": [
       {
-       "canal": "prime de risque geopolitique sur l'approvisionnement (crainte de blocage du detroit d'Ormuz, voie de passage d'une grande partie du petrole mondial)",
-       "effet": "hausse du prix du brut par crainte de rupture d'offre",
-       "actif": "Brent et WTI",
-       "exposes": "majors petrolieres (TotalEnergies, Shell, ExxonMobil) dont les revenus suivent le prix du baril ; fret maritime (tankers transitant par le Golfe), ou les couts d'assurance et d'affretement montent avec le risque"
+       "canal": "Hausse du cout d'achat du brut repercutee sur les couts de production et de raffinage",
+       "effet": "Compression ou expansion des marges selon le positionnement amont/aval",
+       "actif": "Prix du Brent et actions des majors petrolieres",
+       "exposes": "Majors petrolieres cotees en Europe (TotalEnergies, Shell, BP, Eni) : exposition directe au prix du baril, sens de l'effet variable selon activite amont (production) ou aval (raffinage-distribution)"
+      },
+      {
+       "canal": "Renchérissement du carburant (soutes) pour les navires",
+       "effet": "Hausse des couts operationnels du transport maritime",
+       "actif": "Couts de fret et marges des armateurs",
+       "exposes": "Groupes de fret maritime et logistique portuaire : cout d'exploitation en hausse si le carburant se renchérit durablement"
       }
      ],
-     "invalidation": "si le Brent (DCOILBRENTEU) ne confirme pas la hausse dans les prochains releves, ou si des sources ulterieures dementent l'ampleur des frappes",
+     "invalidation": "Si le Brent (DCOILBRENTEU) repasse sous 90 dollars dans les jours suivants, la these d'une flambee durable est invalidee.",
      "materialite": "haute",
-     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1tdXhlb3hCRjN0TWt4Vkl1THhuUklqUGJTbzgybGZ4WFB2Q2oxUVd1Mk5Zd09MS3FuZ0pMd29lMk9WSmMzMktxZkpVaTQxczI3UEJnSkxlMkl4dEE1ODcyX2xPZmQweDJSeVpuamRyS1dBdGJZVDVzT2trSWY?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeFQ1Y3lvYUhveDdYNnc4TlZqN0p4SzN1NXNYbVFMWnkxekNYcTllYjU5azU1NlBETElOdnBjYnU1YUNPcndyUU1icUcteDVnRngwNkFjdzhIMmJGVGRTNlFDX1NSUmYwRkpleTFYeXhNUzJNQWNjMmhzOXJnU2pwWDhGZi1KVTBWUlN0bmItTTBwUENXelJiNVExc2F6Ymd0NndqT1E0UG94dw?oc=5"
     },
     {
-     "titre": "OPEC+ 7 Reveal October Output Plan",
-     "fait": "Huit sources independantes (Bloomberg, WSJ, CNBC, Rigzone, etc.) rapportent que le groupe OPEP+ a devoile un plan de production pour octobre. Le contenu chiffre exact du plan n'est pas precise dans les elements transmis.",
-     "sources_independantes": 8,
+     "titre": "Attaques revendiquees contre des installations petrolieres saoudiennes (Aramco)",
+     "fait": "Trois sources independantes (Financial Times, MarketWatch, oilprice.com) rapportent de nouvelles frappes ayant touche des installations petrolieres d'Aramco, le groupe petrolier public saoudien.",
+     "sources_independantes": 3,
      "communique_interesse": false,
      "chaine": [
       {
-       "canal": "decision d'offre coordonnee par un cartel producteur, qui fixe les quotas de production",
-       "effet": "ajustement du niveau d'offre disponible sur le marche mondial, influencant la trajectoire du prix",
-       "actif": "Brent et WTI",
-       "exposes": "majors petrolieres dont la marge depend du niveau de prix resultant (TotalEnergies, Shell, ExxonMobil, BP)"
+       "canal": "Reduction potentielle de la capacite de production saoudienne, un des plus gros producteurs mondiaux",
+       "effet": "Resserrement de l'offre mondiale de brut, pression a la hausse sur le prix",
+       "actif": "Prix du Brent et du WTI",
+       "exposes": "Majors petrolieres europeennes (marge amont favorisee par un prix plus eleve) ; secteur du fret maritime (cout du carburant en hausse)"
       }
      ],
-     "invalidation": "si les chiffres officiels de production d'octobre publies par l'OPEP+ contredisent le plan annonce, ou si le Brent ne bouge pas malgre l'annonce",
+     "invalidation": "Si Aramco confirme une absence d'impact sur ses volumes exportes, la chaine causale ne se materialise pas sur le prix.",
      "materialite": "haute",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNcUtqbi1WYjBsamlxV0ZVZHdONEswWkp6bHo5NWx0bVIzMHd6R3pWcGlJZTVsNFlOMUcyd0hGY3FtV0VLMTluSzBla2lsZEJaZ2VEdGVILTZBV1JGYUFMc0Q2YktCb1ctSHNxblpkcEctZlhGVksyWURDRTk4em1najZMdk0?oc=5"
+    },
+    {
+     "titre": "OPEP+ devoile son plan de production pour octobre",
+     "fait": "Cinq sources independantes (dont Reuters, WSJ, Rigzone) rapportent que le groupe OPEP+ (l'alliance des pays producteurs de petrole, dont l'Arabie saoudite et la Russie) a annonce ses quotas de production pour le mois d'octobre.",
+     "sources_independantes": 5,
+     "communique_interesse": false,
+     "chaine": [
+      {
+       "canal": "Ajustement collectif de l'offre mondiale de brut par un cartel de producteurs",
+       "effet": "Variation du volume de brut disponible sur le marche mondial, avec effet direct sur le prix",
+       "actif": "Prix du Brent et du WTI",
+       "exposes": "Majors petrolieres cotees dont les revenus dependent du niveau du baril ; secteur energie au sens large"
+      }
+     ],
+     "invalidation": "Si les quotas annonces sont en ligne avec les attentes du marche (deja integres dans les prix), l'effet sur le prix sera nul ou tres limite.",
+     "materialite": "moyenne",
      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcWxTU2g3dEJwR2VsWS1ZSnNwQTlJNVp1OXl6VERGeUVmUjQyd3drTndYYzBRU2RhWUwxQVlIRmd6SjJlRlR6ZlRIOXd0VHl1d3huZHpBMFIwQXBNNGpraG9vV3FWUFdaLUxHT3NFOWE1U3F5RnFQWkdSMV96clp3V3o2WVAtRlctRXQ5S1FNTkdVbXll?oc=5"
     },
     {
-     "titre": "World shares and US futures decline, while oil prices press higher",
-     "fait": "Six sources independantes (AP, Yahoo Finance, US News, etc.) constatent une baisse simultanee des actions mondiales et des contrats a terme americains, en meme temps qu'une hausse du petrole. Aucune de ces sources n'etablit de mecanisme causal precis, seulement une coincidence temporelle.",
-     "sources_independantes": 6,
+     "titre": "Un methanier qatari teste le detroit d'Ormuz",
+     "fait": "Cinq sources independantes (Bloomberg, Arabian Business, NDTV Profit, etc.) rapportent qu'un navire transportant du gaz naturel liquefie (GNL) qatari a effectue un passage-test dans le detroit d'Ormuz, point de passage strategique du transport maritime d'hydrocarbures.",
+     "sources_independantes": 5,
      "communique_interesse": false,
      "chaine": [
       {
-       "canal": "correlation observee entre hausse du cout de l'energie et recul des indices actions ; le canal precis (couts d'intrants, anticipations d'inflation, ou aversion au risque generale) n'est pas identifie par les sources",
-       "effet": "pression baissiere sur les indices actions mondiaux",
-       "actif": "indices actions (S&P 500, futures europeens)",
-       "exposes": "equipementiers semi-conducteurs europeens (marges sensibles aux couts energetiques et a la demande industrielle), actions cycliques en general"
+       "canal": "Test de faisabilite du transit maritime dans une zone sous tension geopolitique",
+       "effet": "Signal sur le niveau de risque percu pour le transport de GNL via ce couloir, avec repercussion possible sur les primes d'assurance maritime",
+       "actif": "Couts d'assurance et de fret pour le transport de GNL",
+       "exposes": "Transporteurs et armateurs specialises GNL, secteur du fret maritime et logistique portuaire"
       }
      ],
-     "invalidation": "si les indices actions rebondissent alors que le petrole reste eleve, la correlation ne se confirme pas",
+     "invalidation": "Si le trafic de methaniers via Ormuz reprend son rythme normal sans incident dans les jours suivants, le risque percu retombe.",
      "materialite": "moyenne",
-     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNjVfWE5UYVpZZGgtaVlLWVhNRUU3dFREYjMyWk1QWGpDZjlIb2pmVkhXcmVsSDJGNm1hNGxTMFpBYnl1MFBIOFFOU3hZcWdvd0swT01GSndGLVlXRDhVbnl0cnhPa3p3TVMwR1ZldUVIUlhtU1M4enRTTnc2czl4Zk55ZzZib2taYVNXWi1GRl9MeFFTZ3hEcQ?oc=5"
-    },
-    {
-     "titre": "Le pétrole et les taux plombent le moral des Bourses européennes",
-     "fait": "Quatre sources independantes (Boursorama, Le Revenu, Zonebourse, Zonebourse Suisse) rapportent que la conjonction de la hausse du petrole et de la remontee des taux d'interet pese sur les Bourses europeennes.",
-     "sources_independantes": 4,
-     "communique_interesse": false,
-     "chaine": [
-      {
-       "canal": "hausse du petrole alimentant les anticipations d'inflation, qui poussent les rendements obligataires europeens a la hausse, ce qui augmente le taux d'actualisation applique aux benefices futurs des entreprises cotees",
-       "effet": "baisse des valorisations actions et hausse des rendements obligataires",
-       "actif": "indices actions europeens (CAC 40, DAX) et taux souverains europeens (Bund, OAT)",
-       "exposes": "actions europeennes sensibles aux taux (secteurs de croissance, semi-conducteurs equipementiers), et emprunteurs europeens dont le cout de financement suit les taux longs"
-      }
-     ],
-     "invalidation": "si les rendements obligataires europeens (proxy via DGS10, series US disponible ici) reculent alors que le petrole reste eleve, ou si les indices actions europeens progressent malgre la hausse du petrole",
-     "materialite": "moyenne",
-     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVWdlSnNIQmlPaG4tcjBaZzUxUDhULUZHLWx3ckUtdENWcXlwV2FIX014T2NEVm1rajNzZ3cwMjdOSFFtMWJLMnhibUZfQUtycDJ3MmZmMUVfd3lTZ2V0NDIzUDJ6UVJnbFg5UTdFWVROOFRYT2NaVkc3TFJoYlFZc3Zsc01pVFZGNEVmRTNNWTUxeGctSUlMN2t4YTE0WnZFdFcxN2pVTmZ1S2FtcW05UXVLTnZldlhaUUNEMndBSkM2RXRYZHNPRTItMXp4VkwtbGtGd3JtdTlIQdIB3wFBVV95cUxPemFZYjZfLVBBclJFOEtfZHlyWjJHNVhSczYtcmt6bUtqMUVqVkk2RjJNZ0tMbVRLd0lMaDk3aGNSY05rTWFrcEhJZE9DZndxRXZUbXpMQ3dpN0ZoellUaDlYUUVLX0tCdEZIY21xV1hHNGNZeHBDUndrd1N3X1EzMnZYMkZTZXpCV2w1NEN4V1Q3WkJnUURLUTkxcTI1MzRsZUVwWUxOemJoVnBPemR4OG1UalJWZVMydnhGM1lHZjc2UVM2RllFUFVCdDVZcldWSVdyQUYxclM5VUt4WWg0?oc=5"
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdm1ld25MVDJQRzg3dDFXWEllV3dzYzRMczRHZ2s3S2xwdVNRWkxacUxjeEZlVnlHMmdFME43OHBYRkszTHRwTVdoUmdBOTdQOXlBcnJjSzZGLWt6WnRseWRySGZwWFJNTW9VSGNMS1JRaHpOdW5ld28waXhZeUJLamFTcW96Wml4N1BlazUyREdvdw?oc=5"
     }
    ],
    "ecarte_car_bruit": [
-    "Pétrole : le Brent flirte avec les 100 dollars !",
-    "U.S. Gasoline Prices Hit Labor Day Record",
-    "Wall Street : les contrats à terme reculent, la flambée du pétrole inquiète les marchés",
-    "Oil prices rise to six-week highs on worsening Middle East conflict",
-    "Why isn't oil above $100 despite supply disruptions?",
-    "Venezuela OPEC Exit 'Structurally Likely'",
+    "Fuel prices at record Labor Day high in U.S. due to Iran war and refinery issues",
+    "Drones attack Saratov Oil Refinery in Russia overnight",
+    "BofA relève ses prévisions de prix du pétrole pour la fin 2026 et 2027",
+    "Le pétrole et les taux plombent le moral des Bourses européennes...",
+    "Wall Street recule, la flambée du pétrole ravive les craintes inflationnistes avant l'IPC",
+    "OPEC Output Slumps as Conflict Curbs Saudi Flows, Survey Shows",
+    "Nigeria's Dangote oil refinery signs IPO documents before landmark share sale",
+    "Gas prices hold steady at $4.15 per gallon amid global conflicts and refinery strain",
+    "EPA small refinery exemptions trigger biofuel concerns",
+    "Dangote refinery CEO says fuel shortages to last after Iran war",
+    "Qatar Is Bringing Empty LNG Ships Home in Possible Export Pivot",
+    "Osaka Gas completes first ship-to-ship LNG bunkering in Osaka Bay",
+    "Port of Gdynia, ORLEN target ship-to-ship LNG bunkering",
+    "LNG traffic through Hormuz hit harder than oil flows",
+    "Japan shipping companies eye sails, kites to cut fuel consumption",
     "Gaz & Pétrole en hausse : Vers une nouvelle flambée des prix de l'énergie ?",
+    "🟡Synthèse des matières premières - Blé, pétrole WTI, or, gaz naturel (08.09.2026)",
     "Au Venezuela, les ambitions pétrolières contrariées des Etats-Unis",
     "États-Unis, Arabie saoudite, Russie : à chacun sa manière de vaciller pour les trois grands du pétrole",
+    "Les actions européennes stables, la hausse du pétrole incite à la prudence ; Novartis chute",
+    "«Nous aurons encore besoin de pétrole en 2040» : à Parentis, dans les Landes, la fin programmée de l'or noir fait débat",
+    "Le pétrole cher continue de freiner les marchés financiers",
     "Remplacer le pétrole par les métaux critiques déplace la dépendance énergétique : vrai ou faux ?",
-    "Pétrole : Ormuz ou l'écologie forcée",
-    "Dangote, Sahara, Afriquia… Les champions africains du pétrole se lancent à l'assaut des majors",
+    "Le Club : Le pétrole et les taux repartent à la hausse - 08/09",
+    "« Une contre-offensive américaine » : Pétrole vénézuélien, l'accord qui change la donne ?",
+    "Le CAC 40 dans le vert, le pétrole et la BCE concentrent l'attention...",
+    "Wall Street recule alors que le yen et le pétrole progressent sur fond de tensions au Moyen-Orient",
+    "CAC 40 : la Bourse de Paris surmonte la hausse du pétrole et finit dans le vert",
     "Le pétrole maintenu à des niveaux élevés avec de nouvelles attaques au Moyen-Orient",
-    "En Russie, des drones ont attaqué la raffinerie de pétrole de Saratov au cours de la nuit",
-    "L'Europe recule, le pétrole à près de 100 dollars après de nouvelles attaques des Houthis",
-    "Change : le yen se renforce, le dollar reste stable, le pétrole s'envole [ABO]",
-    "Les marchés actions s'habituent à un pétrole élevé",
+    "Wall Street ouvre dans le désordre, le pétrole inquiète",
+    "Les stocks de pétrole de la Réserve fédérale stratégique américaine chutent de 1,2 million de barils, au plus bas depuis 1982",
+    "L'Asie est en passe d'absorber 70% des exportations de pétrole canadien, selon un dirigeant d'oléoduc",
+    "Le pétrole brut s'apprête à franchir un nouveau palier important, selon Energy Aspects",
+    "Bourse de Francfort : Le Dax fait du surplace, les prix du pétrole poursuivent leur ascension",
+    "Les indices boursiers américains reculent, le pétrole brut progresse après des attaques contre des sites énergétiques en Arabie saoudite",
+    "Wall Street recule, les tensions dans le Golfe propulsent le pétrole à un plus haut de six semaines",
+    "Le prix du baril de pétrole prend l'ascenceur",
+    "Les banques relèvent leurs prévisions de prix du pétrole face aux perturbations prolongées dans le Golfe",
     "L'Europe recule, la hausse du prix du pétrole ravive les craintes d'inflation",
-    "Le pétrole s'approche des 100 dollars porté par des attaques sur l'Arabie saoudite",
-    "CAC 40 : La Bourse de Paris devrait ouvrir en baisse, lestée par la hausse du pétrole",
-    "Les rendements européens grimpent avec le pétrole proche de 100$ et la BCE prête à agir",
-    "Pétrole brut de la mer du Nord : Vitol achète du WTI Midland",
-    "Les actions énergétiques progressent en prémarché avec la hausse du pétrole",
-    "Les actions chutent face à la forte hausse du yen ; les attaques dans le Golfe font grimper le prix du pétrole",
-    "Le Dax entame la séance en baisse, les prix du pétrole progressent",
-    "Pourquoi le pétrole ne dépasse-t-il pas les 100 dollars malgré les ruptures d'approvisionnement",
-    "CAC 40: Les taux et le pétrole pèsent encore",
-    "Le pétrole atteint des sommets de plusieurs semaines après les attaques des Houthis contre des installations énergétiques saoudiennes",
-    "ANALYSE-Chine : baisse annuelle des importations de pétrole brut en août",
-    "Le pétrole progresse, les risques de conflit prolongé au Moyen-Orient accentuent les craintes sur l'offre",
-    "Les actions indiennes ouvrent en baisse, portées par la hausse du pétrole et les risques au Moyen-Orient",
-    "Baril à 80 ou à 150 dollars : jusqu'où le pétrole peut-il monter ?",
-    "Les réserves stratégiques de pétrole sont si vides que les cavernes aux États-Unis utilisent un système astucieux pour ne pas s'effondrer",
-    "L'OPEP ne fait plus la pluie et le beau temps sur le cours mondial du pétrole",
-    "PDG de Rosneft : Ce n'est pas l'OPEP, mais la Chine qui domine le marché pétrolier.",
-    "Lavrov affirme que la Russie et l'Arabie saoudite coordonneront leurs approches au sein de l'OPEP+",
-    "En Europe, l'impossible sevrage des hydrocarbures du Golfe persique",
     "Prix du gaz sur les marchés ce 7 septembre : le niveau du PEG avant la reprise des cotations",
-    "Le gaz naturel européen progresse de 2% et frôle des sommets pluriannuels sur fond de menaces de Téhéran",
-    "Alerte au gaz",
-    "Selon Jancovici, le gaz pourrait devenir hors de prix cet hiver, et voici pourquoi",
+    "Murianette. Des travaux sur le réseau de gaz naturel",
+    "TotalEnergies laisse ExxonMobil aux manettes pour relancer son projet de GNL en Papouasie-Nouvelle-Guinée",
+    "Les contrats à terme sur le gaz naturel américain reculent face à une production record et des stocks abondants",
     "Une fuite de gaz naturel sécurisée par les sapeurs-pompiers en centre-ville de Manosque",
     "Électricité: le gaz revient dans l'équation libanaise",
-    "Niveaux de stockage de gaz historiquement bas : la fédération met en garde contre un hiver rigoureux",
+    "A quelques mois de l'hiver, le marché du gaz se tend en Europe et en Suisse",
+    "Les prix du gaz européen bondissent à leur plus haut depuis 2023",
+    "Importations de gaz au Liban : où en est-on après le feu vert jordanien",
+    "Pétrole : le prix du baril pourrait atteindre 120 dollars",
     "Gaz : les réserves européennes au plus bas, l'hiver s'annonce à haut risque",
+    "Marchés de l'énergie : une semaine sous tension",
     "Biométhane : l'Europe face à l'offensive asiatique",
+    "Ormuz : le double étau gaz-carbone qui pourrait asphyxier l'industrie française",
     "Le Vietnam et la Russie consolident leur alliance énergétique",
     "Les réserves de gaz vides en Europe peuvent être trompeuses",
-    "Les réserves de gaz naturel de l'Allemagne ont atteint leur plus bas niveau en 17 ans, et le pays s'efforce de trouver des solutions pour faire face à cette situation.",
-    "TotalEnergies laisse ExxonMobil aux manettes pour relancer son projet de GNL en Papouasie-Nouvelle-Guinée",
-    "Décarbonation. « Nous ne sommes plus dans l'expérimentation. Nous sommes dans le réel » : les transports Béade vont rouler aussi au biogaz",
-    "La Corée du Sud conteste le montant de son investissement gazier au Texas",
-    "Blocage des prix du gaz, une urgence face à la crise",
-    "ENGIE inaugure sa centrale à gaz de 875 MW à Flémalle, en Belgique",
-    "Gaz : l'Algérie devance ses concurrents et s'impose en Espagne"
+    "Les réserves de gaz naturel de l'Allemagne ont atteint leur plus bas niveau en 17 ans, et le pays s'efforce de trouver des solutions pour faire face à cette situation."
    ],
    "hypothese": {
-    "enonce": "Sous l'effet cumule des tensions Moyen-Orient (frappes US-Iran, Houthis) et du plan OPEP+ d'octobre, le Brent (serie DCOILBRENTEU) franchira 100 dollars le baril dans les 10 jours suivant le 2026-09-08",
-    "probabilite": 0.55,
+    "enonce": "Compte tenu des tensions autour d'Ormuz et des attaques rapportees contre des installations saoudiennes, le Brent (DCOILBRENTEU) depassera 100 dollars dans les 10 prochains jours de cotation.",
+    "probabilite": 0.5,
     "horizon_jours": 10,
     "verification_auto": {
      "serie": "DCOILBRENTEU",
@@ -495,32 +502,32 @@
     }
    },
    "titre": "Energie et matieres premieres",
-   "dossiers_bruts": 84,
-   "articles_bruts": 123,
+   "dossiers_bruts": 114,
+   "articles_bruts": 152,
    "collecte": [
     {
      "source": "Google News : petrole",
-     "articles": 39,
-     "erreur": null
-    },
-    {
-     "source": "Google News : OPEP",
-     "articles": 3,
+     "articles": 40,
      "erreur": null
     },
     {
      "source": "Google News : gaz naturel",
-     "articles": 21,
-     "erreur": null
-    },
-    {
-     "source": "Google News : oil prices",
-     "articles": 39,
+     "articles": 31,
      "erreur": null
     },
     {
      "source": "Google News : OPEC",
-     "articles": 21,
+     "articles": 19,
+     "erreur": null
+    },
+    {
+     "source": "Google News : refinery",
+     "articles": 35,
+     "erreur": null
+    },
+    {
+     "source": "Google News : LNG shipping",
+     "articles": 27,
      "erreur": null
     }
    ]
@@ -530,32 +537,32 @@
    "ecarte_car_bruit": [],
    "hypothese": null,
    "titre": "Defense et geopolitique",
-   "dossiers_bruts": 88,
-   "articles_bruts": 115,
+   "dossiers_bruts": 95,
+   "articles_bruts": 122,
    "collecte": [
     {
      "source": "Google News : sanctions",
-     "articles": 24,
-     "erreur": null
-    },
-    {
-     "source": "Google News : geopolitique",
-     "articles": 17,
+     "articles": 36,
      "erreur": null
     },
     {
      "source": "Google News : detroit Ormuz",
-     "articles": 19,
-     "erreur": null
-    },
-    {
-     "source": "Google News : sanctions",
-     "articles": 34,
+     "articles": 20,
      "erreur": null
     },
     {
      "source": "Google News : military escalation",
-     "articles": 21,
+     "articles": 18,
+     "erreur": null
+    },
+    {
+     "source": "Google News : defense spending",
+     "articles": 18,
+     "erreur": null
+    },
+    {
+     "source": "Google News : NATO",
+     "articles": 30,
      "erreur": null
     }
    ]
@@ -565,8 +572,8 @@
    "ecarte_car_bruit": [],
    "hypothese": null,
    "titre": "Tech et semi-conducteurs",
-   "dossiers_bruts": 110,
-   "articles_bruts": 142,
+   "dossiers_bruts": 123,
+   "articles_bruts": 158,
    "collecte": [
     {
      "source": "Google News : semi-conducteurs",
@@ -575,28 +582,28 @@
     },
     {
      "source": "Google News : ASML",
-     "articles": 24,
+     "articles": 37,
      "erreur": null
     },
     {
      "source": "Google News : Nvidia",
-     "articles": 33,
-     "erreur": null
-    },
-    {
-     "source": "Google News : semiconductor",
      "articles": 37,
      "erreur": null
     },
     {
      "source": "Google News : export controls",
-     "articles": 14,
+     "articles": 16,
+     "erreur": null
+    },
+    {
+     "source": "Google News : TSMC",
+     "articles": 34,
      "erreur": null
     }
    ]
   }
  },
- "etat_du_jour": "Le petrole concentre toute l'actualite de presse du jour, avec des frappes rapportees entre les Etats-Unis et l'Iran et un plan de production OPEP+ pour octobre, tandis que la macro, la defense et la tech n'ont produit aucune information de presse retenue, et l'ensemble des donnees de marche disponibles date de plus de trois jours.",
+ "etat_du_jour": "Le Brent, dernier releve officiel connu a 96,02 dollars le 1er septembre (donnee vieille de 7 jours), reste eleve sur fond d'attaques rapportees contre des installations petrolieres saoudiennes et d'un test de transit dans le detroit d'Ormuz, tandis que les indicateurs de risque financier transverses (volatilite des actions, ecarts de taux d'emprunt) restent calmes.",
  "carte": [
   {
    "theme": "Macro et banques centrales",
@@ -606,28 +613,28 @@
    "theme": "Energie et matieres premieres",
    "acteurs": [
     {
-     "nom": "Majors petrolieres (TotalEnergies, Shell, ExxonMobil, BP)",
+     "nom": "Majors petrolieres europeennes (TotalEnergies, Shell, BP, Eni)",
      "direction": 1,
-     "sources": 10,
-     "pourquoi": "La hausse du prix du brut liee aux frappes rapportees et au plan OPEP+ ameliore mecaniquement leurs revenus lies au baril."
+     "sources": 7,
+     "pourquoi": "La remontee du Brent vers 100 dollars ameliore mecaniquement les marges de l'activite amont (production), meme si l'aval (raffinage-distribution) peut souffrir du renchérissement du brut achete."
     },
     {
-     "nom": "Transporteurs maritimes / tankers transitant par le detroit d'Ormuz",
+     "nom": "Aramco et capacite de production saoudienne",
      "direction": -1,
-     "sources": 10,
-     "pourquoi": "Le risque de blocage du detroit d'Ormuz renchérit les couts d'assurance et de carburant du fret petrolier."
+     "sources": 3,
+     "pourquoi": "Des frappes rapportees contre des installations Aramco font peser un risque sur les volumes exportes, non confirme officiellement a ce stade."
     },
     {
-     "nom": "Actions europeennes sensibles aux taux (CAC 40, DAX, valeurs de croissance)",
+     "nom": "Armateurs et transporteurs de GNL (fret maritime, logistique portuaire)",
      "direction": -1,
-     "sources": 4,
-     "pourquoi": "Petrole et taux obligataires europeens montent de concert, ce qui augmente le taux d'actualisation applique aux benefices futurs."
+     "sources": 5,
+     "pourquoi": "Le test de transit d'un methanier qatari dans le detroit d'Ormuz et la hausse du carburant de soute renchérissent les couts operationnels du transport maritime."
     },
     {
-     "nom": "Indices actions mondiaux / futures americains",
-     "direction": -1,
-     "sources": 6,
-     "pourquoi": "Coincidence temporelle rapportee entre hausse du petrole et recul des indices, sans canal precis identifie par les sources."
+     "nom": "OPEP+ (Arabie saoudite, Russie et autres producteurs)",
+     "direction": 0,
+     "sources": 5,
+     "pourquoi": "Les quotas d'octobre annonces semblent en ligne avec les attentes du marche, donc effet de prix incertain a ce stade."
     }
    ]
   },
@@ -642,82 +649,73 @@
  ],
  "glossaire": [
   {
-   "terme": "z-score",
-   "definition": "Mesure de l'ampleur d'une variation par rapport a son comportement habituel sur les 90 dernieres seances ; plus il s'eloigne de zero, plus le mouvement est rare."
+   "terme": "z-score (ecart a la normale)",
+   "definition": "Mesure de combien un mouvement du jour s'ecarte de son comportement habituel sur les 90 dernieres seances ; plus il est eleve, plus le mouvement est rare."
   },
   {
-   "terme": "Brent / WTI",
-   "definition": "Deux prix de reference du petrole brut, l'un europeen (Brent), l'autre americain (WTI), utilises pour suivre le marche mondial."
+   "terme": "spread (ecart de taux)",
+   "definition": "Difference entre deux taux d'emprunt, ici utilisee pour mesurer le surcout paye par certaines entreprises pour emprunter par rapport a une reference plus sure."
+  },
+  {
+   "terme": "haut rendement (high yield)",
+   "definition": "Categorie d'obligations emises par des entreprises jugees plus fragiles financierement, qui paient donc un taux d'interet plus eleve."
+  },
+  {
+   "terme": "Brent",
+   "definition": "Prix du baril de petrole de reference en mer du Nord, utilise comme etalon mondial pour le prix du brut."
+  },
+  {
+   "terme": "WTI",
+   "definition": "Prix du baril de petrole de reference americain, cote separement du Brent."
+  },
+  {
+   "terme": "GNL (gaz naturel liquefie)",
+   "definition": "Gaz naturel refroidi et transporte par bateau sous forme liquide plutot que par gazoduc."
   },
   {
    "terme": "OPEP+",
-   "definition": "Groupe de pays producteurs de petrole (OPEP) elargi a d'autres grands producteurs comme la Russie, qui se coordonnent sur leurs niveaux de production."
-  },
-  {
-   "terme": "Detroit d'Ormuz",
-   "definition": "Passage maritime etroit entre le Golfe Persique et l'ocean Indien, par lequel transite une grande partie du petrole mondial ; un blocage y ferait grimper les prix."
-  },
-  {
-   "terme": "Taux d'actualisation",
-   "definition": "Taux utilise pour calculer aujourd'hui la valeur de benefices futurs d'une entreprise ; quand il monte, cette valeur actuelle baisse."
+   "definition": "Alliance de pays producteurs de petrole, dont l'Arabie saoudite et la Russie, qui coordonne ses volumes de production."
   },
   {
    "terme": "VIX",
-   "definition": "Indice qui mesure le niveau de nervosite anticipe des marches actions americains."
+   "definition": "Indice qui mesure la nervosite anticipee des marches actions americains ; plus il est bas, plus les investisseurs sont calmes."
   },
   {
-   "terme": "Spread (ecart de taux)",
-   "definition": "Difference entre le taux d'emprunt d'un emprunteur et celui d'une reference jugee sans risque, qui reflete le risque percu par les preteurs."
+   "terme": "soutage",
+   "definition": "Carburant utilise par les navires pour leur propulsion, dont le prix influence le cout du fret maritime."
   },
   {
-   "terme": "Courbe des taux (10 ans moins 2 ans)",
-   "definition": "Difference entre le taux d'interet a long terme et a court terme ; quand elle passe sous zero, le marche anticipe souvent une recession."
-  },
-  {
-   "terme": "Donnee perimee",
-   "definition": "Donnee de marche dont la date depasse trois jours d'anciennete, a interpreter avec prudence car elle peut ne plus refleter la situation actuelle."
+   "terme": "donnee perimee",
+   "definition": "Chiffre de marche qui n'est plus a jour, publie plusieurs jours avant la date du jour, a interpreter avec prudence."
   }
  ],
  "inexplique": [
   {
-   "quoi": "Aucun mouvement n'est officiellement signale comme anormal aujourd'hui (liste vide), mais plusieurs z-scores restent notables sans explication de presse : indice du dollar (DTWEXBGS, z=1.26) et euro/dollar (DEXUSEU, z=-1.47).",
-   "ampleur": "Moderee (z entre 1.2 et 1.5), en dessous du seuil retenu pour qualifier un mouvement d'anormal.",
-   "piste": "Aucun dossier macro, defense ou tech ne mentionne de facteur de change (politique monetaire, intervention, flux de capitaux).",
-   "manque": "Un dossier de presse sur la politique de change ou les anticipations de taux directeurs qui expliquerait le raffermissement du dollar et le recul de l'euro."
-  },
-  {
-   "quoi": "Le taux 2 ans americain (DGS2) affiche un z-score de -1.1, signe d'une baisse plus marquee que d'habitude, sans dossier macro pour l'expliquer.",
-   "ampleur": "Moderee, theme Macro entierement vide de dossiers retenus.",
-   "piste": "Une anticipation de baisse des taux directeurs serait le canal logique, mais aucune source ne la documente ici.",
-   "manque": "Un communique ou une declaration de banque centrale sur la trajectoire des taux courts."
+   "quoi": "Aucun mouvement n'est signale comme statistiquement anormal aujourd'hui (liste transmise vide)",
+   "ampleur": "non applicable",
+   "piste": "Les mouvements les plus notables du jour (Brent z=1,81, WTI z=1,59) restent sous le seuil d'anomalie retenu par le systeme, et sont deja associes a des dossiers de presse identifies (attaques Aramco, quotas OPEP+, test Ormuz)",
+   "manque": "rien a completer pour l'instant ; a surveiller si un futur mouvement franchit le seuil d'anomalie sans dossier de presse correspondant"
   }
  ],
  "divergences": [
   {
-   "constat": "La presse energie decrit une escalade militaire serieuse (frappes Etats-Unis/Iran, attaques Houthis) mais l'indicateur de nervosite des marches ne la reflete pas.",
-   "presse": "Dix sources independantes rapportent des frappes croisees et un risque de blocage du detroit d'Ormuz, avec un ton d'urgence.",
-   "prix": "Le VIX (indice de volatilite) est a 14.32, en leger recul (z=-0.65), soit un niveau bas et non signale comme anormal.",
-   "lecture": "Correlation attendue mais non confirmee par cette donnee ; la donnee VIX date cependant de 5 jours, donc elle ne capture peut-etre pas les tout derniers evenements rapportes."
-  },
-  {
-   "constat": "Le recit de presse energie parle d'un petrole proche de 100 dollars et d'un choc persistant, mais la seule donnee de prix disponible est agee de 7 jours.",
-   "presse": "Plusieurs dossiers evoquent un Brent proche ou au-dessus de 96-100 dollars suite aux frappes et au plan OPEP+.",
-   "prix": "Le dernier releve verifie de DCOILBRENTEU date du 2026-09-01 (96.02$, perime), donc la persistance du niveau au-dessus de 100$ n'est pas confirmee par une donnee fraiche.",
-   "lecture": "Ecart de calendrier plutot que contradiction : le prix pourrait confirmer ou dementir le recit, mais l'information manque a ce jour."
+   "constat": "La presse decrit une tension energetique marquee (Brent proche de 100 dollars, attaques contre Aramco, test de transit a Ormuz) sans que cela se traduise par un stress visible sur les indicateurs de risque financier transverses.",
+   "presse": "Sept sources independantes evoquent une flambee du Brent et des risques geopolitiques croissants au Moyen-Orient et dans le detroit d'Ormuz.",
+   "prix": "Le VIX (volatilite des actions) reste a 15,3 points avec un z-score de 0,63 (non anormal) et les spreads de credit (haut rendement comme entreprises solides) sont quasiment stables, sans signe de tension.",
+   "lecture": "Soit le marche ne considere pas encore ce choc energetique comme durable, soit son impact reste concentre sur le secteur energie/fret sans se propager au risque de credit ou de volatilite generale ; correlation observee, canal de propagation non confirme a ce stade."
   }
  ],
  "synthese": [
-  "L'energie concentre presque toute l'actualite de presse du jour ; macro, defense et tech n'ont produit aucun dossier retenu.",
-  "La these d'un choc petrolier persistant repose sur une donnee de prix vieille de 7 jours, donc non verifiee par des chiffres frais.",
-  "Le VIX bas ne confirme pas le ton d'escalade militaire decrit par la presse energie, et aucun autre theme n'apporte d'element pour trancher.",
-  "Le lien petrole -> inflation -> taux avance par la presse energie n'est corrobore par aucune source macro independante aujourd'hui.",
-  "Les hypotheses ouvertes du carnet se concentrent presque toutes sur le seul Brent, signe d'un recit dominant non recoupe par d'autres classes d'actifs."
+  "Seul le theme energie a produit des dossiers de presse verifies aujourd'hui ; macro, defense et tech n'ont rien retenu malgre plusieurs centaines d'articles collectes.",
+  "La tension energetique (Brent, Aramco, Ormuz) ne se traduit pour l'instant par aucun stress mesurable sur les indicateurs financiers transverses (VIX bas, spreads de credit stables).",
+  "L'absence de dossier macro empeche de relier la hausse du petrole a une revision des anticipations d'inflation, qui restent quasi stables (T10YIE, z=0,07).",
+  "Aucun lien de presse n'a ete etabli aujourd'hui entre les tensions au Moyen-Orient (theme defense) et le theme energie, ni entre semi-conducteurs et macro : les themes ne se parlent pas entre eux ce jour-la.",
+  "Le decalage entre l'ampleur du recit de presse sur le petrole et le calme des marches actions/credit constitue le point le plus notable de la journee."
  ],
  "contre_analyse": [
-  "Si l'ampleur des frappes US-Iran rapportees est surevaluee par des reprises multiples d'une meme source primaire, toute la chaine causale petrole/actions/taux perd sa base.",
-  "Si le prochain releve du Brent recule sous 90$, l'hypothese de choc energetique persistant est invalidee et les pressions supposees sur majors et fret n'ont plus de fondement.",
-  "L'absence totale de dossiers macro, defense et tech peut refleter un biais des mots-cles de collecte plutot qu'une absence reelle d'actualite sur ces themes.",
-  "Le VIX bas pourrait simplement ne pas avoir integre les evenements les plus recents, sa donnee datant deja de 5 jours ; la 'divergence' releverait alors d'un decalage de calendrier, pas d'un signal reel."
+  "Les donnees de marche cles (Brent, WTI, dollar, euro/dollar) sont perimees de 6 a 11 jours ; un mouvement plus recent pourrait deja avoir change la situation decrite ici.",
+  "Les dossiers energie reposent sur des sources de presse relayees, pas sur une confirmation officielle : Aramco n'a pas confirme l'impact des attaques sur ses volumes exportes.",
+  "Le grand nombre d'articles repris (152 articles pour 114 dossiers bruts en energie) peut refleter la reprise d'un nombre restreint de sources primaires, ce qui gonflerait artificiellement l'impression de consensus autour de la hausse du petrole."
  ],
  "carnet": [
   {
@@ -890,6 +888,22 @@
    "theme": "Energie et matieres premieres",
    "enonce": "Sous l'effet cumule des tensions Moyen-Orient (frappes US-Iran, Houthis) et du plan OPEP+ d'octobre, le Brent (serie DCOILBRENTEU) franchira 100 dollars le baril dans les 10 jours suivant le 2026-09-08",
    "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 100
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-08-energie",
+   "date": "2026-09-08",
+   "theme": "Energie et matieres premieres",
+   "enonce": "Compte tenu des tensions autour d'Ormuz et des attaques rapportees contre des installations saoudiennes, le Brent (DCOILBRENTEU) depassera 100 dollars dans les 10 prochains jours de cotation.",
+   "probabilite": 0.5,
    "horizon_jours": 10,
    "verification_auto": {
     "serie": "DCOILBRENTEU",
