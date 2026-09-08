@@ -205,35 +205,35 @@
   }
  ],
  "verdict": {
-  "action": false,
-  "titre": "Rien a faire aujourd'hui",
-  "detail": "Aucun mouvement de prix hors norme, aucun dossier a la fois materiel et solidement source. Lis la synthese si tu veux, mais il n'y a rien qui appelle une decision."
+  "action": true,
+  "titre": "Rien d'anormal sur les prix, mais un dossier solide",
+  "detail": "2 dossier(s) de materialite haute appuyes sur au moins trois sources independantes, sans reaction visible des prix."
  },
  "collecte": {
   "macro": [
    {
     "source": "Google News : banque centrale",
-    "articles": 30,
+    "articles": 36,
     "erreur": null
    },
    {
     "source": "Google News : taux directeurs",
-    "articles": 6,
+    "articles": 5,
     "erreur": null
    },
    {
     "source": "Google News : inflation zone euro",
-    "articles": 6,
+    "articles": 7,
     "erreur": null
    },
    {
     "source": "Google News : Federal Reserve",
-    "articles": 12,
+    "articles": 13,
     "erreur": null
    },
    {
     "source": "Google News : inflation data",
-    "articles": 24,
+    "articles": 33,
     "erreur": null
    }
   ],
@@ -245,7 +245,7 @@
    },
    {
     "source": "Google News : OPEP",
-    "articles": 5,
+    "articles": 3,
     "erreur": null
    },
    {
@@ -255,66 +255,66 @@
    },
    {
     "source": "Google News : oil prices",
-    "articles": 37,
+    "articles": 39,
     "erreur": null
    },
    {
     "source": "Google News : OPEC",
-    "articles": 17,
+    "articles": 21,
     "erreur": null
    }
   ],
   "defense": [
    {
     "source": "Google News : sanctions",
-    "articles": 21,
+    "articles": 24,
     "erreur": null
    },
    {
     "source": "Google News : geopolitique",
-    "articles": 13,
+    "articles": 17,
     "erreur": null
    },
    {
     "source": "Google News : detroit Ormuz",
-    "articles": 22,
+    "articles": 19,
     "erreur": null
    },
    {
     "source": "Google News : sanctions",
-    "articles": 22,
+    "articles": 34,
     "erreur": null
    },
    {
     "source": "Google News : military escalation",
-    "articles": 17,
+    "articles": 21,
     "erreur": null
    }
   ],
   "tech": [
    {
     "source": "Google News : semi-conducteurs",
-    "articles": 24,
+    "articles": 34,
     "erreur": null
    },
    {
     "source": "Google News : ASML",
-    "articles": 2,
+    "articles": 24,
     "erreur": null
    },
    {
     "source": "Google News : Nvidia",
-    "articles": 29,
+    "articles": 33,
     "erreur": null
    },
    {
     "source": "Google News : semiconductor",
-    "articles": 35,
+    "articles": 37,
     "erreur": null
    },
    {
     "source": "Google News : export controls",
-    "articles": 11,
+    "articles": 14,
     "erreur": null
    }
   ],
@@ -326,43 +326,177 @@
    "ecarte_car_bruit": [],
    "hypothese": null,
    "titre": "Macro et banques centrales",
-   "dossiers_bruts": 57,
-   "articles_bruts": 78,
+   "dossiers_bruts": 70,
+   "articles_bruts": 94,
    "collecte": [
     {
      "source": "Google News : banque centrale",
-     "articles": 30,
+     "articles": 36,
      "erreur": null
     },
     {
      "source": "Google News : taux directeurs",
-     "articles": 6,
+     "articles": 5,
      "erreur": null
     },
     {
      "source": "Google News : inflation zone euro",
-     "articles": 6,
+     "articles": 7,
      "erreur": null
     },
     {
      "source": "Google News : Federal Reserve",
-     "articles": 12,
+     "articles": 13,
      "erreur": null
     },
     {
      "source": "Google News : inflation data",
-     "articles": 24,
+     "articles": 33,
      "erreur": null
     }
    ]
   },
   "energie": {
-   "retenus": [],
-   "ecarte_car_bruit": [],
-   "hypothese": null,
+   "retenus": [
+    {
+     "titre": "Oil Prices Rise After U.S. and Iran Trade Strikes",
+     "fait": "Plusieurs agences et medias (Bloomberg, CNBC, Reuters via Al Jazeera, Forbes, etc., 10 sources independantes) rapportent des frappes croisees entre les Etats-Unis et l'Iran, suivies d'une hausse du prix du petrole. C'est une information de presse fraiche (vu_depuis=0), non un simple mouvement de marche.",
+     "sources_independantes": 10,
+     "communique_interesse": false,
+     "chaine": [
+      {
+       "canal": "prime de risque geopolitique sur l'approvisionnement (crainte de blocage du detroit d'Ormuz, voie de passage d'une grande partie du petrole mondial)",
+       "effet": "hausse du prix du brut par crainte de rupture d'offre",
+       "actif": "Brent et WTI",
+       "exposes": "majors petrolieres (TotalEnergies, Shell, ExxonMobil) dont les revenus suivent le prix du baril ; fret maritime (tankers transitant par le Golfe), ou les couts d'assurance et d'affretement montent avec le risque"
+      }
+     ],
+     "invalidation": "si le Brent (DCOILBRENTEU) ne confirme pas la hausse dans les prochains releves, ou si des sources ulterieures dementent l'ampleur des frappes",
+     "materialite": "haute",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1tdXhlb3hCRjN0TWt4Vkl1THhuUklqUGJTbzgybGZ4WFB2Q2oxUVd1Mk5Zd09MS3FuZ0pMd29lMk9WSmMzMktxZkpVaTQxczI3UEJnSkxlMkl4dEE1ODcyX2xPZmQweDJSeVpuamRyS1dBdGJZVDVzT2trSWY?oc=5"
+    },
+    {
+     "titre": "OPEC+ 7 Reveal October Output Plan",
+     "fait": "Huit sources independantes (Bloomberg, WSJ, CNBC, Rigzone, etc.) rapportent que le groupe OPEP+ a devoile un plan de production pour octobre. Le contenu chiffre exact du plan n'est pas precise dans les elements transmis.",
+     "sources_independantes": 8,
+     "communique_interesse": false,
+     "chaine": [
+      {
+       "canal": "decision d'offre coordonnee par un cartel producteur, qui fixe les quotas de production",
+       "effet": "ajustement du niveau d'offre disponible sur le marche mondial, influencant la trajectoire du prix",
+       "actif": "Brent et WTI",
+       "exposes": "majors petrolieres dont la marge depend du niveau de prix resultant (TotalEnergies, Shell, ExxonMobil, BP)"
+      }
+     ],
+     "invalidation": "si les chiffres officiels de production d'octobre publies par l'OPEP+ contredisent le plan annonce, ou si le Brent ne bouge pas malgre l'annonce",
+     "materialite": "haute",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcWxTU2g3dEJwR2VsWS1ZSnNwQTlJNVp1OXl6VERGeUVmUjQyd3drTndYYzBRU2RhWUwxQVlIRmd6SjJlRlR6ZlRIOXd0VHl1d3huZHpBMFIwQXBNNGpraG9vV3FWUFdaLUxHT3NFOWE1U3F5RnFQWkdSMV96clp3V3o2WVAtRlctRXQ5S1FNTkdVbXll?oc=5"
+    },
+    {
+     "titre": "World shares and US futures decline, while oil prices press higher",
+     "fait": "Six sources independantes (AP, Yahoo Finance, US News, etc.) constatent une baisse simultanee des actions mondiales et des contrats a terme americains, en meme temps qu'une hausse du petrole. Aucune de ces sources n'etablit de mecanisme causal precis, seulement une coincidence temporelle.",
+     "sources_independantes": 6,
+     "communique_interesse": false,
+     "chaine": [
+      {
+       "canal": "correlation observee entre hausse du cout de l'energie et recul des indices actions ; le canal precis (couts d'intrants, anticipations d'inflation, ou aversion au risque generale) n'est pas identifie par les sources",
+       "effet": "pression baissiere sur les indices actions mondiaux",
+       "actif": "indices actions (S&P 500, futures europeens)",
+       "exposes": "equipementiers semi-conducteurs europeens (marges sensibles aux couts energetiques et a la demande industrielle), actions cycliques en general"
+      }
+     ],
+     "invalidation": "si les indices actions rebondissent alors que le petrole reste eleve, la correlation ne se confirme pas",
+     "materialite": "moyenne",
+     "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNjVfWE5UYVpZZGgtaVlLWVhNRUU3dFREYjMyWk1QWGpDZjlIb2pmVkhXcmVsSDJGNm1hNGxTMFpBYnl1MFBIOFFOU3hZcWdvd0swT01GSndGLVlXRDhVbnl0cnhPa3p3TVMwR1ZldUVIUlhtU1M4enRTTnc2czl4Zk55ZzZib2taYVNXWi1GRl9MeFFTZ3hEcQ?oc=5"
+    },
+    {
+     "titre": "Le pétrole et les taux plombent le moral des Bourses européennes",
+     "fait": "Quatre sources independantes (Boursorama, Le Revenu, Zonebourse, Zonebourse Suisse) rapportent que la conjonction de la hausse du petrole et de la remontee des taux d'interet pese sur les Bourses europeennes.",
+     "sources_independantes": 4,
+     "communique_interesse": false,
+     "chaine": [
+      {
+       "canal": "hausse du petrole alimentant les anticipations d'inflation, qui poussent les rendements obligataires europeens a la hausse, ce qui augmente le taux d'actualisation applique aux benefices futurs des entreprises cotees",
+       "effet": "baisse des valorisations actions et hausse des rendements obligataires",
+       "actif": "indices actions europeens (CAC 40, DAX) et taux souverains europeens (Bund, OAT)",
+       "exposes": "actions europeennes sensibles aux taux (secteurs de croissance, semi-conducteurs equipementiers), et emprunteurs europeens dont le cout de financement suit les taux longs"
+      }
+     ],
+     "invalidation": "si les rendements obligataires europeens (proxy via DGS10, series US disponible ici) reculent alors que le petrole reste eleve, ou si les indices actions europeens progressent malgre la hausse du petrole",
+     "materialite": "moyenne",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVWdlSnNIQmlPaG4tcjBaZzUxUDhULUZHLWx3ckUtdENWcXlwV2FIX014T2NEVm1rajNzZ3cwMjdOSFFtMWJLMnhibUZfQUtycDJ3MmZmMUVfd3lTZ2V0NDIzUDJ6UVJnbFg5UTdFWVROOFRYT2NaVkc3TFJoYlFZc3Zsc01pVFZGNEVmRTNNWTUxeGctSUlMN2t4YTE0WnZFdFcxN2pVTmZ1S2FtcW05UXVLTnZldlhaUUNEMndBSkM2RXRYZHNPRTItMXp4VkwtbGtGd3JtdTlIQdIB3wFBVV95cUxPemFZYjZfLVBBclJFOEtfZHlyWjJHNVhSczYtcmt6bUtqMUVqVkk2RjJNZ0tMbVRLd0lMaDk3aGNSY05rTWFrcEhJZE9DZndxRXZUbXpMQ3dpN0ZoellUaDlYUUVLX0tCdEZIY21xV1hHNGNZeHBDUndrd1N3X1EzMnZYMkZTZXpCV2w1NEN4V1Q3WkJnUURLUTkxcTI1MzRsZUVwWUxOemJoVnBPemR4OG1UalJWZVMydnhGM1lHZjc2UVM2RllFUFVCdDVZcldWSVdyQUYxclM5VUt4WWg0?oc=5"
+    }
+   ],
+   "ecarte_car_bruit": [
+    "Pétrole : le Brent flirte avec les 100 dollars !",
+    "U.S. Gasoline Prices Hit Labor Day Record",
+    "Wall Street : les contrats à terme reculent, la flambée du pétrole inquiète les marchés",
+    "Oil prices rise to six-week highs on worsening Middle East conflict",
+    "Why isn't oil above $100 despite supply disruptions?",
+    "Venezuela OPEC Exit 'Structurally Likely'",
+    "Gaz & Pétrole en hausse : Vers une nouvelle flambée des prix de l'énergie ?",
+    "Au Venezuela, les ambitions pétrolières contrariées des Etats-Unis",
+    "États-Unis, Arabie saoudite, Russie : à chacun sa manière de vaciller pour les trois grands du pétrole",
+    "Remplacer le pétrole par les métaux critiques déplace la dépendance énergétique : vrai ou faux ?",
+    "Pétrole : Ormuz ou l'écologie forcée",
+    "Dangote, Sahara, Afriquia… Les champions africains du pétrole se lancent à l'assaut des majors",
+    "Le pétrole maintenu à des niveaux élevés avec de nouvelles attaques au Moyen-Orient",
+    "En Russie, des drones ont attaqué la raffinerie de pétrole de Saratov au cours de la nuit",
+    "L'Europe recule, le pétrole à près de 100 dollars après de nouvelles attaques des Houthis",
+    "Change : le yen se renforce, le dollar reste stable, le pétrole s'envole [ABO]",
+    "Les marchés actions s'habituent à un pétrole élevé",
+    "L'Europe recule, la hausse du prix du pétrole ravive les craintes d'inflation",
+    "Le pétrole s'approche des 100 dollars porté par des attaques sur l'Arabie saoudite",
+    "CAC 40 : La Bourse de Paris devrait ouvrir en baisse, lestée par la hausse du pétrole",
+    "Les rendements européens grimpent avec le pétrole proche de 100$ et la BCE prête à agir",
+    "Pétrole brut de la mer du Nord : Vitol achète du WTI Midland",
+    "Les actions énergétiques progressent en prémarché avec la hausse du pétrole",
+    "Les actions chutent face à la forte hausse du yen ; les attaques dans le Golfe font grimper le prix du pétrole",
+    "Le Dax entame la séance en baisse, les prix du pétrole progressent",
+    "Pourquoi le pétrole ne dépasse-t-il pas les 100 dollars malgré les ruptures d'approvisionnement",
+    "CAC 40: Les taux et le pétrole pèsent encore",
+    "Le pétrole atteint des sommets de plusieurs semaines après les attaques des Houthis contre des installations énergétiques saoudiennes",
+    "ANALYSE-Chine : baisse annuelle des importations de pétrole brut en août",
+    "Le pétrole progresse, les risques de conflit prolongé au Moyen-Orient accentuent les craintes sur l'offre",
+    "Les actions indiennes ouvrent en baisse, portées par la hausse du pétrole et les risques au Moyen-Orient",
+    "Baril à 80 ou à 150 dollars : jusqu'où le pétrole peut-il monter ?",
+    "Les réserves stratégiques de pétrole sont si vides que les cavernes aux États-Unis utilisent un système astucieux pour ne pas s'effondrer",
+    "L'OPEP ne fait plus la pluie et le beau temps sur le cours mondial du pétrole",
+    "PDG de Rosneft : Ce n'est pas l'OPEP, mais la Chine qui domine le marché pétrolier.",
+    "Lavrov affirme que la Russie et l'Arabie saoudite coordonneront leurs approches au sein de l'OPEP+",
+    "En Europe, l'impossible sevrage des hydrocarbures du Golfe persique",
+    "Prix du gaz sur les marchés ce 7 septembre : le niveau du PEG avant la reprise des cotations",
+    "Le gaz naturel européen progresse de 2% et frôle des sommets pluriannuels sur fond de menaces de Téhéran",
+    "Alerte au gaz",
+    "Selon Jancovici, le gaz pourrait devenir hors de prix cet hiver, et voici pourquoi",
+    "Une fuite de gaz naturel sécurisée par les sapeurs-pompiers en centre-ville de Manosque",
+    "Électricité: le gaz revient dans l'équation libanaise",
+    "Niveaux de stockage de gaz historiquement bas : la fédération met en garde contre un hiver rigoureux",
+    "Gaz : les réserves européennes au plus bas, l'hiver s'annonce à haut risque",
+    "Biométhane : l'Europe face à l'offensive asiatique",
+    "Le Vietnam et la Russie consolident leur alliance énergétique",
+    "Les réserves de gaz vides en Europe peuvent être trompeuses",
+    "Les réserves de gaz naturel de l'Allemagne ont atteint leur plus bas niveau en 17 ans, et le pays s'efforce de trouver des solutions pour faire face à cette situation.",
+    "TotalEnergies laisse ExxonMobil aux manettes pour relancer son projet de GNL en Papouasie-Nouvelle-Guinée",
+    "Décarbonation. « Nous ne sommes plus dans l'expérimentation. Nous sommes dans le réel » : les transports Béade vont rouler aussi au biogaz",
+    "La Corée du Sud conteste le montant de son investissement gazier au Texas",
+    "Blocage des prix du gaz, une urgence face à la crise",
+    "ENGIE inaugure sa centrale à gaz de 875 MW à Flémalle, en Belgique",
+    "Gaz : l'Algérie devance ses concurrents et s'impose en Espagne"
+   ],
+   "hypothese": {
+    "enonce": "Sous l'effet cumule des tensions Moyen-Orient (frappes US-Iran, Houthis) et du plan OPEP+ d'octobre, le Brent (serie DCOILBRENTEU) franchira 100 dollars le baril dans les 10 jours suivant le 2026-09-08",
+    "probabilite": 0.55,
+    "horizon_jours": 10,
+    "verification_auto": {
+     "serie": "DCOILBRENTEU",
+     "operateur": ">=",
+     "seuil": 100
+    }
+   },
    "titre": "Energie et matieres premieres",
-   "dossiers_bruts": 77,
-   "articles_bruts": 119,
+   "dossiers_bruts": 84,
+   "articles_bruts": 123,
    "collecte": [
     {
      "source": "Google News : petrole",
@@ -371,7 +505,7 @@
     },
     {
      "source": "Google News : OPEP",
-     "articles": 5,
+     "articles": 3,
      "erreur": null
     },
     {
@@ -381,12 +515,12 @@
     },
     {
      "source": "Google News : oil prices",
-     "articles": 37,
+     "articles": 39,
      "erreur": null
     },
     {
      "source": "Google News : OPEC",
-     "articles": 17,
+     "articles": 21,
      "erreur": null
     }
    ]
@@ -396,207 +530,73 @@
    "ecarte_car_bruit": [],
    "hypothese": null,
    "titre": "Defense et geopolitique",
-   "dossiers_bruts": 77,
-   "articles_bruts": 95,
+   "dossiers_bruts": 88,
+   "articles_bruts": 115,
    "collecte": [
     {
      "source": "Google News : sanctions",
-     "articles": 21,
+     "articles": 24,
      "erreur": null
     },
     {
      "source": "Google News : geopolitique",
-     "articles": 13,
+     "articles": 17,
      "erreur": null
     },
     {
      "source": "Google News : detroit Ormuz",
-     "articles": 22,
+     "articles": 19,
      "erreur": null
     },
     {
      "source": "Google News : sanctions",
-     "articles": 22,
+     "articles": 34,
      "erreur": null
     },
     {
      "source": "Google News : military escalation",
-     "articles": 17,
+     "articles": 21,
      "erreur": null
     }
    ]
   },
   "tech": {
-   "retenus": [
-    {
-     "titre": "Belgique : un ex-cadre de Belgan detenu pour soupcons d'espionnage sur les semi-conducteurs",
-     "fait": "Un ressortissant chinois, ancien cadre de l'entreprise belge Belgan, a ete arrete en Belgique sur soupcon d'espionnage industriel lie aux semi-conducteurs. L'information est reprise par des agences (AP, Reuters) et par des medias belges (L'Echo, VRT) independants les uns des autres.",
-     "sources_independantes": 4,
-     "communique_interesse": false,
-     "chaine": [
-      {
-       "canal": "risque reputationnel et reglementaire sur la chaine d'approvisionnement europeenne des semi-conducteurs",
-       "effet": "durcissement potentiel des controles a l'export et de la surveillance des transferts de technologie vers la Chine",
-       "actif": "actions des equipementiers europeens",
-       "exposes": "ASML Holding, ASM International, BE Semiconductor Industries (Besi) - societes cotees exposees aux restrictions eventuelles sur les exportations vers la Chine"
-      }
-     ],
-     "invalidation": "l'affaire reste une enquete isolee sans suite reglementaire (pas de nouvelle mesure de controle export annoncee) sous 30 jours",
-     "materialite": "faible",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObmNUMkNpaHRGSU5YVjBwaUs2elJrS0YyY2xNT1BpV2lha2JNSVdmZUNoUzRmUmQ1UVFGTjQ2UnZVWlUtcjkxV1B3YzZtWUJyNTExemVaTHdCVUhPVWVCSFItX2NCQUtnYmFwUlZ5ektQcDhQT0lteHN5WEd0ZG5rYXFpQVBSNmVNbFNCRS1YT2ZTeGVSbmVtYlJWYTQtQVE4QTBUSUlZZ3hWdHVlNnc?oc=5"
-    },
-    {
-     "titre": "Rally des semi-conducteurs en Asie : Samsung +6%, SK Hynix +8%, Nikkei et KOSPI a plusieurs mois de sommet",
-     "fait": "Les bourses de Seoul et Tokyo ont fortement progresse, portees par des hausses chiffrees de Samsung (+6%) et SK Hynix (+8%), rapportees par une source unique (zonebourse, relayant des donnees de marche) reprise dans plusieurs articles derives.",
-     "sources_independantes": 1,
-     "communique_interesse": false,
-     "chaine": [
-      {
-       "canal": "demande mondiale en composants memoire lie a l'intelligence artificielle, se propageant aux commandes d'equipement",
-       "effet": "soutien a la demande d'equipements de production adressee aux fournisseurs europeens",
-       "actif": "actions des equipementiers europeens exposes a la demande de fonderies asiatiques",
-       "exposes": "ASML Holding, ASM International, BE Semiconductor Industries (Besi)"
-      }
-     ],
-     "invalidation": "le Nasdaq (NASDAQCOM) ne confirme pas la dynamique et reste sous son niveau du 2026-09-04 (26506.99) dans les 10 jours",
-     "materialite": "moyenne",
-     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQd0dFaUk2bHdmVnNGZzVFY1BSQ1dkaG1zd1pJWjVRR0tOVHAyejgzNkJpNlduYUQ3Ml80c293c0wzVHVqUFJhbER1SGMzYUFiRXI1X0VQeWNQUW0xN1h4aWV5Rl9VdjFRaFhHRU50UjBFUXRYUG9ucnJRSF9FcU1Sa0FWbWZRWXFrU2hCanNKWnNEV1FHN2RYWlhyYklkMk5GUTU2ajBnNlY2RGJUYzNFV1hfUURfNUdJM2hLV3FBNXlZTnhkNUcxRFhHdnN1eE9SNHZYbDJ1OE5PMlgteF82RnlwSXNaaTFBMzJxRk1BeWs?oc=5"
-    },
-    {
-     "titre": "Le CEO d'ASML emet des reserves sur l'European Chips Act 2.0",
-     "fait": "Le dirigeant d'ASML a exprime publiquement des doutes sur la pertinence du plan europeen de soutien aux semi-conducteurs (Chips Act 2.0), rapporte par une source unique (Electroniques).",
-     "sources_independantes": 1,
-     "communique_interesse": false,
-     "chaine": [
-      {
-       "canal": "incertitude sur le soutien public europeen a la filiere semi-conducteurs",
-       "effet": "possible revision a la baisse des anticipations de financement public pour les fonderies et equipementiers europeens",
-       "actif": "action ASML et valeurs liees a la politique industrielle europeenne des puces",
-       "exposes": "ASML Holding, et plus largement les equipementiers europeens beneficiaires potentiels du Chips Act"
-      }
-     ],
-     "invalidation": "la Commission europeenne confirme et finance le Chips Act 2.0 sans modification dans les 30 jours",
-     "materialite": "faible",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRk9wUENIV1V5bWtwbnJlTzZvaUJmN2N0WVlFcm9CbGNXR0lHZTVlTXFVNkNtZlNuaUd2d3JJQmZ2T2Zhdzc0OG04YnZfTWNXekNIMHlsWXlrWXgxaE1QX1hmbzNnRFRGR2tmZ0kwRUE1UXkxNUx2aU5fVWIwSjljWFFpS2lLNzFQTVhuN0lIblMwWEN5Um9DWXRiYTV2aUdNRmVRS3RVeEdPbEdtWHhLelpSTQ?oc=5"
-    },
-    {
-     "titre": "Les ventes mondiales de semi-conducteurs ont encore progresse en juillet",
-     "fait": "Les statistiques sectorielles montrent une nouvelle progression des ventes mondiales de semi-conducteurs en juillet, rapportee par une source unique (Electroniques), sans reprise independante identifiee.",
-     "sources_independantes": 1,
-     "communique_interesse": false,
-     "chaine": [
-      {
-       "canal": "indicateur avance de la demande sectorielle mondiale, precurseur des commandes d'equipement",
-       "effet": "soutien a la poursuite du cycle d'investissement des fonderies en equipement de production",
-       "actif": "actions des equipementiers europeens de semi-conducteurs",
-       "exposes": "ASML Holding, ASM International, BE Semiconductor Industries (Besi)"
-      }
-     ],
-     "invalidation": "les prochaines statistiques mensuelles (aout) montrent un recul des ventes mondiales",
-     "materialite": "moyenne",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT3daVFZJc29fRXE0dXZMTkl6ZWtqaUhLeDNVZ1cyT2w2WndTSVNGeFVGaUtVOWNJaXdjdk1tN2hrNG9Pd2dndUcyS3ZBUVhlOTNqa3hQclI0bkUtMnFOdjRGRk1SRGhSSGV1WV9ySnVUMTRvSFRsS3VrZU5pRExTdTl6S041V3JNMnZ1U1JpeTR3UnRHdUswWWlsWnJIdzhmdElJZVdUeHNmYXl1LW05NjVremhBcFVQbDlSMW1abjEwZw?oc=5"
-    }
-   ],
-   "ecarte_car_bruit": [
-    "La dynamique positive aux Etats-Unis et en Asie profite au secteur des semi-conducteurs",
-    "Les valeurs europeennes des semi-conducteurs montent dans le sillage de la tech asiatique",
-    "Le marche des semi-conducteurs connait une croissance fulgurante.",
-    "Nvidia's Jensen Huang Says 'AGI Has Arrived' and Congratulates OpenAI",
-    "Prediction: Nvidia Stock Will Double in Under a Year",
-    "Nvidia Stock: Is It Still a Good Buy at $230?",
-    "Researchers create polar wurtzite nitride semiconductor NbAlN",
-    "Elle collabore avec Schneider Electric et veut conquerir les datacenters : AlpSemi",
-    "Le rallye des semi-conducteurs propulse les actions des marches emergents",
-    "La Bourse de Coree du Sud cloture au plus haut depuis fin juillet",
-    "Il n'y a pas que les semi-conducteurs qui profitent du boom de l'IA",
-    "Apercu des performances de Broadcom par rapport a ses pairs",
-    "L'Armenie et l'Institut francais CEA-Leti ont discute de leur cooperation",
-    "Semi-conducteurs : tour d'horizon des initiatives africaines",
-    "Bourse de Tokyo : le Nikkei bondit de 2,12% grace a la tech",
-    "Le KOSPI bondit de 3%; l'IA relance les semi-conducteurs et Goldman vise 12,000",
-    "ASM International propose Rutger Wijburg a son conseil de surveillance",
-    "L'orientation positive du secteur profite aux puces - Recommandation d'achat sur Infineon",
-    "L'indice Nikkei japonais progresse grace a l'envolee des valeurs du secteur des semi-conducteurs",
-    "NanoXplore met la main sur Scalinx",
-    "ASML Holding : une tres forte avance technologique, selon UBS",
-    "Nvidia CEO Says GPT-6 Astra Brings AGI Closer",
-    "Nvidia (NVDA)'s First-Ever Year-Ahead Forecast",
-    "Nvidia's Investment Portfolio Spans Intel to SpaceX",
-    "Palantir Stock Leads August Rally",
-    "Nvidia Insider Makes Stunning $410 Million Stock Move",
-    "AI computing demand may never be sated, says CEO of Iren",
-    "Breakingviews - China's AI dragons breathe fire on Nvidia's moat",
-    "Aion 2 Q&A: NVIDIA DLSS 5 Confirmed",
-    "AMD has Nvidia in its crosshairs with the Threadripper Halo",
-    "Nvidia's Rowhammer fix just got hammered",
-    "Nvidia Is No Longer Just a Chip Company",
-    "Not Nvidia, Not Micron - Warren Buffett Stock",
-    "Everyone Is Watching Nvidia. But This Memory Stock",
-    "Dow Futures Fall, Oil Prices Rise",
-    "Nightmare Eclipse Drops CrowdStrike, Nvidia, Avast Zero-Day",
-    "Nvidia's $99 Billion Portfolio Is Turning Intel and CoreWeave",
-    "Jim Cramer Wants Nvidia to Buy Back $500 Billion",
-    "Jim Cramer Discusses NVIDIA Acquiring Hugging Face",
-    "Broadcom's AI Forecast Suggests Hyperscalers Want More Than Just Nvidia GPUs",
-    "Nvidia Acquires HuggingFace for $12.9B",
-    "If You Only Own Nvidia for AI Exposure",
-    "Nvidia's (NVDA) Strong Results Reinforce Long Term Outlook",
-    "NVIDIA's Hugging Face Buyout",
-    "Prediction: Taiwan Semiconductor's Market Value Passes $3 Trillion",
-    "Why Taiwan's Silicon Shield Is Failing",
-    "Taiwan eyes silicon photonics as next big tech leap",
-    "China's chip giant AMEC launches 6 new machines",
-    "Why Pakistan belongs in the semiconductor conversation",
-    "New nitride semiconductor expands material options",
-    "Semiconductor equipment sales hit record $40.5bn in Q2",
-    "Manz Asia and SUSS Partner to Advance Inkjet Technology",
-    "Taiwan Semiconductor Manufacturing Company (TSM) Raises Guidance",
-    "India Launches New Semiconductor Initiative",
-    "IBM and Samsung top AI semiconductor patent rankings"
-   ],
-   "hypothese": {
-    "enonce": "Si le rally des semi-conducteurs asiatiques se confirme, l'indice Nasdaq (technologie americaine) devrait depasser son niveau du 2026-09-04 (26506.99 pts) dans les 10 jours suivant le 2026-09-08",
-    "probabilite": 0.55,
-    "horizon_jours": 10,
-    "verification_auto": {
-     "serie": "NASDAQCOM",
-     "operateur": ">=",
-     "seuil": 26506.99
-    }
-   },
+   "retenus": [],
+   "ecarte_car_bruit": [],
+   "hypothese": null,
    "titre": "Tech et semi-conducteurs",
-   "dossiers_bruts": 89,
-   "articles_bruts": 101,
+   "dossiers_bruts": 110,
+   "articles_bruts": 142,
    "collecte": [
     {
      "source": "Google News : semi-conducteurs",
-     "articles": 24,
+     "articles": 34,
      "erreur": null
     },
     {
      "source": "Google News : ASML",
-     "articles": 2,
+     "articles": 24,
      "erreur": null
     },
     {
      "source": "Google News : Nvidia",
-     "articles": 29,
+     "articles": 33,
      "erreur": null
     },
     {
      "source": "Google News : semiconductor",
-     "articles": 35,
+     "articles": 37,
      "erreur": null
     },
     {
      "source": "Google News : export controls",
-     "articles": 11,
+     "articles": 14,
      "erreur": null
     }
    ]
   }
  },
- "etat_du_jour": "Aucune donnee de marche ne depasse aujourd'hui le seuil statistiquement anormal retenu par le systeme, et trois themes sur quatre (macro, energie, defense) n'ont produit aucun dossier de presse verifie malgre un volume important d'articles collectes.",
+ "etat_du_jour": "Le petrole concentre toute l'actualite de presse du jour, avec des frappes rapportees entre les Etats-Unis et l'Iran et un plan de production OPEP+ pour octobre, tandis que la macro, la defense et la tech n'ont produit aucune information de presse retenue, et l'ensemble des donnees de marche disponibles date de plus de trois jours.",
  "carte": [
   {
    "theme": "Macro et banques centrales",
@@ -604,7 +604,32 @@
   },
   {
    "theme": "Energie et matieres premieres",
-   "acteurs": []
+   "acteurs": [
+    {
+     "nom": "Majors petrolieres (TotalEnergies, Shell, ExxonMobil, BP)",
+     "direction": 1,
+     "sources": 10,
+     "pourquoi": "La hausse du prix du brut liee aux frappes rapportees et au plan OPEP+ ameliore mecaniquement leurs revenus lies au baril."
+    },
+    {
+     "nom": "Transporteurs maritimes / tankers transitant par le detroit d'Ormuz",
+     "direction": -1,
+     "sources": 10,
+     "pourquoi": "Le risque de blocage du detroit d'Ormuz renchérit les couts d'assurance et de carburant du fret petrolier."
+    },
+    {
+     "nom": "Actions europeennes sensibles aux taux (CAC 40, DAX, valeurs de croissance)",
+     "direction": -1,
+     "sources": 4,
+     "pourquoi": "Petrole et taux obligataires europeens montent de concert, ce qui augmente le taux d'actualisation applique aux benefices futurs."
+    },
+    {
+     "nom": "Indices actions mondiaux / futures americains",
+     "direction": -1,
+     "sources": 6,
+     "pourquoi": "Coincidence temporelle rapportee entre hausse du petrole et recul des indices, sans canal precis identifie par les sources."
+    }
+   ]
   },
   {
    "theme": "Defense et geopolitique",
@@ -612,116 +637,87 @@
   },
   {
    "theme": "Tech et semi-conducteurs",
-   "acteurs": [
-    {
-     "nom": "ASML Holding",
-     "direction": 1,
-     "sources": 2,
-     "pourquoi": "Le rally boursier asiatique et la progression des ventes mondiales de semi-conducteurs (deux sources independantes) suggerent une demande d'equipements soutenue, malgre des reserves du CEO sur le financement public europeen."
-    },
-    {
-     "nom": "ASM International / BE Semiconductor Industries (Besi)",
-     "direction": 1,
-     "sources": 2,
-     "pourquoi": "Meme canal que ASML : demande memoire/IA en Asie et statistiques sectorielles de juillet orientees a la hausse, deux sources independantes distinctes."
-    },
-    {
-     "nom": "Chaine d'approvisionnement europeenne des semi-conducteurs (controle export vers la Chine)",
-     "direction": -1,
-     "sources": 4,
-     "pourquoi": "L'arrestation d'un ex-cadre pour espionnage industriel, reprise par 4 sources independantes, expose la filiere a un risque reglementaire et reputationnel accru."
-    },
-    {
-     "nom": "Samsung Electronics / SK Hynix",
-     "direction": 2,
-     "sources": 1,
-     "pourquoi": "Hausses boursieres chiffrees (+6% et +8%) rapportees par une source unique de donnees de marche, a prendre avec prudence faute de recoupement independant."
-    }
-   ]
+   "acteurs": []
   }
  ],
  "glossaire": [
   {
    "terme": "z-score",
-   "definition": "Un chiffre qui mesure si une variation du jour est normale ou rare, en la comparant aux 90 dernieres seances ; plus il s'eloigne de zero, plus le mouvement est inhabituel."
-  },
-  {
-   "terme": "spread",
-   "definition": "L'ecart de taux d'interet entre deux emprunts, qui reflete le surcout paye par l'emprunteur le plus risque."
+   "definition": "Mesure de l'ampleur d'une variation par rapport a son comportement habituel sur les 90 dernieres seances ; plus il s'eloigne de zero, plus le mouvement est rare."
   },
   {
    "terme": "Brent / WTI",
-   "definition": "Les deux prix de reference du petrole brut dans le monde, l'un europeen (Brent), l'autre americain (WTI)."
+   "definition": "Deux prix de reference du petrole brut, l'un europeen (Brent), l'autre americain (WTI), utilises pour suivre le marche mondial."
   },
   {
-   "terme": "Henry Hub",
-   "definition": "Le prix de reference du gaz naturel aux Etats-Unis."
+   "terme": "OPEP+",
+   "definition": "Groupe de pays producteurs de petrole (OPEP) elargi a d'autres grands producteurs comme la Russie, qui se coordonnent sur leurs niveaux de production."
   },
   {
-   "terme": "Chips Act",
-   "definition": "Un plan public europeen destine a soutenir financierement l'industrie des semi-conducteurs (puces electroniques)."
+   "terme": "Detroit d'Ormuz",
+   "definition": "Passage maritime etroit entre le Golfe Persique et l'ocean Indien, par lequel transite une grande partie du petrole mondial ; un blocage y ferait grimper les prix."
   },
   {
-   "terme": "equipementier (semi-conducteurs)",
-   "definition": "Une entreprise qui fabrique les machines utilisees par les usines de puces electroniques, sans produire elle-meme les puces."
-  },
-  {
-   "terme": "fonderie",
-   "definition": "Une usine qui fabrique physiquement les puces electroniques pour le compte d'autres entreprises."
-  },
-  {
-   "terme": "source independante",
-   "definition": "Une organisation ou un enqueteur distinct qui rapporte une information sans dependre d'une autre source deja citee ; compter les sources, pas les articles, evite de confondre une information unique relayee plusieurs fois avec plusieurs informations confirmees."
+   "terme": "Taux d'actualisation",
+   "definition": "Taux utilise pour calculer aujourd'hui la valeur de benefices futurs d'une entreprise ; quand il monte, cette valeur actuelle baisse."
   },
   {
    "terme": "VIX",
-   "definition": "Un indice qui mesure la nervosite anticipee des marches actions americains ; plus il est bas, plus les investisseurs semblent sereins."
+   "definition": "Indice qui mesure le niveau de nervosite anticipe des marches actions americains."
   },
   {
-   "terme": "materialite",
-   "definition": "L'ampleur estimee de l'impact d'une information sur les prix ou les entreprises concernees, du plus faible au plus fort."
+   "terme": "Spread (ecart de taux)",
+   "definition": "Difference entre le taux d'emprunt d'un emprunteur et celui d'une reference jugee sans risque, qui reflete le risque percu par les preteurs."
+  },
+  {
+   "terme": "Courbe des taux (10 ans moins 2 ans)",
+   "definition": "Difference entre le taux d'interet a long terme et a court terme ; quand elle passe sous zero, le marche anticipe souvent une recession."
+  },
+  {
+   "terme": "Donnee perimee",
+   "definition": "Donnee de marche dont la date depasse trois jours d'anciennete, a interpreter avec prudence car elle peut ne plus refleter la situation actuelle."
   }
  ],
  "inexplique": [
   {
-   "quoi": "Hausse du Brent de +6,27$ (niveau 96,02$, z-score de 1,81) sur le releve du 2026-09-01",
-   "ampleur": "Le plus fort ecart a la normale de toute la liste des indicateurs de marche, bien qu'il ne soit pas classe formellement anormal par le systeme",
-   "piste": "Aucune, le theme energie n'a retenu aucun des 77 dossiers de presse collectes ce jour",
-   "manque": "Un communique OPEP/OPEC, une donnee EIA/AIE, ou un evenement geopolitique golfe confirme par au moins une source independante"
+   "quoi": "Aucun mouvement n'est officiellement signale comme anormal aujourd'hui (liste vide), mais plusieurs z-scores restent notables sans explication de presse : indice du dollar (DTWEXBGS, z=1.26) et euro/dollar (DEXUSEU, z=-1.47).",
+   "ampleur": "Moderee (z entre 1.2 et 1.5), en dessous du seuil retenu pour qualifier un mouvement d'anormal.",
+   "piste": "Aucun dossier macro, defense ou tech ne mentionne de facteur de change (politique monetaire, intervention, flux de capitaux).",
+   "manque": "Un dossier de presse sur la politique de change ou les anticipations de taux directeurs qui expliquerait le raffermissement du dollar et le recul de l'euro."
   },
   {
-   "quoi": "Dollar fort (indice large DTWEXBGS, z=1,26) et euro faible (DEXUSEU, z=-1,47), donnees vieilles de 11 jours",
-   "ampleur": "Ecarts moderes a notables, mais aucune donnee recente pour confirmer si le mouvement persiste",
-   "piste": "Aucune, le theme macro n'a retenu aucun des 57 dossiers de presse collectes ce jour malgre 78 articles bruts",
-   "manque": "Un discours de banque centrale (Fed ou BCE) ou une donnee d'inflation recente permettant de relier ce mouvement a une decision ou anticipation de politique monetaire"
+   "quoi": "Le taux 2 ans americain (DGS2) affiche un z-score de -1.1, signe d'une baisse plus marquee que d'habitude, sans dossier macro pour l'expliquer.",
+   "ampleur": "Moderee, theme Macro entierement vide de dossiers retenus.",
+   "piste": "Une anticipation de baisse des taux directeurs serait le canal logique, mais aucune source ne la documente ici.",
+   "manque": "Un communique ou une declaration de banque centrale sur la trajectoire des taux courts."
   }
  ],
  "divergences": [
   {
-   "constat": "Le ton de la presse tech est tres positif sur les semi-conducteurs asiatiques, mais l'indice technologique americain ne suit pas cette dynamique.",
-   "presse": "Rally chiffre de Samsung (+6%) et SK Hynix (+8%), Nikkei et KOSPI a plusieurs mois de sommet, attribue a la demande memoire liee a l'IA",
-   "prix": "Le Nasdaq composite affichait une baisse (-77,07 pts, z=-0,25) sur son dernier releve du 2026-09-04, donnee vieille de 4 jours",
-   "lecture": "L'euphorie relayee sur l'Asie n'est pas confirmee par le marche americain sur la derniere donnee disponible ; c'est precisement l'hypothese ouverte non encore tranchee du dossier tech."
+   "constat": "La presse energie decrit une escalade militaire serieuse (frappes Etats-Unis/Iran, attaques Houthis) mais l'indicateur de nervosite des marches ne la reflete pas.",
+   "presse": "Dix sources independantes rapportent des frappes croisees et un risque de blocage du detroit d'Ormuz, avec un ton d'urgence.",
+   "prix": "Le VIX (indice de volatilite) est a 14.32, en leger recul (z=-0.65), soit un niveau bas et non signale comme anormal.",
+   "lecture": "Correlation attendue mais non confirmee par cette donnee ; la donnee VIX date cependant de 5 jours, donc elle ne capture peut-etre pas les tout derniers evenements rapportes."
   },
   {
-   "constat": "La presse souligne un risque geopolitique croissant autour des semi-conducteurs (espionnage industriel, tensions sur les controles d'exportation), mais la volatilite des marches actions reste basse.",
-   "presse": "Arrestation d'un ex-cadre pour espionnage sur les semi-conducteurs, reprise par 4 sources independantes",
-   "prix": "Le VIX (indice de nervosite des marches) etait a 14,32 pts (z=-0,65) sur son dernier releve du 2026-09-03, donnee vieille de 5 jours, donc en zone calme",
-   "lecture": "Le marche ne semble pas avoir integre ce risque reglementaire, ou considere qu'il reste isole et sans suite immediate ; c'est une hypothese ouverte, pas une certitude."
+   "constat": "Le recit de presse energie parle d'un petrole proche de 100 dollars et d'un choc persistant, mais la seule donnee de prix disponible est agee de 7 jours.",
+   "presse": "Plusieurs dossiers evoquent un Brent proche ou au-dessus de 96-100 dollars suite aux frappes et au plan OPEP+.",
+   "prix": "Le dernier releve verifie de DCOILBRENTEU date du 2026-09-01 (96.02$, perime), donc la persistance du niveau au-dessus de 100$ n'est pas confirmee par une donnee fraiche.",
+   "lecture": "Ecart de calendrier plutot que contradiction : le prix pourrait confirmer ou dementir le recit, mais l'information manque a ce jour."
   }
  ],
  "synthese": [
-  "Trois themes sur quatre (macro, energie, defense) n'apportent aucune information de presse verifiee aujourd'hui, malgre plus de 200 articles collectes au total : le silence est aussi informatif que le bruit.",
-  "Le seul theme documente (tech/semi-conducteurs) montre un decalage entre l'enthousiasme relaye sur l'Asie et la tiedeur du marche americain, sans lien confirme avec les autres themes.",
-  "La hausse notable du Brent (z=1,81) reste totalement inexpliquee par la presse collectee, ce qui constitue le principal angle mort du jour.",
-  "Aucun pont credible n'existe aujourd'hui entre le mouvement du petrole, les tensions geopolitiques evoquees dans le carnet d'hypotheses, et les dossiers tech ou macro : les themes ne se parlent pas.",
-  "L'absence de dossiers de presse ne signifie pas absence d'actualite reelle, mais absence d'information confirmee et sourcee au moment de cette collecte."
+  "L'energie concentre presque toute l'actualite de presse du jour ; macro, defense et tech n'ont produit aucun dossier retenu.",
+  "La these d'un choc petrolier persistant repose sur une donnee de prix vieille de 7 jours, donc non verifiee par des chiffres frais.",
+  "Le VIX bas ne confirme pas le ton d'escalade militaire decrit par la presse energie, et aucun autre theme n'apporte d'element pour trancher.",
+  "Le lien petrole -> inflation -> taux avance par la presse energie n'est corrobore par aucune source macro independante aujourd'hui.",
+  "Les hypotheses ouvertes du carnet se concentrent presque toutes sur le seul Brent, signe d'un recit dominant non recoupe par d'autres classes d'actifs."
  ],
  "contre_analyse": [
-  "Toutes les donnees de marche citees ont entre 4 et 11 jours d'anciennete ; la situation reelle du jour peut deja avoir change sans que cette note le capte.",
-  "L'absence de dossiers retenus en macro, energie et defense peut refleter une limite de la collecte (mots-cles, delai de publication) plutot qu'une absence reelle d'evenements.",
-  "Le rally des semi-conducteurs asiatiques repose sur une seule source de donnees de marche ; si ce chiffre est errone ou partiel, l'essentiel de la lecture tech du jour s'effondre.",
-  "Le lien entre l'affaire d'espionnage industriel isolee et un futur durcissement reglementaire est une deduction, pas un fait etabli ; aucune mesure de controle a l'export n'a ete annoncee a ce stade."
+  "Si l'ampleur des frappes US-Iran rapportees est surevaluee par des reprises multiples d'une meme source primaire, toute la chaine causale petrole/actions/taux perd sa base.",
+  "Si le prochain releve du Brent recule sous 90$, l'hypothese de choc energetique persistant est invalidee et les pressions supposees sur majors et fret n'ont plus de fondement.",
+  "L'absence totale de dossiers macro, defense et tech peut refleter un biais des mots-cles de collecte plutot qu'une absence reelle d'actualite sur ces themes.",
+  "Le VIX bas pourrait simplement ne pas avoir integre les evenements les plus recents, sa donnee datant deja de 5 jours ; la 'divergence' releverait alors d'un decalage de calendrier, pas d'un signal reel."
  ],
  "carnet": [
   {
@@ -883,6 +879,22 @@
     "serie": "NASDAQCOM",
     "operateur": ">=",
     "seuil": 26506.99
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-08-energie",
+   "date": "2026-09-08",
+   "theme": "Energie et matieres premieres",
+   "enonce": "Sous l'effet cumule des tensions Moyen-Orient (frappes US-Iran, Houthis) et du plan OPEP+ d'octobre, le Brent (serie DCOILBRENTEU) franchira 100 dollars le baril dans les 10 jours suivant le 2026-09-08",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 100
    },
    "version": "v3",
    "statut": "ouverte",

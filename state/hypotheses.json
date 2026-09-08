@@ -162,5 +162,21 @@
   "version": "v3",
   "statut": "ouverte",
   "preuve": null
+ },
+ {
+  "id": "2026-09-08-energie",
+  "date": "2026-09-08",
+  "theme": "Energie et matieres premieres",
+  "enonce": "Sous l'effet cumule des tensions Moyen-Orient (frappes US-Iran, Houthis) et du plan OPEP+ d'octobre, le Brent (serie DCOILBRENTEU) franchira 100 dollars le baril dans les 10 jours suivant le 2026-09-08",
+  "probabilite": 0.55,
+  "horizon_jours": 10,
+  "verification_auto": {
+   "serie": "DCOILBRENTEU",
+   "operateur": ">=",
+   "seuil": 100
+  },
+  "version": "v3",
+  "statut": "ouverte",
+  "preuve": null
  }
 ]
