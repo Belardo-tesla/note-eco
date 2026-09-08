@@ -146,5 +146,21 @@
   "version": "v3",
   "statut": "ouverte",
   "preuve": null
+ },
+ {
+  "id": "2026-09-08-tech",
+  "date": "2026-09-08",
+  "theme": "Tech et semi-conducteurs",
+  "enonce": "Si le rally des semi-conducteurs asiatiques se confirme, l'indice Nasdaq (technologie americaine) devrait depasser son niveau du 2026-09-04 (26506.99 pts) dans les 10 jours suivant le 2026-09-08",
+  "probabilite": 0.55,
+  "horizon_jours": 10,
+  "verification_auto": {
+   "serie": "NASDAQCOM",
+   "operateur": ">=",
+   "seuil": 26506.99
+  },
+  "version": "v3",
+  "statut": "ouverte",
+  "preuve": null
  }
 ]

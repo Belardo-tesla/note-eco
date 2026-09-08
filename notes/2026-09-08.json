@@ -1,0 +1,894 @@
+{
+ "date": "2026-09-08",
+ "version": "v3",
+ "exposition": [
+  "Semi-conducteurs (equipementiers europeens)",
+  "Energie (majors petrolieres)",
+  "Fret maritime et logistique portuaire",
+  "Taux europeens"
+ ],
+ "marche": [
+  {
+   "code": "VIXCLS",
+   "nom": "Volatilite actions (VIX)",
+   "quoi": "la nervosite des marches actions",
+   "unite": "pts",
+   "date": "2026-09-03",
+   "age_jours": 5,
+   "perime": true,
+   "niveau": 14.32,
+   "variation": -0.88,
+   "z": -0.65,
+   "anormal": false
+  },
+  {
+   "code": "BAMLH0A0HYM2",
+   "nom": "Spread haut rendement US",
+   "quoi": "le surcout paye par les entreprises fragiles pour emprunter",
+   "unite": "pts",
+   "date": "2026-09-03",
+   "age_jours": 5,
+   "perime": true,
+   "niveau": 2.65,
+   "variation": -0.01,
+   "z": -0.26,
+   "anormal": false
+  },
+  {
+   "code": "DGS10",
+   "nom": "Taux 10 ans US",
+   "quoi": "le cout de l'argent a long terme",
+   "unite": "%",
+   "date": "2026-09-03",
+   "age_jours": 5,
+   "perime": true,
+   "niveau": 4.77,
+   "variation": -0.02,
+   "z": -0.56,
+   "anormal": false
+  },
+  {
+   "code": "DGS2",
+   "nom": "Taux 2 ans US",
+   "quoi": "ce que le marche attend de la banque centrale a court terme",
+   "unite": "%",
+   "date": "2026-09-03",
+   "age_jours": 5,
+   "perime": true,
+   "niveau": 4.34,
+   "variation": -0.05,
+   "z": -1.1,
+   "anormal": false
+  },
+  {
+   "code": "T10YIE",
+   "nom": "Inflation anticipee 10 ans",
+   "quoi": "l'inflation que le marche prevoit",
+   "unite": "%",
+   "date": "2026-09-04",
+   "age_jours": 4,
+   "perime": true,
+   "niveau": 2.35,
+   "variation": 0.0,
+   "z": 0.07,
+   "anormal": false
+  },
+  {
+   "code": "DCOILBRENTEU",
+   "nom": "Brent (FRED)",
+   "quoi": "le prix du petrole de reference, avec quelques jours de retard",
+   "unite": "$",
+   "date": "2026-09-01",
+   "age_jours": 7,
+   "perime": true,
+   "niveau": 96.02,
+   "variation": 6.27,
+   "z": 1.81,
+   "anormal": false
+  },
+  {
+   "code": "DTWEXBGS",
+   "nom": "Dollar (indice large)",
+   "quoi": "la force du dollar face aux autres monnaies",
+   "unite": "idx",
+   "date": "2026-08-28",
+   "age_jours": 11,
+   "perime": true,
+   "niveau": 118.748,
+   "variation": 0.39,
+   "z": 1.26,
+   "anormal": false
+  },
+  {
+   "code": "DEXUSEU",
+   "nom": "Euro / dollar",
+   "quoi": "combien de dollars vaut un euro",
+   "unite": "$",
+   "date": "2026-08-28",
+   "age_jours": 11,
+   "perime": true,
+   "niveau": 1.16,
+   "variation": -0.006,
+   "z": -1.47,
+   "anormal": false
+  },
+  {
+   "code": "SP500",
+   "nom": "S&P 500",
+   "quoi": "l'indice des grandes actions americaines",
+   "unite": "pts",
+   "date": "2026-09-04",
+   "age_jours": 4,
+   "perime": true,
+   "niveau": 7718.6,
+   "variation": -29.11,
+   "z": -0.56,
+   "anormal": false
+  },
+  {
+   "code": "NASDAQCOM",
+   "nom": "Nasdaq composite",
+   "quoi": "l'indice des valeurs technologiques americaines",
+   "unite": "pts",
+   "date": "2026-09-04",
+   "age_jours": 4,
+   "perime": true,
+   "niveau": 26506.99,
+   "variation": -77.07,
+   "z": -0.25,
+   "anormal": false
+  },
+  {
+   "code": "DCOILWTICO",
+   "nom": "Petrole WTI",
+   "quoi": "le petrole de reference americain",
+   "unite": "$",
+   "date": "2026-09-01",
+   "age_jours": 7,
+   "perime": true,
+   "niveau": 91.48,
+   "variation": 4.45,
+   "z": 1.59,
+   "anormal": false
+  },
+  {
+   "code": "DHHNGSP",
+   "nom": "Gaz naturel Henry Hub",
+   "quoi": "le prix de reference du gaz aux Etats-Unis",
+   "unite": "$",
+   "date": "2026-09-01",
+   "age_jours": 7,
+   "perime": true,
+   "niveau": 2.9,
+   "variation": 0.0,
+   "z": -0.01,
+   "anormal": false
+  },
+  {
+   "code": "T10Y2Y",
+   "nom": "Ecart 10 ans moins 2 ans",
+   "quoi": "quand il passe sous zero, le marche anticipe une recession",
+   "unite": "pts",
+   "date": "2026-09-04",
+   "age_jours": 4,
+   "perime": true,
+   "niveau": 0.41,
+   "variation": -0.02,
+   "z": -0.64,
+   "anormal": false
+  },
+  {
+   "code": "BAMLC0A0CM",
+   "nom": "Spread entreprises solides",
+   "quoi": "le surcout d'emprunt des grandes entreprises saines",
+   "unite": "pts",
+   "date": "2026-09-03",
+   "age_jours": 5,
+   "perime": true,
+   "niveau": 0.81,
+   "variation": 0.0,
+   "z": -0.05,
+   "anormal": false
+  },
+  {
+   "code": "DEXCHUS",
+   "nom": "Yuan / dollar",
+   "quoi": "la monnaie chinoise face au dollar",
+   "unite": "CNY",
+   "date": "2026-08-28",
+   "age_jours": 11,
+   "perime": true,
+   "niveau": 6.726,
+   "variation": 0.006,
+   "z": 0.91,
+   "anormal": false
+  }
+ ],
+ "verdict": {
+  "action": false,
+  "titre": "Rien a faire aujourd'hui",
+  "detail": "Aucun mouvement de prix hors norme, aucun dossier a la fois materiel et solidement source. Lis la synthese si tu veux, mais il n'y a rien qui appelle une decision."
+ },
+ "collecte": {
+  "macro": [
+   {
+    "source": "Google News : banque centrale",
+    "articles": 30,
+    "erreur": null
+   },
+   {
+    "source": "Google News : taux directeurs",
+    "articles": 6,
+    "erreur": null
+   },
+   {
+    "source": "Google News : inflation zone euro",
+    "articles": 6,
+    "erreur": null
+   },
+   {
+    "source": "Google News : Federal Reserve",
+    "articles": 12,
+    "erreur": null
+   },
+   {
+    "source": "Google News : inflation data",
+    "articles": 24,
+    "erreur": null
+   }
+  ],
+  "energie": [
+   {
+    "source": "Google News : petrole",
+    "articles": 39,
+    "erreur": null
+   },
+   {
+    "source": "Google News : OPEP",
+    "articles": 5,
+    "erreur": null
+   },
+   {
+    "source": "Google News : gaz naturel",
+    "articles": 21,
+    "erreur": null
+   },
+   {
+    "source": "Google News : oil prices",
+    "articles": 37,
+    "erreur": null
+   },
+   {
+    "source": "Google News : OPEC",
+    "articles": 17,
+    "erreur": null
+   }
+  ],
+  "defense": [
+   {
+    "source": "Google News : sanctions",
+    "articles": 21,
+    "erreur": null
+   },
+   {
+    "source": "Google News : geopolitique",
+    "articles": 13,
+    "erreur": null
+   },
+   {
+    "source": "Google News : detroit Ormuz",
+    "articles": 22,
+    "erreur": null
+   },
+   {
+    "source": "Google News : sanctions",
+    "articles": 22,
+    "erreur": null
+   },
+   {
+    "source": "Google News : military escalation",
+    "articles": 17,
+    "erreur": null
+   }
+  ],
+  "tech": [
+   {
+    "source": "Google News : semi-conducteurs",
+    "articles": 24,
+    "erreur": null
+   },
+   {
+    "source": "Google News : ASML",
+    "articles": 2,
+    "erreur": null
+   },
+   {
+    "source": "Google News : Nvidia",
+    "articles": 29,
+    "erreur": null
+   },
+   {
+    "source": "Google News : semiconductor",
+    "articles": 35,
+    "erreur": null
+   },
+   {
+    "source": "Google News : export controls",
+    "articles": 11,
+    "erreur": null
+   }
+  ],
+  "marches": []
+ },
+ "themes": {
+  "macro": {
+   "retenus": [],
+   "ecarte_car_bruit": [],
+   "hypothese": null,
+   "titre": "Macro et banques centrales",
+   "dossiers_bruts": 57,
+   "articles_bruts": 78,
+   "collecte": [
+    {
+     "source": "Google News : banque centrale",
+     "articles": 30,
+     "erreur": null
+    },
+    {
+     "source": "Google News : taux directeurs",
+     "articles": 6,
+     "erreur": null
+    },
+    {
+     "source": "Google News : inflation zone euro",
+     "articles": 6,
+     "erreur": null
+    },
+    {
+     "source": "Google News : Federal Reserve",
+     "articles": 12,
+     "erreur": null
+    },
+    {
+     "source": "Google News : inflation data",
+     "articles": 24,
+     "erreur": null
+    }
+   ]
+  },
+  "energie": {
+   "retenus": [],
+   "ecarte_car_bruit": [],
+   "hypothese": null,
+   "titre": "Energie et matieres premieres",
+   "dossiers_bruts": 77,
+   "articles_bruts": 119,
+   "collecte": [
+    {
+     "source": "Google News : petrole",
+     "articles": 39,
+     "erreur": null
+    },
+    {
+     "source": "Google News : OPEP",
+     "articles": 5,
+     "erreur": null
+    },
+    {
+     "source": "Google News : gaz naturel",
+     "articles": 21,
+     "erreur": null
+    },
+    {
+     "source": "Google News : oil prices",
+     "articles": 37,
+     "erreur": null
+    },
+    {
+     "source": "Google News : OPEC",
+     "articles": 17,
+     "erreur": null
+    }
+   ]
+  },
+  "defense": {
+   "retenus": [],
+   "ecarte_car_bruit": [],
+   "hypothese": null,
+   "titre": "Defense et geopolitique",
+   "dossiers_bruts": 77,
+   "articles_bruts": 95,
+   "collecte": [
+    {
+     "source": "Google News : sanctions",
+     "articles": 21,
+     "erreur": null
+    },
+    {
+     "source": "Google News : geopolitique",
+     "articles": 13,
+     "erreur": null
+    },
+    {
+     "source": "Google News : detroit Ormuz",
+     "articles": 22,
+     "erreur": null
+    },
+    {
+     "source": "Google News : sanctions",
+     "articles": 22,
+     "erreur": null
+    },
+    {
+     "source": "Google News : military escalation",
+     "articles": 17,
+     "erreur": null
+    }
+   ]
+  },
+  "tech": {
+   "retenus": [
+    {
+     "titre": "Belgique : un ex-cadre de Belgan detenu pour soupcons d'espionnage sur les semi-conducteurs",
+     "fait": "Un ressortissant chinois, ancien cadre de l'entreprise belge Belgan, a ete arrete en Belgique sur soupcon d'espionnage industriel lie aux semi-conducteurs. L'information est reprise par des agences (AP, Reuters) et par des medias belges (L'Echo, VRT) independants les uns des autres.",
+     "sources_independantes": 4,
+     "communique_interesse": false,
+     "chaine": [
+      {
+       "canal": "risque reputationnel et reglementaire sur la chaine d'approvisionnement europeenne des semi-conducteurs",
+       "effet": "durcissement potentiel des controles a l'export et de la surveillance des transferts de technologie vers la Chine",
+       "actif": "actions des equipementiers europeens",
+       "exposes": "ASML Holding, ASM International, BE Semiconductor Industries (Besi) - societes cotees exposees aux restrictions eventuelles sur les exportations vers la Chine"
+      }
+     ],
+     "invalidation": "l'affaire reste une enquete isolee sans suite reglementaire (pas de nouvelle mesure de controle export annoncee) sous 30 jours",
+     "materialite": "faible",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxObmNUMkNpaHRGSU5YVjBwaUs2elJrS0YyY2xNT1BpV2lha2JNSVdmZUNoUzRmUmQ1UVFGTjQ2UnZVWlUtcjkxV1B3YzZtWUJyNTExemVaTHdCVUhPVWVCSFItX2NCQUtnYmFwUlZ5ektQcDhQT0lteHN5WEd0ZG5rYXFpQVBSNmVNbFNCRS1YT2ZTeGVSbmVtYlJWYTQtQVE4QTBUSUlZZ3hWdHVlNnc?oc=5"
+    },
+    {
+     "titre": "Rally des semi-conducteurs en Asie : Samsung +6%, SK Hynix +8%, Nikkei et KOSPI a plusieurs mois de sommet",
+     "fait": "Les bourses de Seoul et Tokyo ont fortement progresse, portees par des hausses chiffrees de Samsung (+6%) et SK Hynix (+8%), rapportees par une source unique (zonebourse, relayant des donnees de marche) reprise dans plusieurs articles derives.",
+     "sources_independantes": 1,
+     "communique_interesse": false,
+     "chaine": [
+      {
+       "canal": "demande mondiale en composants memoire lie a l'intelligence artificielle, se propageant aux commandes d'equipement",
+       "effet": "soutien a la demande d'equipements de production adressee aux fournisseurs europeens",
+       "actif": "actions des equipementiers europeens exposes a la demande de fonderies asiatiques",
+       "exposes": "ASML Holding, ASM International, BE Semiconductor Industries (Besi)"
+      }
+     ],
+     "invalidation": "le Nasdaq (NASDAQCOM) ne confirme pas la dynamique et reste sous son niveau du 2026-09-04 (26506.99) dans les 10 jours",
+     "materialite": "moyenne",
+     "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQd0dFaUk2bHdmVnNGZzVFY1BSQ1dkaG1zd1pJWjVRR0tOVHAyejgzNkJpNlduYUQ3Ml80c293c0wzVHVqUFJhbER1SGMzYUFiRXI1X0VQeWNQUW0xN1h4aWV5Rl9VdjFRaFhHRU50UjBFUXRYUG9ucnJRSF9FcU1Sa0FWbWZRWXFrU2hCanNKWnNEV1FHN2RYWlhyYklkMk5GUTU2ajBnNlY2RGJUYzNFV1hfUURfNUdJM2hLV3FBNXlZTnhkNUcxRFhHdnN1eE9SNHZYbDJ1OE5PMlgteF82RnlwSXNaaTFBMzJxRk1BeWs?oc=5"
+    },
+    {
+     "titre": "Le CEO d'ASML emet des reserves sur l'European Chips Act 2.0",
+     "fait": "Le dirigeant d'ASML a exprime publiquement des doutes sur la pertinence du plan europeen de soutien aux semi-conducteurs (Chips Act 2.0), rapporte par une source unique (Electroniques).",
+     "sources_independantes": 1,
+     "communique_interesse": false,
+     "chaine": [
+      {
+       "canal": "incertitude sur le soutien public europeen a la filiere semi-conducteurs",
+       "effet": "possible revision a la baisse des anticipations de financement public pour les fonderies et equipementiers europeens",
+       "actif": "action ASML et valeurs liees a la politique industrielle europeenne des puces",
+       "exposes": "ASML Holding, et plus largement les equipementiers europeens beneficiaires potentiels du Chips Act"
+      }
+     ],
+     "invalidation": "la Commission europeenne confirme et finance le Chips Act 2.0 sans modification dans les 30 jours",
+     "materialite": "faible",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNRk9wUENIV1V5bWtwbnJlTzZvaUJmN2N0WVlFcm9CbGNXR0lHZTVlTXFVNkNtZlNuaUd2d3JJQmZ2T2Zhdzc0OG04YnZfTWNXekNIMHlsWXlrWXgxaE1QX1hmbzNnRFRGR2tmZ0kwRUE1UXkxNUx2aU5fVWIwSjljWFFpS2lLNzFQTVhuN0lIblMwWEN5Um9DWXRiYTV2aUdNRmVRS3RVeEdPbEdtWHhLelpSTQ?oc=5"
+    },
+    {
+     "titre": "Les ventes mondiales de semi-conducteurs ont encore progresse en juillet",
+     "fait": "Les statistiques sectorielles montrent une nouvelle progression des ventes mondiales de semi-conducteurs en juillet, rapportee par une source unique (Electroniques), sans reprise independante identifiee.",
+     "sources_independantes": 1,
+     "communique_interesse": false,
+     "chaine": [
+      {
+       "canal": "indicateur avance de la demande sectorielle mondiale, precurseur des commandes d'equipement",
+       "effet": "soutien a la poursuite du cycle d'investissement des fonderies en equipement de production",
+       "actif": "actions des equipementiers europeens de semi-conducteurs",
+       "exposes": "ASML Holding, ASM International, BE Semiconductor Industries (Besi)"
+      }
+     ],
+     "invalidation": "les prochaines statistiques mensuelles (aout) montrent un recul des ventes mondiales",
+     "materialite": "moyenne",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT3daVFZJc29fRXE0dXZMTkl6ZWtqaUhLeDNVZ1cyT2w2WndTSVNGeFVGaUtVOWNJaXdjdk1tN2hrNG9Pd2dndUcyS3ZBUVhlOTNqa3hQclI0bkUtMnFOdjRGRk1SRGhSSGV1WV9ySnVUMTRvSFRsS3VrZU5pRExTdTl6S041V3JNMnZ1U1JpeTR3UnRHdUswWWlsWnJIdzhmdElJZVdUeHNmYXl1LW05NjVremhBcFVQbDlSMW1abjEwZw?oc=5"
+    }
+   ],
+   "ecarte_car_bruit": [
+    "La dynamique positive aux Etats-Unis et en Asie profite au secteur des semi-conducteurs",
+    "Les valeurs europeennes des semi-conducteurs montent dans le sillage de la tech asiatique",
+    "Le marche des semi-conducteurs connait une croissance fulgurante.",
+    "Nvidia's Jensen Huang Says 'AGI Has Arrived' and Congratulates OpenAI",
+    "Prediction: Nvidia Stock Will Double in Under a Year",
+    "Nvidia Stock: Is It Still a Good Buy at $230?",
+    "Researchers create polar wurtzite nitride semiconductor NbAlN",
+    "Elle collabore avec Schneider Electric et veut conquerir les datacenters : AlpSemi",
+    "Le rallye des semi-conducteurs propulse les actions des marches emergents",
+    "La Bourse de Coree du Sud cloture au plus haut depuis fin juillet",
+    "Il n'y a pas que les semi-conducteurs qui profitent du boom de l'IA",
+    "Apercu des performances de Broadcom par rapport a ses pairs",
+    "L'Armenie et l'Institut francais CEA-Leti ont discute de leur cooperation",
+    "Semi-conducteurs : tour d'horizon des initiatives africaines",
+    "Bourse de Tokyo : le Nikkei bondit de 2,12% grace a la tech",
+    "Le KOSPI bondit de 3%; l'IA relance les semi-conducteurs et Goldman vise 12,000",
+    "ASM International propose Rutger Wijburg a son conseil de surveillance",
+    "L'orientation positive du secteur profite aux puces - Recommandation d'achat sur Infineon",
+    "L'indice Nikkei japonais progresse grace a l'envolee des valeurs du secteur des semi-conducteurs",
+    "NanoXplore met la main sur Scalinx",
+    "ASML Holding : une tres forte avance technologique, selon UBS",
+    "Nvidia CEO Says GPT-6 Astra Brings AGI Closer",
+    "Nvidia (NVDA)'s First-Ever Year-Ahead Forecast",
+    "Nvidia's Investment Portfolio Spans Intel to SpaceX",
+    "Palantir Stock Leads August Rally",
+    "Nvidia Insider Makes Stunning $410 Million Stock Move",
+    "AI computing demand may never be sated, says CEO of Iren",
+    "Breakingviews - China's AI dragons breathe fire on Nvidia's moat",
+    "Aion 2 Q&A: NVIDIA DLSS 5 Confirmed",
+    "AMD has Nvidia in its crosshairs with the Threadripper Halo",
+    "Nvidia's Rowhammer fix just got hammered",
+    "Nvidia Is No Longer Just a Chip Company",
+    "Not Nvidia, Not Micron - Warren Buffett Stock",
+    "Everyone Is Watching Nvidia. But This Memory Stock",
+    "Dow Futures Fall, Oil Prices Rise",
+    "Nightmare Eclipse Drops CrowdStrike, Nvidia, Avast Zero-Day",
+    "Nvidia's $99 Billion Portfolio Is Turning Intel and CoreWeave",
+    "Jim Cramer Wants Nvidia to Buy Back $500 Billion",
+    "Jim Cramer Discusses NVIDIA Acquiring Hugging Face",
+    "Broadcom's AI Forecast Suggests Hyperscalers Want More Than Just Nvidia GPUs",
+    "Nvidia Acquires HuggingFace for $12.9B",
+    "If You Only Own Nvidia for AI Exposure",
+    "Nvidia's (NVDA) Strong Results Reinforce Long Term Outlook",
+    "NVIDIA's Hugging Face Buyout",
+    "Prediction: Taiwan Semiconductor's Market Value Passes $3 Trillion",
+    "Why Taiwan's Silicon Shield Is Failing",
+    "Taiwan eyes silicon photonics as next big tech leap",
+    "China's chip giant AMEC launches 6 new machines",
+    "Why Pakistan belongs in the semiconductor conversation",
+    "New nitride semiconductor expands material options",
+    "Semiconductor equipment sales hit record $40.5bn in Q2",
+    "Manz Asia and SUSS Partner to Advance Inkjet Technology",
+    "Taiwan Semiconductor Manufacturing Company (TSM) Raises Guidance",
+    "India Launches New Semiconductor Initiative",
+    "IBM and Samsung top AI semiconductor patent rankings"
+   ],
+   "hypothese": {
+    "enonce": "Si le rally des semi-conducteurs asiatiques se confirme, l'indice Nasdaq (technologie americaine) devrait depasser son niveau du 2026-09-04 (26506.99 pts) dans les 10 jours suivant le 2026-09-08",
+    "probabilite": 0.55,
+    "horizon_jours": 10,
+    "verification_auto": {
+     "serie": "NASDAQCOM",
+     "operateur": ">=",
+     "seuil": 26506.99
+    }
+   },
+   "titre": "Tech et semi-conducteurs",
+   "dossiers_bruts": 89,
+   "articles_bruts": 101,
+   "collecte": [
+    {
+     "source": "Google News : semi-conducteurs",
+     "articles": 24,
+     "erreur": null
+    },
+    {
+     "source": "Google News : ASML",
+     "articles": 2,
+     "erreur": null
+    },
+    {
+     "source": "Google News : Nvidia",
+     "articles": 29,
+     "erreur": null
+    },
+    {
+     "source": "Google News : semiconductor",
+     "articles": 35,
+     "erreur": null
+    },
+    {
+     "source": "Google News : export controls",
+     "articles": 11,
+     "erreur": null
+    }
+   ]
+  }
+ },
+ "etat_du_jour": "Aucune donnee de marche ne depasse aujourd'hui le seuil statistiquement anormal retenu par le systeme, et trois themes sur quatre (macro, energie, defense) n'ont produit aucun dossier de presse verifie malgre un volume important d'articles collectes.",
+ "carte": [
+  {
+   "theme": "Macro et banques centrales",
+   "acteurs": []
+  },
+  {
+   "theme": "Energie et matieres premieres",
+   "acteurs": []
+  },
+  {
+   "theme": "Defense et geopolitique",
+   "acteurs": []
+  },
+  {
+   "theme": "Tech et semi-conducteurs",
+   "acteurs": [
+    {
+     "nom": "ASML Holding",
+     "direction": 1,
+     "sources": 2,
+     "pourquoi": "Le rally boursier asiatique et la progression des ventes mondiales de semi-conducteurs (deux sources independantes) suggerent une demande d'equipements soutenue, malgre des reserves du CEO sur le financement public europeen."
+    },
+    {
+     "nom": "ASM International / BE Semiconductor Industries (Besi)",
+     "direction": 1,
+     "sources": 2,
+     "pourquoi": "Meme canal que ASML : demande memoire/IA en Asie et statistiques sectorielles de juillet orientees a la hausse, deux sources independantes distinctes."
+    },
+    {
+     "nom": "Chaine d'approvisionnement europeenne des semi-conducteurs (controle export vers la Chine)",
+     "direction": -1,
+     "sources": 4,
+     "pourquoi": "L'arrestation d'un ex-cadre pour espionnage industriel, reprise par 4 sources independantes, expose la filiere a un risque reglementaire et reputationnel accru."
+    },
+    {
+     "nom": "Samsung Electronics / SK Hynix",
+     "direction": 2,
+     "sources": 1,
+     "pourquoi": "Hausses boursieres chiffrees (+6% et +8%) rapportees par une source unique de donnees de marche, a prendre avec prudence faute de recoupement independant."
+    }
+   ]
+  }
+ ],
+ "glossaire": [
+  {
+   "terme": "z-score",
+   "definition": "Un chiffre qui mesure si une variation du jour est normale ou rare, en la comparant aux 90 dernieres seances ; plus il s'eloigne de zero, plus le mouvement est inhabituel."
+  },
+  {
+   "terme": "spread",
+   "definition": "L'ecart de taux d'interet entre deux emprunts, qui reflete le surcout paye par l'emprunteur le plus risque."
+  },
+  {
+   "terme": "Brent / WTI",
+   "definition": "Les deux prix de reference du petrole brut dans le monde, l'un europeen (Brent), l'autre americain (WTI)."
+  },
+  {
+   "terme": "Henry Hub",
+   "definition": "Le prix de reference du gaz naturel aux Etats-Unis."
+  },
+  {
+   "terme": "Chips Act",
+   "definition": "Un plan public europeen destine a soutenir financierement l'industrie des semi-conducteurs (puces electroniques)."
+  },
+  {
+   "terme": "equipementier (semi-conducteurs)",
+   "definition": "Une entreprise qui fabrique les machines utilisees par les usines de puces electroniques, sans produire elle-meme les puces."
+  },
+  {
+   "terme": "fonderie",
+   "definition": "Une usine qui fabrique physiquement les puces electroniques pour le compte d'autres entreprises."
+  },
+  {
+   "terme": "source independante",
+   "definition": "Une organisation ou un enqueteur distinct qui rapporte une information sans dependre d'une autre source deja citee ; compter les sources, pas les articles, evite de confondre une information unique relayee plusieurs fois avec plusieurs informations confirmees."
+  },
+  {
+   "terme": "VIX",
+   "definition": "Un indice qui mesure la nervosite anticipee des marches actions americains ; plus il est bas, plus les investisseurs semblent sereins."
+  },
+  {
+   "terme": "materialite",
+   "definition": "L'ampleur estimee de l'impact d'une information sur les prix ou les entreprises concernees, du plus faible au plus fort."
+  }
+ ],
+ "inexplique": [
+  {
+   "quoi": "Hausse du Brent de +6,27$ (niveau 96,02$, z-score de 1,81) sur le releve du 2026-09-01",
+   "ampleur": "Le plus fort ecart a la normale de toute la liste des indicateurs de marche, bien qu'il ne soit pas classe formellement anormal par le systeme",
+   "piste": "Aucune, le theme energie n'a retenu aucun des 77 dossiers de presse collectes ce jour",
+   "manque": "Un communique OPEP/OPEC, une donnee EIA/AIE, ou un evenement geopolitique golfe confirme par au moins une source independante"
+  },
+  {
+   "quoi": "Dollar fort (indice large DTWEXBGS, z=1,26) et euro faible (DEXUSEU, z=-1,47), donnees vieilles de 11 jours",
+   "ampleur": "Ecarts moderes a notables, mais aucune donnee recente pour confirmer si le mouvement persiste",
+   "piste": "Aucune, le theme macro n'a retenu aucun des 57 dossiers de presse collectes ce jour malgre 78 articles bruts",
+   "manque": "Un discours de banque centrale (Fed ou BCE) ou une donnee d'inflation recente permettant de relier ce mouvement a une decision ou anticipation de politique monetaire"
+  }
+ ],
+ "divergences": [
+  {
+   "constat": "Le ton de la presse tech est tres positif sur les semi-conducteurs asiatiques, mais l'indice technologique americain ne suit pas cette dynamique.",
+   "presse": "Rally chiffre de Samsung (+6%) et SK Hynix (+8%), Nikkei et KOSPI a plusieurs mois de sommet, attribue a la demande memoire liee a l'IA",
+   "prix": "Le Nasdaq composite affichait une baisse (-77,07 pts, z=-0,25) sur son dernier releve du 2026-09-04, donnee vieille de 4 jours",
+   "lecture": "L'euphorie relayee sur l'Asie n'est pas confirmee par le marche americain sur la derniere donnee disponible ; c'est precisement l'hypothese ouverte non encore tranchee du dossier tech."
+  },
+  {
+   "constat": "La presse souligne un risque geopolitique croissant autour des semi-conducteurs (espionnage industriel, tensions sur les controles d'exportation), mais la volatilite des marches actions reste basse.",
+   "presse": "Arrestation d'un ex-cadre pour espionnage sur les semi-conducteurs, reprise par 4 sources independantes",
+   "prix": "Le VIX (indice de nervosite des marches) etait a 14,32 pts (z=-0,65) sur son dernier releve du 2026-09-03, donnee vieille de 5 jours, donc en zone calme",
+   "lecture": "Le marche ne semble pas avoir integre ce risque reglementaire, ou considere qu'il reste isole et sans suite immediate ; c'est une hypothese ouverte, pas une certitude."
+  }
+ ],
+ "synthese": [
+  "Trois themes sur quatre (macro, energie, defense) n'apportent aucune information de presse verifiee aujourd'hui, malgre plus de 200 articles collectes au total : le silence est aussi informatif que le bruit.",
+  "Le seul theme documente (tech/semi-conducteurs) montre un decalage entre l'enthousiasme relaye sur l'Asie et la tiedeur du marche americain, sans lien confirme avec les autres themes.",
+  "La hausse notable du Brent (z=1,81) reste totalement inexpliquee par la presse collectee, ce qui constitue le principal angle mort du jour.",
+  "Aucun pont credible n'existe aujourd'hui entre le mouvement du petrole, les tensions geopolitiques evoquees dans le carnet d'hypotheses, et les dossiers tech ou macro : les themes ne se parlent pas.",
+  "L'absence de dossiers de presse ne signifie pas absence d'actualite reelle, mais absence d'information confirmee et sourcee au moment de cette collecte."
+ ],
+ "contre_analyse": [
+  "Toutes les donnees de marche citees ont entre 4 et 11 jours d'anciennete ; la situation reelle du jour peut deja avoir change sans que cette note le capte.",
+  "L'absence de dossiers retenus en macro, energie et defense peut refleter une limite de la collecte (mots-cles, delai de publication) plutot qu'une absence reelle d'evenements.",
+  "Le rally des semi-conducteurs asiatiques repose sur une seule source de donnees de marche ; si ce chiffre est errone ou partiel, l'essentiel de la lecture tech du jour s'effondre.",
+  "Le lien entre l'affaire d'espionnage industriel isolee et un futur durcissement reglementaire est une deduction, pas un fait etabli ; aucune mesure de controle a l'export n'a ete annoncee a ce stade."
+ ],
+ "carnet": [
+  {
+   "id": "2026-09-06-macro",
+   "date": "2026-09-06",
+   "theme": "Macro et banques centrales",
+   "enonce": "Si la hausse du Brent (+6.27$ sur la derniere seance disponible, niveau 96.02$, z=1.81) se confirme sur les prochaines publications journalieres plutot que d'etre un mouvement isole, elle se traduira par une pression haussiere mesurable sur les couts de soutage du fret maritime et sur les marges raffinage des majors petrolieres europeennes.",
+   "probabilite": 0.5,
+   "horizon_jours": 10,
+   "verification": "Observer si DCOILBRENTEU reste au-dessus de 93-94$ sur les prochaines publications quotidiennes (persistance du niveau) et si les indices de fret (type Baltic Dry ou equivalent, non disponible ici) integrent un ajustement de surcharge carburant.",
+   "version": "v1",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-06-energie",
+   "date": "2026-09-06",
+   "theme": "Energie et matieres premieres",
+   "enonce": "Le Brent se maintient au-dessus de 90$ lors des prochains relevés, confirmant un choc energetique persistant plutot qu'un pic ponctuel, avec repercussion visible sur les couts de fret",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification": "Niveau de DCOILBRENTEU au prochain releve disponible ; comparaison au seuil de 90$",
+   "version": "v1",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-06-tech",
+   "date": "2026-09-06",
+   "theme": "Tech et semi-conducteurs",
+   "enonce": "Aucune donnee du dossier de presse n'explique la hausse anormale du Brent (+6,27$, z=1,81) observee le 2026-09-01; cette hausse reste une correlation non expliquee par les sources disponibles sur ce theme tech/semis.",
+   "probabilite": 0.5,
+   "horizon_jours": 10,
+   "verification": "publication d'un communique OPEP+, d'une donnee EIA/AIE, ou d'un evenement geopolitique energie identifie dans les prochains jours pour expliquer le mouvement du Brent",
+   "version": "v1",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-energie",
+   "date": "2026-09-07",
+   "theme": "Energie et matieres premieres",
+   "enonce": "Le Brent (DCOILBRENTEU), dont le dernier releve connu (01/09/2026, soit 6 jours d'anciennete) affichait 96,02 dollars apres une hausse inhabituelle (+6,27 $, z-score de 1,81, signe d'un mouvement rare), restera au-dessus de 90 dollars lors du prochain releve dans les 10 jours qui suivent, en l'absence de toute information de presse identifiee justifiant ce niveau.",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 90
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-defense",
+   "date": "2026-09-07",
+   "theme": "Defense et geopolitique",
+   "enonce": "Si les frappes sur des petroliers dans le Golfe sont confirmees par au moins une deuxieme source d'ici 10 jours, le Brent pourrait depasser 100 dollars le baril, contre 96,02 dollars constate le 2026-09-01 (donnee agee de 6 jours).",
+   "probabilite": 0.3,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 100
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-tech",
+   "date": "2026-09-07",
+   "theme": "Tech et semi-conducteurs",
+   "enonce": "Le Brent (DCOILBRENTEU), qui a bondi de 6,27$ sur une lecture datee du 2026-09-01 (deja vieille de 6 jours) pour atteindre 96,02$, un niveau statistiquement eleve (z-score, mesure de l'ecart a la normale, de 1,81), restera au-dessus de 95$ le 2026-09-17.",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 95
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-energie",
+   "date": "2026-09-07",
+   "theme": "Energie et matieres premieres",
+   "enonce": "Sans nouvelle information de presse, le Brent (DCOILBRENTEU), dont le dernier releve disponible date du 2026-09-01 (6 jours, perime) et affichait une hausse forte (+6.27$, z-score de 1.81, soit un mouvement nettement au-dessus de la normale), se stabilisera sans repartir a la hausse : il restera sous 100$ d'ici au 2026-09-17.",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": "<",
+    "seuil": 100
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-defense",
+   "date": "2026-09-07",
+   "theme": "Defense et geopolitique",
+   "enonce": "Le Brent a saute de +6.27$ sur sa derniere lecture connue (2026-09-01, perimee de 6 jours), un mouvement statistiquement notable (z=1.81) mais sans dossier de presse identifie pour l'expliquer. Si la hausse est due a une tension geopolitique reelle, elle devrait se confirmer ou s'amplifier plutot que de refluer une fois des donnees plus fraiches disponibles.",
+   "probabilite": 0.4,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 96.02
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-tech",
+   "date": "2026-09-07",
+   "theme": "Tech et semi-conducteurs",
+   "enonce": "Le Brent (DCOILBRENTEU), releve a 96.02$ le 2026-09-01 (donnee agee de 6 jours, hausse de +6.27$ sur la derniere variation connue, z-score de 1.81 signalant un ecart notable a la normale sans etre qualifie d'anormal), depassera le seuil de 100$ d'ici 10 jours, ce qui renchérirait mecaniquement les couts de carburant des transporteurs maritimes et modifierait les marges des majors petrolieres.",
+   "probabilite": 0.4,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 100
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-tech",
+   "date": "2026-09-07",
+   "theme": "Tech et semi-conducteurs",
+   "enonce": "Malgre le rally des semi-conducteurs et le risque geopolitique croissant (espionnage industriel, tensions sur les controles d'exportation vers la Chine), la volatilite des marches actions restera basse, signe que ce risque n'est pas encore price par le marche.",
+   "probabilite": 0.6,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "VIXCLS",
+    "operateur": "<",
+    "seuil": 16
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-08-tech",
+   "date": "2026-09-08",
+   "theme": "Tech et semi-conducteurs",
+   "enonce": "Si le rally des semi-conducteurs asiatiques se confirme, l'indice Nasdaq (technologie americaine) devrait depasser son niveau du 2026-09-04 (26506.99 pts) dans les 10 jours suivant le 2026-09-08",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "NASDAQCOM",
+    "operateur": ">=",
+    "seuil": 26506.99
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  }
+ ],
+ "fiabilite": {},
+ "calibration": []
+}
