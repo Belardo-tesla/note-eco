@@ -194,5 +194,21 @@
   "version": "v3",
   "statut": "ouverte",
   "preuve": null
+ },
+ {
+  "id": "2026-09-08-energie",
+  "date": "2026-09-08",
+  "theme": "Energie et matieres premieres",
+  "enonce": "Le Brent (DCOILBRENTEU) atteint ou depasse 100 dollars le baril d'ici 10 jours, sous l'effet conjugue des tensions au Moyen-Orient (frappes sur Aramco, detroit d'Ormuz) et de l'attente du plan de production OPEP+ d'octobre.",
+  "probabilite": 0.55,
+  "horizon_jours": 10,
+  "verification_auto": {
+   "serie": "DCOILBRENTEU",
+   "operateur": ">=",
+   "seuil": 100
+  },
+  "version": "v3",
+  "statut": "ouverte",
+  "preuve": null
  }
 ]
