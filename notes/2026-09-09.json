@@ -1,0 +1,760 @@
+{
+ "date": "2026-09-09",
+ "version": "v3",
+ "exposition": [
+  "Semi-conducteurs (equipementiers europeens)",
+  "Energie (majors petrolieres)",
+  "Fret maritime et logistique portuaire",
+  "Taux europeens"
+ ],
+ "marche": [
+  {
+   "code": "VIXCLS",
+   "nom": "Volatilite actions (VIX)",
+   "quoi": "la nervosite des marches actions",
+   "unite": "pts",
+   "date": "2026-09-07",
+   "age_jours": 2,
+   "perime": false,
+   "niveau": 15.3,
+   "variation": 0.77,
+   "z": 0.63,
+   "anormal": false
+  },
+  {
+   "code": "BAMLH0A0HYM2",
+   "nom": "Spread haut rendement US",
+   "quoi": "le surcout paye par les entreprises fragiles pour emprunter",
+   "unite": "pts",
+   "date": "2026-09-07",
+   "age_jours": 2,
+   "perime": false,
+   "niveau": 2.68,
+   "variation": 0.0,
+   "z": 0.05,
+   "anormal": false
+  },
+  {
+   "code": "DGS10",
+   "nom": "Taux 10 ans US",
+   "quoi": "le cout de l'argent a long terme",
+   "unite": "%",
+   "date": "2026-09-04",
+   "age_jours": 5,
+   "perime": true,
+   "niveau": 4.78,
+   "variation": 0.01,
+   "z": 0.14,
+   "anormal": false
+  },
+  {
+   "code": "DGS2",
+   "nom": "Taux 2 ans US",
+   "quoi": "ce que le marche attend de la banque centrale a court terme",
+   "unite": "%",
+   "date": "2026-09-04",
+   "age_jours": 5,
+   "perime": true,
+   "niveau": 4.37,
+   "variation": 0.03,
+   "z": 0.51,
+   "anormal": false
+  },
+  {
+   "code": "T10YIE",
+   "nom": "Inflation anticipee 10 ans",
+   "quoi": "l'inflation que le marche prevoit",
+   "unite": "%",
+   "date": "2026-09-08",
+   "age_jours": 1,
+   "perime": false,
+   "niveau": 2.37,
+   "variation": 0.02,
+   "z": 1.0,
+   "anormal": false
+  },
+  {
+   "code": "DCOILBRENTEU",
+   "nom": "Brent (FRED)",
+   "quoi": "le prix du petrole de reference, avec quelques jours de retard",
+   "unite": "$",
+   "date": "2026-09-01",
+   "age_jours": 8,
+   "perime": true,
+   "niveau": 96.02,
+   "variation": 6.27,
+   "z": 1.85,
+   "anormal": false
+  },
+  {
+   "code": "DTWEXBGS",
+   "nom": "Dollar (indice large)",
+   "quoi": "la force du dollar face aux autres monnaies",
+   "unite": "idx",
+   "date": "2026-09-04",
+   "age_jours": 5,
+   "perime": true,
+   "niveau": 118.073,
+   "variation": -0.054,
+   "z": -0.16,
+   "anormal": false
+  },
+  {
+   "code": "DEXUSEU",
+   "nom": "Euro / dollar",
+   "quoi": "combien de dollars vaut un euro",
+   "unite": "$",
+   "date": "2026-09-04",
+   "age_jours": 5,
+   "perime": true,
+   "niveau": 1.162,
+   "variation": -0.001,
+   "z": -0.1,
+   "anormal": false
+  },
+  {
+   "code": "SP500",
+   "nom": "S&P 500",
+   "quoi": "l'indice des grandes actions americaines",
+   "unite": "pts",
+   "date": "2026-09-08",
+   "age_jours": 1,
+   "perime": false,
+   "niveau": 7673.52,
+   "variation": -45.08,
+   "z": -0.82,
+   "anormal": false
+  },
+  {
+   "code": "NASDAQCOM",
+   "nom": "Nasdaq composite",
+   "quoi": "l'indice des valeurs technologiques americaines",
+   "unite": "pts",
+   "date": "2026-09-08",
+   "age_jours": 1,
+   "perime": false,
+   "niveau": 26421.41,
+   "variation": -85.58,
+   "z": -0.28,
+   "anormal": false
+  },
+  {
+   "code": "DCOILWTICO",
+   "nom": "Petrole WTI",
+   "quoi": "le petrole de reference americain",
+   "unite": "$",
+   "date": "2026-09-01",
+   "age_jours": 8,
+   "perime": true,
+   "niveau": 91.48,
+   "variation": 4.45,
+   "z": 1.62,
+   "anormal": false
+  },
+  {
+   "code": "DHHNGSP",
+   "nom": "Gaz naturel Henry Hub",
+   "quoi": "le prix de reference du gaz aux Etats-Unis",
+   "unite": "$",
+   "date": "2026-09-01",
+   "age_jours": 8,
+   "perime": true,
+   "niveau": 2.9,
+   "variation": 0.0,
+   "z": 0.0,
+   "anormal": false
+  },
+  {
+   "code": "T10Y2Y",
+   "nom": "Ecart 10 ans moins 2 ans",
+   "quoi": "quand il passe sous zero, le marche anticipe une recession",
+   "unite": "pts",
+   "date": "2026-09-08",
+   "age_jours": 1,
+   "perime": false,
+   "niveau": 0.41,
+   "variation": 0.0,
+   "z": 0.02,
+   "anormal": false
+  },
+  {
+   "code": "BAMLC0A0CM",
+   "nom": "Spread entreprises solides",
+   "quoi": "le surcout d'emprunt des grandes entreprises saines",
+   "unite": "pts",
+   "date": "2026-09-07",
+   "age_jours": 2,
+   "perime": false,
+   "niveau": 0.81,
+   "variation": 0.0,
+   "z": -0.06,
+   "anormal": false
+  },
+  {
+   "code": "DEXCHUS",
+   "nom": "Yuan / dollar",
+   "quoi": "la monnaie chinoise face au dollar",
+   "unite": "CNY",
+   "date": "2026-09-04",
+   "age_jours": 5,
+   "perime": true,
+   "niveau": 6.711,
+   "variation": -0.007,
+   "z": -0.82,
+   "anormal": false
+  }
+ ],
+ "verdict": {
+  "action": false,
+  "titre": "Rien a faire aujourd'hui",
+  "detail": "Aucun mouvement de prix hors norme, aucun dossier a la fois materiel et solidement source. Lis la synthese si tu veux, mais il n'y a rien qui appelle une decision."
+ },
+ "collecte": {
+  "macro": [
+   {
+    "source": "Google News : banque centrale",
+    "articles": 32,
+    "erreur": null
+   },
+   {
+    "source": "Google News : taux directeurs",
+    "articles": 6,
+    "erreur": null
+   },
+   {
+    "source": "Google News : Federal Reserve",
+    "articles": 29,
+    "erreur": null
+   },
+   {
+    "source": "Google News : inflation data",
+    "articles": 30,
+    "erreur": null
+   },
+   {
+    "source": "Google News : bond yields",
+    "articles": 30,
+    "erreur": null
+   }
+  ],
+  "energie": [
+   {
+    "source": "Google News : petrole",
+    "articles": 40,
+    "erreur": null
+   },
+   {
+    "source": "Google News : gaz naturel",
+    "articles": 27,
+    "erreur": null
+   },
+   {
+    "source": "Google News : OPEC",
+    "articles": 18,
+    "erreur": null
+   },
+   {
+    "source": "Google News : refinery",
+    "articles": 30,
+    "erreur": null
+   },
+   {
+    "source": "Google News : LNG shipping",
+    "articles": 25,
+    "erreur": null
+   }
+  ],
+  "defense": [
+   {
+    "source": "Google News : sanctions",
+    "articles": 38,
+    "erreur": null
+   },
+   {
+    "source": "Google News : detroit Ormuz",
+    "articles": 15,
+    "erreur": null
+   },
+   {
+    "source": "Google News : military escalation",
+    "articles": 25,
+    "erreur": null
+   },
+   {
+    "source": "Google News : defense spending",
+    "articles": 21,
+    "erreur": null
+   },
+   {
+    "source": "Google News : NATO",
+    "articles": 28,
+    "erreur": null
+   }
+  ],
+  "tech": [
+   {
+    "source": "Google News : semi-conducteurs",
+    "articles": 29,
+    "erreur": null
+   },
+   {
+    "source": "Google News : ASML",
+    "articles": 36,
+    "erreur": null
+   },
+   {
+    "source": "Google News : Nvidia",
+    "articles": 35,
+    "erreur": null
+   },
+   {
+    "source": "Google News : export controls",
+    "articles": 23,
+    "erreur": null
+   },
+   {
+    "source": "Google News : TSMC",
+    "articles": 37,
+    "erreur": null
+   }
+  ],
+  "marches": []
+ },
+ "themes": {
+  "macro": {
+   "retenus": [],
+   "ecarte_car_bruit": [],
+   "hypothese": null,
+   "titre": "Macro et banques centrales",
+   "dossiers_bruts": 109,
+   "articles_bruts": 127,
+   "collecte": [
+    {
+     "source": "Google News : banque centrale",
+     "articles": 32,
+     "erreur": null
+    },
+    {
+     "source": "Google News : taux directeurs",
+     "articles": 6,
+     "erreur": null
+    },
+    {
+     "source": "Google News : Federal Reserve",
+     "articles": 29,
+     "erreur": null
+    },
+    {
+     "source": "Google News : inflation data",
+     "articles": 30,
+     "erreur": null
+    },
+    {
+     "source": "Google News : bond yields",
+     "articles": 30,
+     "erreur": null
+    }
+   ]
+  },
+  "energie": {
+   "retenus": [],
+   "ecarte_car_bruit": [],
+   "hypothese": null,
+   "titre": "Energie et matieres premieres",
+   "dossiers_bruts": 101,
+   "articles_bruts": 140,
+   "collecte": [
+    {
+     "source": "Google News : petrole",
+     "articles": 40,
+     "erreur": null
+    },
+    {
+     "source": "Google News : gaz naturel",
+     "articles": 27,
+     "erreur": null
+    },
+    {
+     "source": "Google News : OPEC",
+     "articles": 18,
+     "erreur": null
+    },
+    {
+     "source": "Google News : refinery",
+     "articles": 30,
+     "erreur": null
+    },
+    {
+     "source": "Google News : LNG shipping",
+     "articles": 25,
+     "erreur": null
+    }
+   ]
+  },
+  "defense": {
+   "retenus": [],
+   "ecarte_car_bruit": [],
+   "hypothese": null,
+   "titre": "Defense et geopolitique",
+   "dossiers_bruts": 99,
+   "articles_bruts": 127,
+   "collecte": [
+    {
+     "source": "Google News : sanctions",
+     "articles": 38,
+     "erreur": null
+    },
+    {
+     "source": "Google News : detroit Ormuz",
+     "articles": 15,
+     "erreur": null
+    },
+    {
+     "source": "Google News : military escalation",
+     "articles": 25,
+     "erreur": null
+    },
+    {
+     "source": "Google News : defense spending",
+     "articles": 21,
+     "erreur": null
+    },
+    {
+     "source": "Google News : NATO",
+     "articles": 28,
+     "erreur": null
+    }
+   ]
+  },
+  "tech": {
+   "retenus": [],
+   "ecarte_car_bruit": [],
+   "hypothese": null,
+   "titre": "Tech et semi-conducteurs",
+   "dossiers_bruts": 109,
+   "articles_bruts": 160,
+   "collecte": [
+    {
+     "source": "Google News : semi-conducteurs",
+     "articles": 29,
+     "erreur": null
+    },
+    {
+     "source": "Google News : ASML",
+     "articles": 36,
+     "erreur": null
+    },
+    {
+     "source": "Google News : Nvidia",
+     "articles": 35,
+     "erreur": null
+    },
+    {
+     "source": "Google News : export controls",
+     "articles": 23,
+     "erreur": null
+    },
+    {
+     "source": "Google News : TSMC",
+     "articles": 37,
+     "erreur": null
+    }
+   ]
+  }
+ },
+ "etat_du_jour": "Aucun dossier de presse n'a ete retenu aujourd'hui dans les quatre themes suivis (macro, energie, defense, tech) ; les seules informations disponibles sont des donnees de marche, dont la plus notable, le prix du Brent, est agee de huit jours et n'est pas confirmee par une source de presse recente.",
+ "carte": [
+  {
+   "theme": "Macro et banques centrales",
+   "acteurs": []
+  },
+  {
+   "theme": "Energie et matieres premieres",
+   "acteurs": []
+  },
+  {
+   "theme": "Defense et geopolitique",
+   "acteurs": []
+  },
+  {
+   "theme": "Tech et semi-conducteurs",
+   "acteurs": []
+  }
+ ],
+ "glossaire": [
+  {
+   "terme": "z-score",
+   "definition": "Mesure de l'ecart d'une variation par rapport a son comportement habituel sur les 90 derniers jours ; plus le chiffre est eleve, plus le mouvement est rare."
+  },
+  {
+   "terme": "spread (ecart de taux)",
+   "definition": "Difference entre le taux d'emprunt d'une entreprise et celui, plus sur, de l'Etat ; plus il est large, plus le marche juge l'emprunteur risque."
+  },
+  {
+   "terme": "VIX",
+   "definition": "Indice qui mesure la nervosite anticipee des marches actions americains ; plus il monte, plus les investisseurs redoutent des secousses."
+  },
+  {
+   "terme": "Brent / WTI",
+   "definition": "Deux prix de reference du petrole brut, l'un europeen (Brent), l'autre americain (WTI), utilises pour fixer les contrats petroliers dans le monde."
+  },
+  {
+   "terme": "Ecart 10 ans moins 2 ans (T10Y2Y)",
+   "definition": "Difference entre le taux d'emprunt de l'Etat americain sur 10 ans et sur 2 ans ; quand elle devient negative, le marche anticipe souvent une recession."
+  },
+  {
+   "terme": "Henry Hub",
+   "definition": "Prix de reference du gaz naturel aux Etats-Unis, utilise comme base pour les contrats gaziers americains."
+  },
+  {
+   "terme": "indice dollar (DTWEXBGS)",
+   "definition": "Mesure de la valeur du dollar americain face a un panier d'autres monnaies etrangeres."
+  },
+  {
+   "terme": "dossier de presse",
+   "definition": "Une information rapportee par au moins un media ou communique, distincte d'un simple mouvement de prix sur les marches."
+  },
+  {
+   "terme": "perime",
+   "definition": "Se dit d'une donnee de marche dont la date de publication remonte a plus de trois jours, donc a interpreter avec prudence."
+  }
+ ],
+ "inexplique": [
+  {
+   "quoi": "Hausse du Brent (+6,27$, niveau 96,02$) et du WTI (+4,45$, niveau 91,48$)",
+   "ampleur": "z-score de 1,85 pour le Brent et 1,62 pour le WTI, soit des mouvements notables mais non classes 'anormaux' par le systeme (seuil non atteint) ; donnees agees de 8 jours (2026-09-01), donc perimees",
+   "piste": "Les hypotheses ouvertes du carnet evoquent des tensions au Moyen-Orient (detroit d'Ormuz, frappes sur des installations petrolieres) sans qu'aucune de ces informations ne figure dans les dossiers de presse retenus aujourd'hui",
+   "manque": "Aucun dossier retenu dans le theme energie ni dans le theme defense ne confirme un evenement geopolitique precis a l'origine de ce mouvement ; il manque une source de presse independante datee du 1er au 8 septembre pour etablir un lien causal"
+  }
+ ],
+ "divergences": [],
+ "synthese": [
+  "Aucun des quatre themes n'a produit de dossier de presse retenu aujourd'hui : la collecte a tourne (109 a 140 articles par theme) mais rien n'a passe le filtre de pertinence.",
+  "Les themes ne se parlent donc pas entre eux aujourd'hui : il n'y a pas de fil narrutif commun a verifier, seulement des donnees de marche isolees.",
+  "Le seul signal de marche notable, la hausse du Brent/WTI, reste non explique et deja ancien (8 jours), ce qui limite sa valeur d'alerte immediate.",
+  "Le reste des indicateurs (VIX, spreads de credit, taux, dollar) est dans la norme (z proche de 0), signe d'un marche calme independamment de l'absence de presse.",
+  "Cette absence generalisee de dossiers pourrait refleter soit un jour reellement pauvre en actualite verifiee, soit une defaillance du filtre de collecte."
+ ],
+ "contre_analyse": [
+  "L'absence totale de dossiers retenus dans les quatre themes pourrait signaler un probleme de filtrage ou de collecte plutot qu'une realite d'absence d'actualite, ce qui invaliderait la lecture 'marche calme, presse silencieuse'.",
+  "Le z-score de 1,85 sur le Brent, bien que sous le seuil 'anormal' du systeme, reste eleve ; si le seuil de detection est mal calibre, une tension reelle sur le petrole pourrait etre sous-estimee dans cette note.",
+  "Les donnees cles (Brent, WTI, taux, dollar, yuan) sont perimees de 5 a 8 jours ; toute evolution recente non captee ici pourrait rendre la lecture 'marche calme' caduque au moment de la lecture.",
+  "Les hypotheses ouvertes du carnet supposent des causes geopolitiques (Ormuz, Aramco) qui ne sont confirmees par aucune source dans cette collecte ; si ces evenements sont reels mais non couverts par Google News au moment de la collecte, la note sous-estime le risque."
+ ],
+ "carnet": [
+  {
+   "id": "2026-09-06-macro",
+   "date": "2026-09-06",
+   "theme": "Macro et banques centrales",
+   "enonce": "Si la hausse du Brent (+6.27$ sur la derniere seance disponible, niveau 96.02$, z=1.81) se confirme sur les prochaines publications journalieres plutot que d'etre un mouvement isole, elle se traduira par une pression haussiere mesurable sur les couts de soutage du fret maritime et sur les marges raffinage des majors petrolieres europeennes.",
+   "probabilite": 0.5,
+   "horizon_jours": 10,
+   "verification": "Observer si DCOILBRENTEU reste au-dessus de 93-94$ sur les prochaines publications quotidiennes (persistance du niveau) et si les indices de fret (type Baltic Dry ou equivalent, non disponible ici) integrent un ajustement de surcharge carburant.",
+   "version": "v1",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-06-energie",
+   "date": "2026-09-06",
+   "theme": "Energie et matieres premieres",
+   "enonce": "Le Brent se maintient au-dessus de 90$ lors des prochains relevés, confirmant un choc energetique persistant plutot qu'un pic ponctuel, avec repercussion visible sur les couts de fret",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification": "Niveau de DCOILBRENTEU au prochain releve disponible ; comparaison au seuil de 90$",
+   "version": "v1",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-06-tech",
+   "date": "2026-09-06",
+   "theme": "Tech et semi-conducteurs",
+   "enonce": "Aucune donnee du dossier de presse n'explique la hausse anormale du Brent (+6,27$, z=1,81) observee le 2026-09-01; cette hausse reste une correlation non expliquee par les sources disponibles sur ce theme tech/semis.",
+   "probabilite": 0.5,
+   "horizon_jours": 10,
+   "verification": "publication d'un communique OPEP+, d'une donnee EIA/AIE, ou d'un evenement geopolitique energie identifie dans les prochains jours pour expliquer le mouvement du Brent",
+   "version": "v1",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-energie",
+   "date": "2026-09-07",
+   "theme": "Energie et matieres premieres",
+   "enonce": "Le Brent (DCOILBRENTEU), dont le dernier releve connu (01/09/2026, soit 6 jours d'anciennete) affichait 96,02 dollars apres une hausse inhabituelle (+6,27 $, z-score de 1,81, signe d'un mouvement rare), restera au-dessus de 90 dollars lors du prochain releve dans les 10 jours qui suivent, en l'absence de toute information de presse identifiee justifiant ce niveau.",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 90
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-defense",
+   "date": "2026-09-07",
+   "theme": "Defense et geopolitique",
+   "enonce": "Si les frappes sur des petroliers dans le Golfe sont confirmees par au moins une deuxieme source d'ici 10 jours, le Brent pourrait depasser 100 dollars le baril, contre 96,02 dollars constate le 2026-09-01 (donnee agee de 6 jours).",
+   "probabilite": 0.3,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 100
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-tech",
+   "date": "2026-09-07",
+   "theme": "Tech et semi-conducteurs",
+   "enonce": "Le Brent (DCOILBRENTEU), qui a bondi de 6,27$ sur une lecture datee du 2026-09-01 (deja vieille de 6 jours) pour atteindre 96,02$, un niveau statistiquement eleve (z-score, mesure de l'ecart a la normale, de 1,81), restera au-dessus de 95$ le 2026-09-17.",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 95
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-energie",
+   "date": "2026-09-07",
+   "theme": "Energie et matieres premieres",
+   "enonce": "Sans nouvelle information de presse, le Brent (DCOILBRENTEU), dont le dernier releve disponible date du 2026-09-01 (6 jours, perime) et affichait une hausse forte (+6.27$, z-score de 1.81, soit un mouvement nettement au-dessus de la normale), se stabilisera sans repartir a la hausse : il restera sous 100$ d'ici au 2026-09-17.",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": "<",
+    "seuil": 100
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-defense",
+   "date": "2026-09-07",
+   "theme": "Defense et geopolitique",
+   "enonce": "Le Brent a saute de +6.27$ sur sa derniere lecture connue (2026-09-01, perimee de 6 jours), un mouvement statistiquement notable (z=1.81) mais sans dossier de presse identifie pour l'expliquer. Si la hausse est due a une tension geopolitique reelle, elle devrait se confirmer ou s'amplifier plutot que de refluer une fois des donnees plus fraiches disponibles.",
+   "probabilite": 0.4,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 96.02
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-tech",
+   "date": "2026-09-07",
+   "theme": "Tech et semi-conducteurs",
+   "enonce": "Le Brent (DCOILBRENTEU), releve a 96.02$ le 2026-09-01 (donnee agee de 6 jours, hausse de +6.27$ sur la derniere variation connue, z-score de 1.81 signalant un ecart notable a la normale sans etre qualifie d'anormal), depassera le seuil de 100$ d'ici 10 jours, ce qui renchérirait mecaniquement les couts de carburant des transporteurs maritimes et modifierait les marges des majors petrolieres.",
+   "probabilite": 0.4,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 100
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-07-tech",
+   "date": "2026-09-07",
+   "theme": "Tech et semi-conducteurs",
+   "enonce": "Malgre le rally des semi-conducteurs et le risque geopolitique croissant (espionnage industriel, tensions sur les controles d'exportation vers la Chine), la volatilite des marches actions restera basse, signe que ce risque n'est pas encore price par le marche.",
+   "probabilite": 0.6,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "VIXCLS",
+    "operateur": "<",
+    "seuil": 16
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-08-tech",
+   "date": "2026-09-08",
+   "theme": "Tech et semi-conducteurs",
+   "enonce": "Si le rally des semi-conducteurs asiatiques se confirme, l'indice Nasdaq (technologie americaine) devrait depasser son niveau du 2026-09-04 (26506.99 pts) dans les 10 jours suivant le 2026-09-08",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "NASDAQCOM",
+    "operateur": ">=",
+    "seuil": 26506.99
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-08-energie",
+   "date": "2026-09-08",
+   "theme": "Energie et matieres premieres",
+   "enonce": "Sous l'effet cumule des tensions Moyen-Orient (frappes US-Iran, Houthis) et du plan OPEP+ d'octobre, le Brent (serie DCOILBRENTEU) franchira 100 dollars le baril dans les 10 jours suivant le 2026-09-08",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 100
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-08-energie",
+   "date": "2026-09-08",
+   "theme": "Energie et matieres premieres",
+   "enonce": "Compte tenu des tensions autour d'Ormuz et des attaques rapportees contre des installations saoudiennes, le Brent (DCOILBRENTEU) depassera 100 dollars dans les 10 prochains jours de cotation.",
+   "probabilite": 0.5,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 100
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  },
+  {
+   "id": "2026-09-08-energie",
+   "date": "2026-09-08",
+   "theme": "Energie et matieres premieres",
+   "enonce": "Le Brent (DCOILBRENTEU) atteint ou depasse 100 dollars le baril d'ici 10 jours, sous l'effet conjugue des tensions au Moyen-Orient (frappes sur Aramco, detroit d'Ormuz) et de l'attente du plan de production OPEP+ d'octobre.",
+   "probabilite": 0.55,
+   "horizon_jours": 10,
+   "verification_auto": {
+    "serie": "DCOILBRENTEU",
+    "operateur": ">=",
+    "seuil": 100
+   },
+   "version": "v3",
+   "statut": "ouverte",
+   "preuve": null
+  }
+ ],
+ "fiabilite": {},
+ "calibration": []
+}
